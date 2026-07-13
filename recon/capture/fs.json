@@ -1,0 +1,718 @@
+{
+  "label": "fs",
+  "http": [
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942370777",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942370793
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942370778",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942370808
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942372779",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942372795
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942372779",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942372804
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942374779",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942374803
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942374779",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942374813
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942376778",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942376804
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942376779",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942376812
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942378778",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942378792
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942378778",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942378799
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942379793",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942379804
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942379794",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942379810
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942380806",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942380824
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942380806",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942380834
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942381824",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942381838
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942381828",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942381847
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942382839",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942382855
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942382842",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942382864
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942383856",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942383874
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942383858",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942383885
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942384875",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942384896
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942384879",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942384904
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942385898",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942385915
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942385899",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942385925
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942386917",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942386938
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942386920",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942386944
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942387939",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942387958
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942387941",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942387968
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942388960",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942388977
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942388962",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942388988
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942389977",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942390001
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942389981",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942390012
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942391003",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942391034
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942391006",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942391045
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942392036",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942392072
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942392040",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942392081
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942393073",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942393095
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942393075",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942393105
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942394097",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942394113
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942394100",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942394123
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942395114",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942395143
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942395117",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942395153
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942396145",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942396192
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942396148",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942396201
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942397192",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942397239
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942397195",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942397248
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942398240",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942398284
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942398242",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942398292
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942399285",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942399344
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942399288",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942399351
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942400346",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942400379
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942400346",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942400385
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942401380",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942401428
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942401382",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942401434
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942402430",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942402475
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942402430",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942402482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942403477",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942403529
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942403478",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942403537
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942404530",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942404575
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942404531",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942404581
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942405575",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942405626
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942405578",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942405635
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942406627",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942406676
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942406631",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942406686
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942407678",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942407721
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942407682",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942407727
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942408722",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942408773
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942408724",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942408783
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942409774",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942409818
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942409777",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942409825
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942410820",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942410865
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942410821",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942410869
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/?_dc=1783942411867",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783942411913
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats?_dc=1783942411867",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783942411919
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/1?_dc=1783942413410",
+      "reqBody": "{\"id\":1,\"name\":\"desktop\",\"data\":{\"shortcuts\":[{\"x\":0,\"y\":115,\"order\":0,\"application\":\"Fbx.os.app.settings.ConnectionStatus\",\"caption\":\"État de la Freebox\",\"qtip\":\"Consultez l’état de votre Freebox.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":130,\"y\":115,\"order\":1,\"application\":\"Fbx.os.app.downloader.app\",\"caption\":\"Téléchargements\",\"qtip\":\"Téléchargez des fichiers sur Internet avec votre Freebox.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":260,\"y\":115,\"order\":2,\"application\":\"Fbx.os.app.explorer.app\",\"caption\":\"Explorateur de fichiers\",\"qtip\":\"Explorez le contenu des disques connectés au Freebox Server.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":390,\"y\":115,\"order\":3,\"application\":\"Fbx.os.app.settings.app\",\"caption\":\"Paramètres de la Freebox\",\"qtip\":\"Accédez aux réglages de votre Freebox Server.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":520,\"y\":115,\"order\":4,\"application\":\"Fbx.os.app.profiles.app\",\"caption\":\"Profils\",\"qtip\":\"Configurez les différentes personnes accédant à votre réseau et leurs horaires d’accès à Internet.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":650,\"y\":115,\"order\":5,\"application\":\"Fbx.os.app.lanbrowser.app\",\"caption\":\"Périphériques réseau\",\"qtip\":\"Gérez les différents périphériques connectés à votre réseau.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":780,\"y\":115,\"order\":6,\"application\":\"Fbx.os.app.calls.app\",\"caption\":\"Journal d’appels\",\"qtip\":\"Consultez l’historique des appels reçus et émis.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":910,\"y\":115,\"order\":7,\"application\":\"Fbx.os.app.pvr.app\",\"caption\":\"Gestion des enregistrements\",\"qtip\":\"Gérez vos enregistrements TV.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":1040,\"y\":115,\"order\":8,\"application\":\"Fbx.os.app.epg.app\",\"caption\":\"Guide des programmes\",\"qtip\":\"Consultez le guide des programmes TV Freebox\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":1170,\"y\":115,\"order\":9,\"application\":\"Fbx.os.app.contacts.app\",\"caption\":\"Contacts\",\"qtip\":\"Importez et modifiez vos contacts pour personnaliser le journal d’appels.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":1300,\"y\":115,\"order\":10,\"application\":\"Fbx.os.app.vm.app\",\"caption\":\"VMs\",\"qtip\":\"Gérez vos VMs\",\"hidden\":false,\"isNew\":false,\"restricted\":false}],\"disableMobileInfo\":true,\"version\":2}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":1,\"name\":\"desktop\",\"data\":{\"shortcuts\":[{\"restricted\":false,\"order\":0,\"hidden\":false,\"y\":115,\"x\":0,\"caption\":\"État de la Freebox\",\"isNew\":false,\"qtip\":\"Consultez l’état de votre Freebox.\",\"application\":\"Fbx.os.app.settings.ConnectionStatus\"},{\"restricted\":false,\"order\":1,\"hidden\":false,\"y\":115,\"x\":130,\"caption\":\"Téléchargements\",\"isNew\":false,\"qtip\":\"Téléchargez des fichiers sur Internet avec votre Freebox.\",\"application\":\"Fbx.os.app.downloader.app\"},{\"restricted\":false,\"order\":2,\"hidden\":false,\"y\":115,\"x\":260,\"caption\":\"Explorateur de fichiers\",\"isNew\":false,\"qtip\":\"Explorez le contenu des disques connectés au Freebox Server.\",\"application\":\"Fbx.os.app.explorer.app\"},{\"restricted\":false,\"order\":3,\"hidden\":false,\"y\":115,\"x\":390,\"caption\":\"Paramètres de la Freebox\",\"isNew\":false,\"qtip\":\"Accédez aux réglages de votre Freebox Server.\",\"application\":\"Fbx.os.app.settings.app\"},{\"restricted\":false,\"order\":4,\"hidden\":false,\"y\":115,\"x\":520,\"caption\":\"Profils\",\"isNew\":false,\"qtip\":\"Configurez les différentes personnes accédant à votre réseau et leurs horaires d’accès à Internet.\",\"application\":\"Fbx.os.app.profiles.app\"},{\"restricted\":false,\"order\":5,\"hidden\":false,\"y\":115,\"x\":650,\"caption\":\"Périphériques réseau\",\"isNew\":false,\"qtip\":\"Gérez les différents périphériques connectés à votre réseau.\",\"application\":\"Fbx.os.app.lanbrowser.app\"},{\"restricted\":false,\"order\":6,\"hidden\":false,\"y\":115,\"x\":780,\"caption\":\"Journal d’appels\",\"isNew\":false,\"qtip\":\"Consultez l’historique des appels reçus et émis.\",\"application\":\"Fbx.os.app.calls.app\"},{\"restricted\":false,\"order\":7,\"hidden\":false,\"y\":115,\"x\":910,\"caption\":\"Gestion des enregistrements\",\"isNew\":false,\"qtip\":\"Gérez vos enregistrements TV.\",\"application\":\"Fbx.os.app.pvr.app\"},{\"restricted\":false,\"order\":8,\"hidden\":false,\"y\":115,\"x\":1040,\"caption\":\"Guide des programmes\",\"isNew\":false,\"qtip\":\"Consultez le guide des programmes TV Freebox\",\"application\":\"Fbx.os.app.epg.app\"},{\"restricted\":false,\"order\":9,\"hidden\":false,\"y\":115,\"x\":1170,\"caption\":\"Contacts\",\"isNew\":false,\"qtip\":\"Importez et modifiez vos contacts pour personnaliser le journal d’appels.\",\"application\":\"Fbx.os.app.contacts.app\"},{\"restricted\":false,\"order\":10,\"hidden\":false,\"y\":115,\"x\":1300,\"caption\":\"VMs\",\"isNew\":false,\"qtip\":\"Gérez vos VMs\",\"application\":\"Fbx.os.app.vm.app\"}],\"disableMobileInfo\":true,\"version\":2}}}",
+      "t": 1783942413497
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783942418299",
+      "reqBody": "{\"name\":\"Fbx.os.app.explorer.app\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783942418334
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/ls/?_dc=1783942418311&node=&countSubFolder=1&removeHidden=1&onlyFolder=1",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"entries\":[{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1726319787,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Freebox\",\"index\":0,\"foldercount\":6,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS00\",\"size\":4096}]}}",
+      "t": 1783942418343
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/storage/partition/?_dc=1783942418316&page=1&start=0&limit=25",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"fstype\":\"ext4\",\"total_bytes\":984260000000,\"label\":\"Freebox\",\"id\":1001,\"internal\":false,\"fsck_result\":\"no_run_yet\",\"state\":\"mounted\",\"disk_id\":1000,\"free_bytes\":358030000000,\"used_bytes\":626210000000,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS00\"}]}",
+      "t": 1783942418345
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/storage/partition/?_dc=1783942418346&page=1&start=0&limit=25",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"fstype\":\"ext4\",\"total_bytes\":984260000000,\"label\":\"Freebox\",\"id\":1001,\"internal\":false,\"fsck_result\":\"no_run_yet\",\"state\":\"mounted\",\"disk_id\":1000,\"free_bytes\":358030000000,\"used_bytes\":626210000000,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS00\"}]}",
+      "t": 1783942418355
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/ls/L0ZyZWVib3gvc2NydWJiZWQvZmlsZS05?_dc=1783942418345&countSubFolder=1&removeHidden=1",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"entries\":[{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1726319787,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Freebox\",\"index\":0,\"foldercount\":6,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS00\",\"size\":4096}]}}",
+      "t": 1783942418358
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/26?_dc=1783942418410",
+      "reqBody": "{\"id\":26,\"name\":\"Fbx.os.app.explorer.app-window\",\"data\":{\"width\":772,\"height\":371,\"maximized\":false,\"size\":{\"width\":769,\"height\":371},\"pos\":[52,3],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":26,\"name\":\"Fbx.os.app.explorer.app-window\",\"data\":{\"maximized\":false,\"version\":1,\"height\":371,\"width\":772,\"size\":{\"height\":371,\"width\":769},\"pos\":[52,3]}}}",
+      "t": 1783942418433
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/1?_dc=1783942420095",
+      "reqBody": "{\"id\":1,\"name\":\"desktop\",\"data\":{\"shortcuts\":[{\"x\":151,\"y\":80,\"order\":0,\"application\":\"Fbx.os.app.settings.ConnectionStatus\",\"caption\":\"État de la Freebox\",\"qtip\":\"Consultez l’état de votre Freebox.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":281,\"y\":80,\"order\":1,\"application\":\"Fbx.os.app.downloader.app\",\"caption\":\"Téléchargements\",\"qtip\":\"Téléchargez des fichiers sur Internet avec votre Freebox.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":411,\"y\":80,\"order\":2,\"application\":\"Fbx.os.app.explorer.app\",\"caption\":\"Explorateur de fichiers\",\"qtip\":\"Explorez le contenu des disques connectés au Freebox Server.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":541,\"y\":80,\"order\":3,\"application\":\"Fbx.os.app.settings.app\",\"caption\":\"Paramètres de la Freebox\",\"qtip\":\"Accédez aux réglages de votre Freebox Server.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":151,\"y\":230,\"order\":4,\"application\":\"Fbx.os.app.profiles.app\",\"caption\":\"Profils\",\"qtip\":\"Configurez les différentes personnes accédant à votre réseau et leurs horaires d’accès à Internet.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":281,\"y\":230,\"order\":5,\"application\":\"Fbx.os.app.lanbrowser.app\",\"caption\":\"Périphériques réseau\",\"qtip\":\"Gérez les différents périphériques connectés à votre réseau.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":411,\"y\":230,\"order\":6,\"application\":\"Fbx.os.app.calls.app\",\"caption\":\"Journal d’appels\",\"qtip\":\"Consultez l’historique des appels reçus et émis.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":541,\"y\":230,\"order\":7,\"application\":\"Fbx.os.app.pvr.app\",\"caption\":\"Gestion des enregistrements\",\"qtip\":\"Gérez vos enregistrements TV.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":151,\"y\":380,\"order\":8,\"application\":\"Fbx.os.app.epg.app\",\"caption\":\"Guide des programmes\",\"qtip\":\"Consultez le guide des programmes TV Freebox\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":281,\"y\":380,\"order\":9,\"application\":\"Fbx.os.app.contacts.app\",\"caption\":\"Contacts\",\"qtip\":\"Importez et modifiez vos contacts pour personnaliser le journal d’appels.\",\"hidden\":false,\"isNew\":false,\"restricted\":false},{\"x\":411,\"y\":380,\"order\":10,\"application\":\"Fbx.os.app.vm.app\",\"caption\":\"VMs\",\"qtip\":\"Gérez vos VMs\",\"hidden\":false,\"isNew\":false,\"restricted\":false}],\"disableMobileInfo\":true,\"version\":2}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":1,\"name\":\"desktop\",\"data\":{\"shortcuts\":[{\"restricted\":false,\"order\":0,\"hidden\":false,\"y\":80,\"x\":151,\"caption\":\"État de la Freebox\",\"isNew\":false,\"qtip\":\"Consultez l’état de votre Freebox.\",\"application\":\"Fbx.os.app.settings.ConnectionStatus\"},{\"restricted\":false,\"order\":1,\"hidden\":false,\"y\":80,\"x\":281,\"caption\":\"Téléchargements\",\"isNew\":false,\"qtip\":\"Téléchargez des fichiers sur Internet avec votre Freebox.\",\"application\":\"Fbx.os.app.downloader.app\"},{\"restricted\":false,\"order\":2,\"hidden\":false,\"y\":80,\"x\":411,\"caption\":\"Explorateur de fichiers\",\"isNew\":false,\"qtip\":\"Explorez le contenu des disques connectés au Freebox Server.\",\"application\":\"Fbx.os.app.explorer.app\"},{\"restricted\":false,\"order\":3,\"hidden\":false,\"y\":80,\"x\":541,\"caption\":\"Paramètres de la Freebox\",\"isNew\":false,\"qtip\":\"Accédez aux réglages de votre Freebox Server.\",\"application\":\"Fbx.os.app.settings.app\"},{\"restricted\":false,\"order\":4,\"hidden\":false,\"y\":230,\"x\":151,\"caption\":\"Profils\",\"isNew\":false,\"qtip\":\"Configurez les différentes personnes accédant à votre réseau et leurs horaires d’accès à Internet.\",\"application\":\"Fbx.os.app.profiles.app\"},{\"restricted\":false,\"order\":5,\"hidden\":false,\"y\":230,\"x\":281,\"caption\":\"Périphériques réseau\",\"isNew\":false,\"qtip\":\"Gérez les différents périphériques connectés à votre réseau.\",\"application\":\"Fbx.os.app.lanbrowser.app\"},{\"restricted\":false,\"order\":6,\"hidden\":false,\"y\":230,\"x\":411,\"caption\":\"Journal d’appels\",\"isNew\":false,\"qtip\":\"Consultez l’historique des appels reçus et émis.\",\"application\":\"Fbx.os.app.calls.app\"},{\"restricted\":false,\"order\":7,\"hidden\":false,\"y\":230,\"x\":541,\"caption\":\"Gestion des enregistrements\",\"isNew\":false,\"qtip\":\"Gérez vos enregistrements TV.\",\"application\":\"Fbx.os.app.pvr.app\"},{\"restricted\":false,\"order\":8,\"hidden\":false,\"y\":380,\"x\":151,\"caption\":\"Guide des programmes\",\"isNew\":false,\"qtip\":\"Consultez le guide des programmes TV Freebox\",\"application\":\"Fbx.os.app.epg.app\"},{\"restricted\":false,\"order\":9,\"hidden\":false,\"y\":380,\"x\":281,\"caption\":\"Contacts\",\"isNew\":false,\"qtip\":\"Importez et modifiez vos contacts pour personnaliser le journal d’appels.\",\"application\":\"Fbx.os.app.contacts.app\"},{\"restricted\":false,\"order\":10,\"hidden\":false,\"y\":380,\"x\":411,\"caption\":\"VMs\",\"isNew\":false,\"qtip\":\"Gérez vos VMs\",\"application\":\"Fbx.os.app.vm.app\"}],\"disableMobileInfo\":true,\"version\":2}}}",
+      "t": 1783942420117
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/ls/L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMA==?_dc=1783942442571&node=L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMA==&countSubFolder=1&removeHidden=1&onlyFolder=1",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"entries\":[{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1726318569,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Enregistrements\",\"index\":0,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMQ==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1730987204,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Musiques\",\"index\":1,\"foldercount\":3,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMg==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1730640245,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Photos\",\"index\":2,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMw==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1726318569,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Téléchargements\",\"index\":3,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNA==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1770024546,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Vidéos\",\"index\":4,\"foldercount\":4,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNQ==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":4,\"link\":false,\"modification\":1769679138,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"VMs\",\"index\":5,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNg==\",\"size\":4096}]}}",
+      "t": 1783942443000
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/ls/L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMA==?_dc=1783942442570&countSubFolder=1&removeHidden=1",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"entries\":[{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1726318569,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Enregistrements\",\"index\":0,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMQ==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1730987204,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Musiques\",\"index\":1,\"foldercount\":3,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMg==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1730640245,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Photos\",\"index\":2,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xMw==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1726318569,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Téléchargements\",\"index\":3,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNA==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":0,\"link\":false,\"modification\":1770024546,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"Vidéos\",\"index\":4,\"foldercount\":4,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNQ==\",\"size\":4096},{\"type\":\"dir\",\"filecount\":4,\"link\":false,\"modification\":1769679138,\"hidden\":false,\"mimetype\":\"inode/directory\",\"name\":\"VMs\",\"index\":5,\"foldercount\":0,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNg==\",\"size\":4096}]}}",
+      "t": 1783942443006
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/ls/L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNg==?_dc=1783942469979&node=L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNg==&countSubFolder=1&removeHidden=1&onlyFolder=1",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"entries\":[]}}",
+      "t": 1783942469999
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/ls/L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNg==?_dc=1783942469977&countSubFolder=1&removeHidden=1",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"entries\":[{\"type\":\"file\",\"index\":0,\"link\":false,\"modification\":1769679075,\"hidden\":false,\"mimetype\":\"application/x-qemu-disk\",\"name\":\"file-2\",\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xNw==\",\"size\":1938489344},{\"type\":\"file\",\"index\":1,\"link\":false,\"modification\":1773277539,\"hidden\":false,\"mimetype\":\"application/vnd.freebox.efi-settings\",\"name\":\"file-3\",\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xOA==\",\"size\":1114112},{\"type\":\"file\",\"index\":2,\"link\":false,\"modification\":1783942427,\"hidden\":false,\"mimetype\":\"application/x-qemu-disk\",\"name\":\"file-1\",\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0xOQ==\",\"size\":10274865152},{\"type\":\"file\",\"index\":3,\"link\":false,\"modification\":1783860757,\"hidden\":false,\"mimetype\":\"application/vnd.freebox.efi-settings\",\"name\":\"file-4\",\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0yMA==\",\"size\":1114112}]}}",
+      "t": 1783942470003
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783942509118",
+      "reqBody": "{\"name\":\"Fbx.os.app.explorer.ShareLinkWin\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783942509133
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/share_link/?_dc=1783942509136",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783942509157
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/settings/?_dc=1783942509224",
+      "reqBody": "{\"id\":0,\"name\":\"Fbx.os.app.explorer.ShareLinkWin-window\",\"data\":{\"maximized\":false,\"size\":{\"width\":799,\"height\":400},\"pos\":[12,243],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":53,\"name\":\"Fbx.os.app.explorer.ShareLinkWin-window\",\"data\":{\"maximized\":false,\"size\":{\"height\":400,\"width\":799},\"version\":1,\"pos\":[12,243]}}}",
+      "t": 1783942509246
+    }
+  ],
+  "ws": []
+}

@@ -32,6 +32,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import base64
 import ipaddress
 import json
 import re
@@ -53,6 +54,11 @@ SECRET_KEYS = {
     "pwd", "passphrase", "key", "wpa_key", "psk", "pre_shared_key",
     "private_key", "public_key", "secret", "token", "api_key", "wps_pin",
     "pin", "cert", "certificate", "ca_cert", "client_cert", "crt",
+    "cloudinit_userdata",  # cloud-init YAML: ssh keys, sometimes passwords
+    "comment",             # free-text user comments (DHCP leases, etc.)
+    # contact-record free text / postal data
+    "street", "address", "note", "notes", "zip_code", "zipcode", "city",
+    "birthday",
 }
 
 # Replaced with a stable fake from the named pool.
@@ -65,17 +71,92 @@ POOL_KEYS = {
     "primary_name": "host",
     "host_name": "host",
     "hostname": "host",
+    "default_name": "host",
+    "domain_name": "host",
+    "device_name": "host",   # /player, and app-authorization records
+    "friendlyname": "host",  # UPnP-advertised device name
+    "cloudinit_hostname": "host",
+    "name_dns": "host",      # lan/config box names
+    "name_mdns": "host",
+    "name_netbios": "host",
+    "custom_key_ssid": "ssid",
+    "profile_name": "person",
     "display_name": "person",
     "first_name": "person",
     "last_name": "person",
     "company": "person",
     "owner": "person",
+    # VPN client / DDNS / SIP / FTP credentials & endpoints
+    "remote_host": "host",
+    "user": "person",
+    "username": "person",
+    "login": "person",
+    "label": "host",        # storage volume labels ("Extreme SSD")
+    "number": "phone",      # call-log numbers, any national format
+    "disk_path": "b64path",
+    "cd_path": "b64path",
+    "download_dir": "b64path",
 }
+
+# fs-entry "path"/"filepath" values are base64url of a real (often personal)
+# path — but the same key names also carry plain API endpoint paths in our
+# own harvest records. Only the base64 form is scrubbed: a value starting
+# with "/" is a plain path and passes through (see scrub_field).
+B64PATH_KEYS = {"path", "filepath"}
+
+# Values that must never be pool-scrubbed even when a shape rule matches —
+# API placeholders ("call" is the call log's stand-in when no caller ID
+# resolves), Free's own product names, and factory-default device names that
+# identify a device *type*, not a person. Checked case-insensitively.
+NEVER_SCRUB_VALUES = {
+    "call", "unknown", "inconnu", "n/a", "none", "-", "",
+    "freebox server", "freebox-server", "freebox player", "freebox player pop",
+    "freebox", "freebox-delta", "freebox-ultra",
+    "linux", "android", "iphone", "ipad", "mac", "pc", "windows",
+    "xboxone", "xbox one", "playstation",
+    # factory-default Freebox disk folder names — present on every box
+    "vms", "téléchargements", "musiques", "photos", "vidéos",
+    "enregistrements", "disque dur", "disque dur interne",
+}
+
+# The bare key "name" is too polymorphic to scrub unconditionally — it's also
+# a sensor label ("Température CPU 1"), a fan label, a box model name, a
+# torrent/file name, none of which are identifying. Instead, disambiguate by
+# the OTHER keys present alongside "name" in the same dict (its "shape"):
+# every one of these shapes is a real, observed Freebox API record type that
+# names a person or a device. required: ALL must be present as siblings;
+# forbidden: NONE may be present (excludes lookalike shapes, e.g. a Home/PVR
+# category tile is {category,icon,name,type} — icon+type alone would
+# wrongly match the player-device shape without the "category" exclusion).
+NAME_SHAPE_RULES: list[tuple[frozenset[str], frozenset[str], str]] = [
+    # LAN host's name-with-provenance record: {name, source}
+    (frozenset({"source"}), frozenset(), "host"),
+    # call log entry (caller display name): {name, number, contact_id, ...}
+    (frozenset({"number"}), frozenset(), "person"),
+    (frozenset({"contact_id"}), frozenset(), "person"),
+    # parental-control profile record: exactly {id, name, icon}
+    (frozenset({"id", "icon"}), frozenset({"type", "category"}), "person"),
+    # LAN host's network_control association: {current_mode, profile_id, name}
+    (frozenset({"profile_id"}), frozenset(), "person"),
+    # VM record: {..., mac, vcpus, cloudinit_hostname, ...}
+    (frozenset({"vcpus"}), frozenset(), "host"),
+    # push-notification target device: {..., api_url, subscriptions, ...}
+    (frozenset({"api_url"}), frozenset(), "host"),
+    # AirMedia receiver: {name, capabilities, password_protected}
+    (frozenset({"capabilities"}), frozenset(), "host"),
+    (frozenset({"password_protected"}), frozenset(), "host"),
+    # cast/player-type target device: {icon, name, type} but NOT a category tile
+    (frozenset({"icon", "type"}), frozenset({"category", "id"}), "host"),
+    # download task (torrent/file names are personal): {..., tx_pct, rx_pct}
+    (frozenset({"tx_pct"}), frozenset(), "file"),
+    # download file entry / fs listing entry: both carry a base64 "path"
+    (frozenset({"path"}), frozenset(), "file"),
+]
 
 # Leaf values under keys matching this are exempt from the pattern pass:
 # firmware versions like "4.8.9.1" would otherwise be mistaken for public
-# IPv4 addresses.
-VERSION_KEY_RE = re.compile(r"version|firmware", re.I)
+# IPv4 addresses. Anchored so that 'conversion'/'diversion' don't match.
+VERSION_KEY_RE = re.compile(r"(?:^|_)version$|^firmware", re.I)
 
 # ---------------------------------------------------------------------------
 # Pattern rules (applied to every string value, and inside nested JSON)
@@ -92,6 +173,18 @@ PHONE_RE = re.compile(
     r"|(?<![\d.+])0[1-9](?:[\s.\-]?\d{2}){4}(?![\d.])"
 )
 HEXBLOB_RE = re.compile(r"\b[0-9a-fA-F]{32,}\b")
+# a MAC with separators stripped: exactly 12 hex chars, standalone, and with
+# at least one letter so we don't nuke 12-digit decimal counters/timestamps.
+MAC_NOSEP_RE = re.compile(
+    r"(?<![0-9A-Za-z])(?=[0-9A-Fa-f]{12}(?![0-9A-Fa-f]))(?=[0-9]*[A-Fa-f])[0-9A-Fa-f]{12}"
+)
+# International phone numbers beyond the French formats PHONE_RE handles:
+# a leading + and 8–14 digits (optionally spaced), e.g. +49..., +1...
+INTL_PHONE_RE = re.compile(r"(?<![\w+])\+\d[\d\s.\-]{7,17}\d(?!\w)")
+# base64url fs paths embedded in request URLs: /fs/ls/<b64>, /dl/<b64>,
+# and as query params (?node=<b64>, &path=<b64>, …)
+FS_URL_RE = re.compile(r"(?<=/)(?:ls|dl|rm|mv|cp|mkdir|share)/([A-Za-z0-9%_=-]{4,})")
+FS_PARAM_RE = re.compile(r"(?<=[?&])(?:node|path|dir|folder)=([A-Za-z0-9%_=-]{4,})")
 
 
 def _ipv4_is_safe(ip: ipaddress.IPv4Address) -> bool:
@@ -146,6 +239,11 @@ class ScrubMap:
             return f"host-{n}"
         if pool == "person":
             return f"person-{n}"
+        if pool == "file":
+            return f"file-{n}"
+        if pool == "b64path":
+            # keep the base64url encoding the fs API uses, but of a fake path
+            return base64.urlsafe_b64encode(f"/Freebox/scrubbed/file-{n}".encode()).decode()
         if pool == "hex":
             return f"SCRUBBED_HEX_{n}"
         return f"scrubbed-{pool}-{n}"
@@ -160,9 +258,36 @@ class ScrubMap:
 # Scrubbing
 # ---------------------------------------------------------------------------
 
+def _normkey(key: str) -> str:
+    return re.sub(r"[\s-]+", "_", key.strip().lower())
+
+
+_B64_RE = re.compile(r"^[A-Za-z0-9_-]{8,}={0,2}$")
+
+
+def _decodes_to_path(value: str) -> bool:
+    """True if value is base64url of an absolute filesystem path.
+
+    The Freebox fs API encodes every path this way (/fs/ls/<b64>, download
+    dirs, share targets, watch dirs, …). Catching them by *value shape*
+    rather than key name closes the whole class in one rule — no field can
+    be forgotten. Guarded tightly (clean UTF-8, printable, leading '/') so it
+    won't fire on icon blobs, tokens, or hashes.
+    """
+    if not _B64_RE.match(value) or len(value) % 4 == 1:
+        return False
+    try:
+        dec = base64.urlsafe_b64decode(value + "=" * (-len(value) % 4))
+        t = dec.decode("utf-8")
+    except (ValueError, UnicodeDecodeError):
+        return False
+    return t.startswith("/") and t.isprintable() and "/scrubbed/" not in t
+
+
 def scrub_value(obj, m: ScrubMap, key: str | None = None):
     if isinstance(obj, dict):
-        return {k: scrub_field(k, v, m) for k, v in obj.items()}
+        siblings = {_normkey(k) for k in obj}
+        return {k: scrub_field(k, v, m, siblings) for k, v in obj.items()}
     if isinstance(obj, list):
         return [scrub_value(v, m, key) for v in obj]
     if isinstance(obj, str):
@@ -170,12 +295,29 @@ def scrub_value(obj, m: ScrubMap, key: str | None = None):
     return obj
 
 
-def scrub_field(key: str, value, m: ScrubMap):
-    lk = key.lower()
+def scrub_field(key: str, value, m: ScrubMap, siblings: frozenset[str] = frozenset()):
+    lk = _normkey(key)
     if lk in SECRET_KEYS and isinstance(value, str) and value:
         return f"SCRUBBED_{lk.upper()}"
-    if lk in POOL_KEYS and isinstance(value, str) and value:
+    never = isinstance(value, str) and value.lower() in NEVER_SCRUB_VALUES
+    # The recon capture envelope is {label, http, ws} / {label, harvest}; its
+    # "label" is our own section name (metadata we chose), not box data.
+    if lk == "label" and siblings & {"http", "ws", "harvest"}:
+        return scrub_value(value, m, key)
+    # Any *_serial (sfp_serial, disk_serial, …) is a hardware identifier.
+    if (lk == "serial" or lk.endswith("_serial")) and isinstance(value, str) and value:
+        return m.get("serial", value)
+    if lk in POOL_KEYS and isinstance(value, str) and value and not never:
         return m.get(POOL_KEYS[lk], value)
+    if (
+        lk in B64PATH_KEYS and isinstance(value, str) and value
+        and not never and not value.startswith("/")
+    ):
+        return m.get("b64path", value)
+    if lk == "name" and isinstance(value, str) and value and not never:
+        for required, forbidden, pool in NAME_SHAPE_RULES:
+            if required <= siblings and not (forbidden & siblings):
+                return m.get(pool, value)
     return scrub_value(value, m, key)
 
 
@@ -195,12 +337,30 @@ def scrub_string(s: str, m: ScrubMap, key: str | None = None) -> str:
                     ensure_ascii=False,
                 )
 
+    # Value-shape catch-all for base64url'd fs paths, whatever the key.
+    if _decodes_to_path(s):
+        return m.get("b64path", s)
+
     if key is not None and VERSION_KEY_RE.search(key):
         return s
 
+    s = FS_URL_RE.sub(
+        lambda mt: mt.group(0)[: -len(mt.group(1))] + m.get("b64path", mt.group(1)), s
+    )
+    s = FS_PARAM_RE.sub(
+        lambda mt: mt.group(0)[: -len(mt.group(1))] + m.get("b64path", mt.group(1)), s
+    )
     s = FBXOS_RE.sub(lambda mt: m.get("fbxos", mt.group(0)), s)
     s = EMAIL_RE.sub(lambda mt: m.get("email", mt.group(0)), s)
     s = PHONE_RE.sub(lambda mt: m.get("phone", mt.group(0)), s)
+
+    def _intl_phone_repl(mt: re.Match) -> str:
+        # Don't re-scrub our own fake phones (+33100000NN) into phone-of-phone.
+        if re.sub(r"[\s.\-]", "", mt.group(0)).startswith("+33100000"):
+            return mt.group(0)
+        return m.get("phone", mt.group(0))
+
+    s = INTL_PHONE_RE.sub(_intl_phone_repl, s)
 
     def _ipv6_repl(mt: re.Match) -> str:
         try:
@@ -224,6 +384,14 @@ def scrub_string(s: str, m: ScrubMap, key: str | None = None) -> str:
 
     s = IPV4_RE.sub(_ipv4_repl, s)
     s = MAC_RE.sub(lambda mt: m.get("mac", mt.group(0).lower()), s)
+
+    def _mac_nosep_repl(mt: re.Match) -> str:
+        # Key the map by the colon'd form so the same device maps identically
+        # whether written "aabbcc.." or "aa:bb:cc.."; emit sep-less to match.
+        colon = ":".join(mt.group(0).lower()[i:i + 2] for i in range(0, 12, 2))
+        return m.get("mac", colon).replace(":", "")
+
+    s = MAC_NOSEP_RE.sub(_mac_nosep_repl, s)
     s = HEXBLOB_RE.sub(lambda mt: m.get("hex", mt.group(0).lower()), s)
     return s
 
@@ -302,11 +470,46 @@ def check_text(text: str) -> list[str]:
     for mt in PHONE_RE.finditer(text):
         if not re.sub(r"[\s.\-]", "", mt.group(0)).startswith("+33100000"):
             problems.append(f"phone number survives: {mt.group(0)}")
+    for mt in INTL_PHONE_RE.finditer(text):
+        if not re.sub(r"[\s.\-]", "", mt.group(0)).startswith("+33100000"):
+            problems.append(f"intl phone survives: {mt.group(0)}")
     for mt in EMAIL_RE.finditer(text):
         if not mt.group(0).endswith("@example.com"):
             problems.append(f"email survives: {mt.group(0)}")
+    for mt in MAC_NOSEP_RE.finditer(text):
+        if not mt.group(0).lower().startswith("020000000"):
+            problems.append(f"sep-less MAC survives: {mt.group(0)}")
     for mt in HEXBLOB_RE.finditer(text):
         problems.append(f"long hex blob survives: {mt.group(0)[:16]}…")
+    for tok in re.findall(r"[A-Za-z0-9_-]{12,}={0,2}", text):
+        if _decodes_to_path(tok):
+            dec = base64.urlsafe_b64decode(tok + "=" * (-len(tok) % 4)).decode("utf-8")
+            problems.append(f"base64 fs path survives: {tok[:20]}… -> {dec[:40]}")
+    return problems
+
+
+def check_against_map(text: str, m: ScrubMap) -> list[str]:
+    """Defense in depth: every real value the map has ever scrubbed
+    successfully, anywhere, must never appear literally in scrubbed output —
+    independent of which key-name or shape rule caught it originally. This
+    catches leaks through structural shapes the rules don't yet know about,
+    as long as the same real value was scrubbed at least once elsewhere.
+    """
+    # Strip our own fake-value markers first — e.g. the real value "BED" is a
+    # substring of the literal marker "SCRUBBED", which would otherwise
+    # false-positive on every redacted secret in the document.
+    haystack = re.sub(r"SCRUBBED[A-Z0-9_]*", "", text)
+    problems: list[str] = []
+    for pool, bucket in m.map.items():
+        for real in bucket:
+            if len(real) < 3:
+                continue
+            # Word-boundary match: a real hostname "linux" must not flag the
+            # public URL "alpinelinux.org"; "Plexi" inside "Plexi.qcow2" must.
+            if re.search(
+                r"(?<![A-Za-z0-9])" + re.escape(real) + r"(?![A-Za-z0-9])", haystack
+            ):
+                problems.append(f"real {pool} value survives verbatim: {real!r}")
     return problems
 
 
@@ -365,8 +568,18 @@ SELFTEST_SAMPLE = {
             "resBody": json.dumps({
                 "result": [{
                     "primary_name": "MacBook-de-Kevin",
+                    "default_name": "MacBook-Pro",
+                    "domain_name": "macbook-pro-2.home",
                     "l2ident": {"id": "AA:BB:CC:DD:EE:FF", "type": "mac_address"},
                     "ipv6": "fe80::a8bb:ccff:fedd:eeff",
+                    "names": [
+                        {"name": "MacBook-Pro", "source": "dhcp"},
+                        {"name": "MacBook-Pro-2", "source": "mdns"},
+                    ],
+                    "info": {"dhcp": {"Host Name": "MacBook-Pro"}},
+                    "network_control": {
+                        "current_mode": "allowed", "profile_id": 1, "name": "Kevin",
+                    },
                 }],
             }),
         },
@@ -387,6 +600,37 @@ SELFTEST_SAMPLE = {
                            {"number": "0612345678"}],
             }),
         },
+        {
+            "method": "GET",
+            "url": "http://mafreebox.freebox.fr/api/v14/profile",
+            "resBody": json.dumps({
+                "result": [{"id": 1, "name": "Kevin", "icon": "/resources/profile_03.png"}],
+            }),
+        },
+        {
+            "method": "GET",
+            "url": "http://mafreebox.freebox.fr/api/v14/downloads/config/",
+            "resBody": json.dumps({
+                "result": {
+                    # base64url of "/Disque dur/Perso de Kevin" under a key the
+                    # POOL_KEYS list does NOT contain — must still be caught by
+                    # the value-shape heuristic.
+                    "watch_dir": base64.urlsafe_b64encode(
+                        "/Disque dur/Perso de Kevin".encode()).decode(),
+                },
+            }),
+        },
+        {
+            "method": "GET",
+            "url": "http://mafreebox.freebox.fr/api/v14/system/",
+            "resBody": json.dumps({
+                "result": {
+                    "sensors": [{"id": "temp_cpu1", "name": "Température CPU 1", "value": 59}],
+                    "fans": [{"id": "fan0_speed", "name": "Ventilateur 1", "value": 660}],
+                    "model_info": {"name": "fbxgw9-r1"},
+                },
+            }),
+        },
     ],
     "ws": [
         {"dir": "tx", "data": json.dumps({"action": "register",
@@ -403,11 +647,14 @@ def selftest() -> int:
     text = json.dumps(out, ensure_ascii=False)
 
     problems = check_value(out)
+    problems += check_against_map(text, m)
     for needle in (
         "FBX1234567890", "a1b2c3d4e5f6", "68:A3:78", "68:a3:78", "abcd1234.fbxos",
         "88.123.45.67", "2a01:", "MacBook-de-Kevin", "AA:BB:CC", "aa:bb:cc",
         "MaisonKevin", "SuperSecret", "35JYdQSvkcBYK54", "6 12 34 56 78",
         "0612345678", "maman@gmail.com", "fedcba98",
+        # shapes disambiguated by sibling keys (names[], call log, profile, network_control)
+        "MacBook-Pro", "macbook-pro-2.home",
     ):
         if needle in text:
             problems.append(f"needle survives: {needle!r}")
@@ -418,6 +665,33 @@ def selftest() -> int:
     if ws_rx["result"]["mac"] != lan["result"][0]["l2ident"]["id"]:
         problems.append("mapping not stable across occurrences")
 
+    # Names disambiguated by sibling-key shape (not substring-safe to needle-check
+    # since "Kevin"/"Maman" could coincidentally appear inside a generated fake).
+    lan0 = lan["result"][0]
+    if lan0["network_control"]["name"] == "Kevin":
+        problems.append("network_control.name (person, via profile_id sibling) not scrubbed")
+    if lan0["names"][0]["name"] == "MacBook-Pro":
+        problems.append("names[].name (host, via source sibling) not scrubbed")
+    if lan0["info"]["dhcp"]["Host Name"] == "MacBook-Pro":
+        problems.append("info.dhcp.'Host Name' (space in key) not scrubbed")
+    calllog = json.loads(out["http"][5]["resBody"])["result"]
+    if calllog[0]["name"] == "Maman":
+        problems.append("call log name (person, via number sibling) not scrubbed")
+    if json.loads(out["http"][6]["resBody"])["result"][0]["name"] == "Kevin":
+        problems.append("profile name (person, via icon sibling) not scrubbed")
+    watch = json.loads(out["http"][7]["resBody"])["result"]["watch_dir"]
+    if _decodes_to_path(watch) and "Kevin" in base64.urlsafe_b64decode(
+        watch + "=" * (-len(watch) % 4)
+    ).decode("utf-8"):
+        problems.append("base64 fs path (unmapped key 'watch_dir') not scrubbed")
+
+    # Stability: the same real name ("Kevin", via network_control) scrubbed in
+    # two different shapes must produce the SAME fake — both are person pool.
+    nc_name = lan["result"][0]["network_control"]["name"]
+    profile_name = json.loads(out["http"][6]["resBody"])["result"][0]["name"]
+    if nc_name != profile_name:
+        problems.append("same real name scrubbed to two different fakes")
+
     # Fidelity: things that must NOT be touched.
     sysinfo = json.loads(out["http"][0]["resBody"])
     if sysinfo["result"]["firmware_version"] != "4.8.9.1":
@@ -425,6 +699,13 @@ def selftest() -> int:
     conn = json.loads(out["http"][2]["resBody"])
     if conn["result"]["ipv4_local"] != "192.168.1.254":
         problems.append("private LAN IP was mangled")
+    sys2 = json.loads(out["http"][8]["resBody"])["result"]
+    if sys2["sensors"][0]["name"] != "Température CPU 1":
+        problems.append("sensor label was wrongly scrubbed")
+    if sys2["fans"][0]["name"] != "Ventilateur 1":
+        problems.append("fan label was wrongly scrubbed")
+    if sys2["model_info"]["name"] != "fbxgw9-r1":
+        problems.append("box model name was wrongly scrubbed")
 
     if problems:
         print("SELFTEST FAILED:", file=sys.stderr)
@@ -449,9 +730,11 @@ def main() -> int:
         return selftest()
 
     if args.check:
+        m = ScrubMap()
         bad = 0
         for f in args.files:
-            problems = check_document(Path(f).read_text())
+            text = Path(f).read_text()
+            problems = check_document(text) + check_against_map(text, m)
             for p in problems:
                 print(f"{f}: {p}", file=sys.stderr)
             bad += len(problems)
@@ -468,7 +751,8 @@ def main() -> int:
         for src in srcs:
             dst = CAPTURE_DIR / src.name
             scrub_file(src, dst, m)
-            residue = check_document(dst.read_text())
+            text = dst.read_text()
+            residue = check_document(text) + check_against_map(text, m)
             for p in residue:
                 print(f"{dst}: {p}", file=sys.stderr)
             if residue:
@@ -482,7 +766,8 @@ def main() -> int:
     if len(args.files) == 2:
         src, dst = Path(args.files[0]), Path(args.files[1])
         scrub_file(src, dst, m)
-        residue = check_document(dst.read_text())
+        text = dst.read_text()
+        residue = check_document(text) + check_against_map(text, m)
         for p in residue:
             print(f"{dst}: {p}", file=sys.stderr)
         if residue:

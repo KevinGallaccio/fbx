@@ -1,0 +1,894 @@
+{
+  "label": "settings-access",
+  "http": [
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783942795447",
+      "reqBody": "{\"name\":\"Fbx.os.app.settings.app\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783942795460
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/6?_dc=1783942795559",
+      "reqBody": "{\"id\":6,\"name\":\"Fbx.os.app.settings.app-window\",\"data\":{\"width\":822,\"height\":879,\"maximized\":false,\"size\":{\"width\":821,\"height\":879},\"pos\":[1,3],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":6,\"name\":\"Fbx.os.app.settings.app-window\",\"data\":{\"maximized\":false,\"version\":1,\"height\":879,\"width\":822,\"size\":{\"height\":879,\"width\":821},\"pos\":[1,3]}}}",
+      "t": 1783942795582
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783942840105",
+      "reqBody": "{\"name\":\"Fbx.os.app.settings.ConnectionConfig\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783942840127
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/config/?_dc=1783942840122",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"allow_token_request\":true,\"adblock\":false,\"wol\":false,\"sip_alg\":\"direct_media\",\"disable_guest\":false,\"remote_access_min_port\":16384,\"api_domain\":\"fake-1.fbxos.fr\",\"remote_access\":false,\"is_secure_pass\":true,\"https_port\":29491,\"api_remote_access\":true,\"https_available\":true,\"remote_access_ip\":\"203.0.113.1\",\"remote_access_port\":21252,\"ping\":true,\"remote_access_max_port\":32767,\"adblock_not_set\":false}}",
+      "t": 1783942840133
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/28?_dc=1783942840209",
+      "reqBody": "{\"id\":28,\"name\":\"Fbx.os.app.settings.ConnectionConfig-window\",\"data\":{\"width\":458,\"maximized\":false,\"size\":{\"width\":457,\"height\":495},\"pos\":[365,207],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":28,\"name\":\"Fbx.os.app.settings.ConnectionConfig-window\",\"data\":{\"maximized\":false,\"version\":1,\"width\":458,\"size\":{\"height\":495,\"width\":457},\"pos\":[365,207]}}}",
+      "t": 1783942840326
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783942892318",
+      "reqBody": "{\"name\":\"Fbx.os.app.settings.ConnectionIpv6Config\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783942892342
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/ipv6/config/?_dc=1783942892338",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"ipv6_enabled\":true,\"ipv6_prefix_firewall\":false,\"ipv6ll\":\"fe80::1\",\"delegations\":[{\"prefix\":\"2001:db8::2/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::3/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::4/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::5/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::6/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::7/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::8/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::9/64\",\"next_hop\":\"\"}],\"ipv6_firewall\":false}}",
+      "t": 1783942892357
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/22?_dc=1783942892424",
+      "reqBody": "{\"id\":22,\"name\":\"Fbx.os.app.settings.ConnectionIpv6Config-window\",\"data\":{\"width\":822,\"height\":881,\"maximized\":false,\"size\":{\"width\":820,\"height\":881},\"pos\":[1,3],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":22,\"name\":\"Fbx.os.app.settings.ConnectionIpv6Config-window\",\"data\":{\"maximized\":false,\"version\":1,\"height\":881,\"width\":822,\"size\":{\"height\":881,\"width\":820},\"pos\":[1,3]}}}",
+      "t": 1783942892445
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/dhcpv6/config/?_dc=1783942917093",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false,\"use_custom_dns\":false,\"dns\":{}}}",
+      "t": 1783942917104
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/dhcpv6/config/?_dc=1783942923547",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false,\"use_custom_dns\":false,\"dns\":{}}}",
+      "t": 1783942923619
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":58}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"22 heures 59 minutes 56 secondes\",\"uptime_val\":82796,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943509680
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/login/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"logged_in\":true,\"challenge\":[\"var _ynurc = { _ieafx: '_dcwE' }; _ynurc._ieafx.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%30%2E%35%32%29%20%2B%20%34%20%2D%20%31')))\",\"var _cuictuuo = '_uvmi';var _duqxob = new RegExp(_cuictuuo.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%31%2E%39%34%29%20%2B%20%32%20%2D%20%31'))), 'g');String.fromCharCode(_cuictuuo.replace(_duqxob, '3').charCodeAt(eval(unescape('%76%61%72%20%5F%63%74%71%64%6A%64%6E%66%20%3D%20%30%3B%76%61%72%20%5F%61%6A%6D%6B%64%63%75%6A%20%3D%20%33%3B%76%61%72%20%5F%74%72%65%68%78%20%3D%20%27%5F%75%6A%6C%76%66%64%6F%75%27%3B%5F%63%74%71%64%6A%64%6E%66%20%2A%20%5F%74%72%65%68%78%2E%6C%65%6E%67%74%68%20%2B%20%5F%61%6A%6D%6B%64%63%75%6A'))))\",\"var _apil = '_hskvin';var _unrmfp = new RegExp(_apil.charAt(eval(unescape('%28%28%31%20%2A%20%35%30%20%2D%20%32%35%29%20%2F%20%32%35%29'))), 'g');String.fromCharCode(_apil.replace(_unrmfp, 'E').charCodeAt(eval(unescape('%28%28%31%20%2A%20%31%30%20%2D%20%35%29%20%2F%20%35%29'))))\",\"'s'\",\"var _kbleqwa = { _cpihrcvb: '_leIel' }; _kbleqwa._cpihrcvb.charAt(eval(unescape('%76%61%72%20%5F%69%6D%74%62%20%3D%20%30%3B%76%61%72%20%5F%69%75%78%78%62%62%20%3D%20%33%3B%76%61%72%20%5F%73%6B%6E%73%20%3D%20%27%5F%67%70%65%69%68%6E%27%3B%5F%69%6D%74%62%20%2A%20%5F%73%6B%6E%73%2E%6C%65%6E%67%74%68%20%2B%20%5F%69%75%78%78%62%62')))\",\"decodeURIComponent('%' + (eval(unescape('%76%61%72%20%5F%6D%69%6A%6E%61%77%20%3D%20%7B%20%5F%67%72%61%6A%67%65%73%68%3A%20%39%39%20%7D%3B%20%5F%6D%69%6A%6E%61%77%2E%5F%67%72%61%6A%67%65%73%68%20%2B%20%35'))).toString(eval(unescape('%76%61%72%20%5F%73%66%6A%6E%6D%63%6E%63%20%3D%20%7B%20%5F%6B%78%61%65%6D%72%66%6F%3A%20%30%20%7D%3B%20%5F%73%66%6A%6E%6D%63%6E%63%2E%5F%6B%78%61%65%6D%72%66%6F%20%2B%20%31%36'))))\",\"'I'\",\"'S'\",\"'Z'\",\"var _auamybrd = '_qcijqye';var _nrbyb = new RegExp(_auamybrd.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%32%2E%39%31%29%20%2B%20%30%20%2D%20%31'))), 'g');String.fromCharCode(_auamybrd.replace(_nrbyb, 'Z').charCodeAt(eval(unescape('%76%61%72%20%5F%64%62%6C%66%79%20%3D%20%30%3B%76%61%72%20%5F%77%73%6E%65%71%6A%78%20%3D%20%32%3B%76%61%72%20%5F%76%71%76%68%20%3D%20%27%5F%71%6F%65%72%6D%69%27%3B%5F%64%62%6C%66%79%20%2A%20%5F%76%71%76%68%2E%6C%65%6E%67%74%68%20%2B%20%5F%77%73%6E%65%71%6A%78'))))\",\"'y'\",\"var _msgrj = { _prcz: '5pxnvqe' }; _msgrj._prcz.charAt(eval(unescape('%76%61%72%20%5F%75%76%70%73%6E%7A%20%3D%20%30%3B%76%61%72%20%5F%6B%6A%79%63%64%77%20%3D%20%30%3B%76%61%72%20%5F%74%66%73%6E%20%3D%20%27%5F%6C%76%6C%70%27%3B%5F%75%76%70%73%6E%7A%20%2A%20%5F%74%66%73%6E%2E%6C%65%6E%67%74%68%20%2B%20%5F%6B%6A%79%63%64%77')))\",\"'v'\",\"var _brbh = { _vina: '_ohLxkh' }; _brbh._vina.charAt(eval(unescape('%76%61%72%20%5F%75%73%75%63%70%78%62%20%3D%20%7B%20%5F%65%71%63%62%78%3A%20%32%20%7D%3B%20%5F%75%73%75%63%70%78%62%2E%5F%65%71%63%62%78%20%2B%20%31')))\",\"var _yrey = '_andui';var _adazoal = new RegExp(_yrey.charAt(eval(unescape('%32'))), 'g');String.fromCharCode(_yrey.replace(_adazoal, 'w').charCodeAt(eval(unescape('%28%28%32%20%2A%20%31%36%20%2D%20%31%36%29%20%2F%20%38%29'))))\",\"var _mjkczbv = '_iwngcp';var _ylondq = new RegExp(_mjkczbv.charAt(eval(unescape('%76%61%72%20%5F%62%75%63%69%6C%67%70%62%20%3D%20%7B%20%5F%6B%74%66%63%74%74%74%3A%20%31%20%7D%3B%20%5F%62%75%63%69%6C%67%70%62%2E%5F%6B%74%66%63%74%74%74%20%2B%20%31'))), 'g');String.fromCharCode(_mjkczbv.replace(_ylondq, 'i').charCodeAt(eval(unescape('%76%61%72%20%5F%79%63%75%79%70%77%20%3D%20%7B%20%5F%70%71%6C%77%6F%6A%78%73%3A%20%32%20%7D%3B%20%5F%79%63%75%79%70%77%2E%5F%70%71%6C%77%6F%6A%78%73%20%2B%20%30'))))\",\"'6'\",\"var _mhcd = { _voyk: '_s8uuzx' }; _mhcd._voyk.charAt(eval(unescape('%76%61%72%20%5F%63%70%65%69%6B%69%20%3D%20%30%3B%76%61%72%20%5F%72%75%70%75%70%20%3D%20%32%3B%76%61%72%20%5F%6D%61%65%6A%20%3D%20%27%5F%62%6B%65%6B%68%27%3B%5F%63%70%65%69%6B%69%20%2A%20%5F%6D%61%65%6A%2E%6C%65%6E%67%74%68%20%2B%20%5F%72%75%70%75%70')))\",\"var _rrsn = '_bgaj';var _iphilxlx = new RegExp(_rrsn.charAt(eval(unescape('%76%61%72%20%5F%65%74%62%76%69%79%20%3D%20%7B%20%5F%6C%78%70%73%74%6F%68%77%3A%20%33%20%7D%3B%20%5F%65%74%62%76%69%79%2E%5F%6C%78%70%73%74%6F%68%77%20%2B%20%31'))), 'g');String.fromCharCode(_rrsn.replace(_iphilxlx, 'B').charCodeAt(eval(unescape('%34'))))\",\"var _oedvsm = '_kbumfbbc';var _grdiw = new RegExp(_oedvsm.charAt(eval(unescape('%76%61%72%20%5F%6A%6C%72%77%20%3D%20%30%3B%76%61%72%20%5F%75%72%6C%79%6B%20%3D%20%33%3B%76%61%72%20%5F%76%68%75%69%65%20%3D%20%27%5F%6E%66%7A%6B%79%27%3B%5F%6A%6C%72%77%20%2A%20%5F%76%68%75%69%65%2E%6C%65%6E%67%74%68%20%2B%20%5F%75%72%6C%79%6B'))), 'g');String.fromCharCode(_oedvsm.replace(_grdiw, 'z').charCodeAt(eval(unescape('%28%28%33%20%2A%20%35%30%20%2D%20%37%35%29%20%2F%20%32%35%29'))))\",\"var _oluzpgl = { _ydpwiiob: '_txsagx' }; _oluzpgl._ydpwiiob.charAt(eval(unescape('%76%61%72%20%5F%72%76%76%79%78%20%3D%20%7B%20%5F%77%6D%78%6A%61%3A%20%31%20%7D%3B%20%5F%72%76%76%79%78%2E%5F%77%6D%78%6A%61%20%2B%20%31')))\",\"'r'\",\"var _clrd = { _uziyptjm: '_qgqiqomx' }; _clrd._uziyptjm.charAt(eval(unescape('%33')))\",\"var _ctimr = { _dvkftd: '_Kxodyhu' }; _ctimr._dvkftd.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%31%2E%37%35%29%20%2B%20%30%20%2D%20%31')))\",\"var _qmnnz = { _pkrbiut: '_+rru' }; _qmnnz._pkrbiut.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%30%2E%38%36%29%20%2B%20%31%20%2D%20%31')))\",\"'I'\",\"decodeURIComponent('%' + (eval(unescape('%76%61%72%20%5F%65%72%79%62%74%6C%20%3D%20%7B%20%5F%72%70%77%75%6A%3A%20%33%30%20%7D%3B%20%5F%65%72%79%62%74%6C%2E%5F%72%70%77%75%6A%20%2B%20%31%39'))).toString(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%31%30%2E%37%38%29%20%2B%20%36%20%2D%20%31'))))\",\"var _kwkyfhy = '_rnlp';var _qvwyegdl = new RegExp(_kwkyfhy.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%34%2E%38%36%29%20%2B%20%30%20%2D%20%31'))), 'g');String.fromCharCode(_kwkyfhy.replace(_qvwyegdl, '7').charCodeAt(eval(unescape('%76%61%72%20%5F%62%71%78%77%78%6D%20%3D%20%7B%20%5F%62%68%61%74%61%6B%3A%20%30%20%7D%3B%20%5F%62%71%78%77%78%6D%2E%5F%62%68%61%74%61%6B%20%2B%20%34'))))\",\"'9'\",\"var _aeavaslb = '_tdequlef';var _jfrcceur = new RegExp(_aeavaslb.charAt(eval(unescape('%35'))), 'g');String.fromCharCode(_aeavaslb.replace(_jfrcceur, '9').charCodeAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%32%2E%35%31%29%20%2B%20%33%20%2D%20%31'))))\",\"var _zmlnpiu = '_ygfrodtd';var _jbhhh = new RegExp(_zmlnpiu.charAt(eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%33%2E%36%32%29%20%2B%20%30%20%2D%20%31'))), 'g');String.fromCharCode(_zmlnpiu.replace(_jbhhh, '3').charCodeAt(eval(unescape('%33'))))\",\"decodeURIComponent('%' + (eval(unescape('%4D%61%74%68%2E%72%6F%75%6E%64%28%35%36%2E%35%34%29%20%2B%20%31%35%20%2D%20%31'))).toString(eval(unescape('%31%36'))))\"],\"password_salt\":\"SCRUBBED_PASSWORD_SALT\",\"password_set\":true}}",
+      "t": 1783943647211
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/ws/event",
+      "reqBody": null,
+      "status": 400,
+      "resBody": "400 Bad Request",
+      "t": 1783943647217
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/airmedia/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true,\"password\":\"\"}}",
+      "t": 1783943647223
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/airmedia/receivers/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"capabilities\":{\"photo\":false,\"screen\":false,\"audio\":true,\"video\":false},\"name\":\"host-1\",\"password_protected\":false},{\"capabilities\":{\"photo\":false,\"screen\":true,\"audio\":true,\"video\":true},\"name\":\"host-2\",\"password_protected\":false}]}",
+      "t": 1783943647229
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/call/log/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"datetime\":1777904840,\"type\":\"missed\",\"name\":\"person-1\",\"contact_id\":0,\"id\":10,\"duration\":29,\"number\":\"+3310000001\",\"new\":true},{\"datetime\":1764688798,\"type\":\"missed\",\"name\":\"person-2\",\"contact_id\":0,\"id\":9,\"duration\":35,\"number\":\"+3310000002\",\"new\":true},{\"datetime\":1761660213,\"type\":\"missed\",\"name\":\"person-3\",\"contact_id\":0,\"id\":8,\"duration\":30,\"number\":\"+3310000003\",\"new\":true},{\"datetime\":1761325310,\"type\":\"missed\",\"name\":\"person-4\",\"contact_id\":0,\"id\":7,\"duration\":33,\"number\":\"+3310000004\",\"new\":true},{\"datetime\":1757407468,\"type\":\"missed\",\"name\":\"call\",\"contact_id\":0,\"id\":6,\"duration\":26,\"number\":\"+3310000005\",\"new\":true},{\"datetime\":1716283984,\"type\":\"missed\",\"name\":\"person-5\",\"contact_id\":0,\"id\":5,\"duration\":35,\"number\":\"+3310000006\",\"new\":true},{\"datetime\":1716223371,\"type\":\"missed\",\"name\":\"person-5\",\"contact_id\":0,\"id\":4,\"duration\":35,\"number\":\"+3310000006\",\"new\":true},{\"datetime\":1716199466,\"type\":\"missed\",\"name\":\"person-5\",\"contact_id\":0,\"id\":3,\"duration\":35,\"number\":\"+3310000006\",\"new\":true},{\"datetime\":1716114458,\"type\":\"missed\",\"name\":\"person-6\",\"contact_id\":0,\"id\":2,\"duration\":35,\"number\":\"+3310000007\",\"new\":true},{\"datetime\":1716111062,\"type\":\"missed\",\"name\":\"person-5\",\"contact_id\":0,\"id\":1,\"duration\":35,\"number\":\"+3310000006\",\"new\":true}]}",
+      "t": 1783943647235
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/call/account",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"phone_number\":\"+3310000008\"}}",
+      "t": 1783943647274
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/call/voicemail/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"msg\":\"\",\"success\":false,\"error_code\":\"internal_error\"}",
+      "t": 1783943647349
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/contact/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647359
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":150150,\"bytes_up\":4415893546,\"ipv4_port_range\":[16384,32767],\"rate_up\":7842,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50282834883,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943647368
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"allow_token_request\":true,\"adblock\":false,\"wol\":false,\"sip_alg\":\"direct_media\",\"disable_guest\":false,\"remote_access_min_port\":16384,\"api_domain\":\"fake-1.fbxos.fr\",\"remote_access\":false,\"is_secure_pass\":true,\"https_port\":29491,\"api_remote_access\":true,\"https_available\":true,\"remote_access_ip\":\"203.0.113.1\",\"remote_access_port\":21252,\"ping\":true,\"remote_access_max_port\":32767,\"adblock_not_set\":false}}",
+      "t": 1783943647379
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/ipv6/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"ipv6_enabled\":true,\"ipv6_prefix_firewall\":false,\"ipv6ll\":\"fe80::1\",\"delegations\":[{\"prefix\":\"2001:db8::2/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::3/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::4/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::5/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::6/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::7/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::8/64\",\"next_hop\":\"\"},{\"prefix\":\"2001:db8::9/64\",\"next_hop\":\"\"}],\"ipv6_firewall\":false}}",
+      "t": 1783943647387
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/xdsl/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"msg\":\"Impossible de récupérer l’état de la connexion: Ce service n’est pas disponible actuellement\",\"success\":false,\"error_code\":\"service_down\"}",
+      "t": 1783943647394
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/aggregation",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"msg\":\"Aucun module 4G détecté\",\"success\":false,\"error_code\":\"noent\"}",
+      "t": 1783943647400
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/ftth/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"sfp_has_power_report\":true,\"sfp_has_signal\":true,\"sfp_model\":\"LTF7219-BC+1\",\"link_type\":\"pon\",\"sfp_pwr_rx\":-1838,\"sfp_vendor\":\"Hisense\",\"sfp_pwr_tx\":642,\"has_sfp\":true,\"link\":true,\"sfp_alim_ok\":true,\"sfp_serial\":\"SCRUBBEDSERIAL0001\",\"sfp_present\":true}}",
+      "t": 1783943647521
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/lan/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"name_dns\":\"freebox-server\",\"name\":\"Freebox Server\",\"name_mdns\":\"Freebox-Server\",\"mode\":\"router\",\"name_netbios\":\"host-3\",\"ip\":\"192.168.1.254\"}}",
+      "t": 1783943647529
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/lan/routes",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647536
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/lan/browser/interfaces/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"name\":\"pub\",\"host_count\":127},{\"name\":\"wifiguest\",\"host_count\":0}]}",
+      "t": 1783943647541
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/lan/browser/types/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"icon\":\"/resources/images/lan/ic_device_computer.png\",\"type\":\"workstation\",\"name\":\"Ordinateur\",\"category\":\"personal_device\"},{\"icon\":\"/resources/images/lan/ic_device_laptop.png\",\"type\":\"laptop\",\"name\":\"Laptop\",\"category\":\"personal_device\"},{\"icon\":\"/resources/images/lan/ic_device_phone.png\",\"type\":\"smartphone\",\"name\":\"Smartphone\",\"category\":\"personal_device\"},{\"icon\":\"/resources/images/lan/ic_device_tablet.png\",\"type\":\"tablet\",\"name\":\"Tablette\",\"category\":\"personal_device\"},{\"icon\":\"/resources/images/lan/ic_device_printer.png\",\"type\":\"printer\",\"name\":\"Imprimante\",\"category\":\"network\"},{\"icon\":\"/resources/images/lan/ic_device_game.png\",\"type\":\"vg_console\",\"name\":\"Console\",\"category\":\"multimedia\"},{\"icon\":\"/resources/images/lan/ic_device_television.png\",\"type\":\"television\",\"name\":\"Télévision\",\"category\":\"multimedia\"},{\"icon\":\"/resources/images/lan/ic_device_nas.png\",\"type\":\"nas\",\"name\":\"NAS\",\"category\":\"network\"},{\"icon\":\"/resources/images/lan/ic_device_camera.png\",\"type\":\"ip_camera\",\"name\":\"Caméra\",\"category\":\"home\"},{\"icon\":\"/resources/images/lan/ic_device_networking.png\",\"type\":\"networking_device\",\"name\":\"Périphérique réseau\",\"category\":\"network\"},{\"icon\":\"/resources/images/lan/ic_device_speaker.png\",\"type\":\"multimedia_device\",\"name\":\"Périphérique multimédia\",\"category\":\"multimedia\"},{\"icon\":\"/resources/images/lan/ic_device_ip_phone.png\",\"type\":\"ip_phone\",\"name\":\"Téléphone IP\",\"category\":\"network\"},{\"icon\":\"/resources/images/lan/ic_device_other.png\",\"type\":\"other\",\"name\":\"Autre\",\"category\":\"other\"},{\"icon\":\"/resources/images/lan/ic_device_car.png\",\"type\":\"car\",\"name\":\"Véhicule connecté\",\"category\":\"other\"},{\"icon\":\"/resources/images/lan/ic_device_watch.png\",\"type\":\"watch\",\"name\":\"Montre connectée\",\"category\":\"personal_device\"},{\"icon\":\"/resources/images/lan/ic_device_light.png\",\"type\":\"light\",\"name\":\"Éclairage\",\"category\":\"home\"},{\"icon\":\"/resources/images/lan/ic_device_outlet.png\",\"type\":\"outlet\",\"name\":\"Prise connectée\",\"category\":\"home\"},{\"icon\":\"/resources/images/lan/ic_device_appliances.png\",\"type\":\"appliances\",\"name\":\"Électroménager\",\"category\":\"home\"},{\"icon\":\"/resources/images/lan/ic_device_thermostat.png\",\"type\":\"thermostat\",\"name\":\"Système thermique\",\"category\":\"home\"},{\"icon\":\"/resources/images/lan/ic_device_shutter.png\",\"type\":\"shutter\",\"name\":\"Volet\",\"category\":\"home\"},{\"type\":\"freebox_player\",\"name\":\"Freebox Player\",\"icon\":\"/resources/images/lan/ic_freebox_player.png\"},{\"type\":\"freebox_hd\",\"name\":\"host-4\",\"icon\":\"/resources/images/lan/ic_freebox_hd.png\"},{\"type\":\"freebox_mini\",\"name\":\"host-5\",\"icon\":\"/resources/images/lan/ic_freebox_mini.png\"},{\"type\":\"freebox_delta\",\"name\":\"host-6\",\"icon\":\"/resources/images/lan/ic_freebox_delta.png\"}]}",
+      "t": 1783943647548
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/freeplug/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647567
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/dhcp/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true,\"sticky_assign\":true,\"boot_server\":\"\",\"netmask\":\"255.255.255.0\",\"always_broadcast\":false,\"dns\":[\"192.168.1.24\",\"\",\"\",\"\",\"\",\"\"],\"ignore_out_of_range_hint\":false,\"ip_range_end\":\"192.168.1.200\",\"gateway\":\"192.168.1.254\",\"options\":{},\"boot_file\":\"\",\"ip_range_start\":\"192.168.1.2\"}}",
+      "t": 1783943647574
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/dhcp/static_lease/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"mac\":\"02:00:00:00:00:01\",\"comment\":\"\",\"hostname\":\"host-7\",\"id\":\"02:00:00:00:00:01\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:01\",\"type\":\"mac_address\"},\"active\":false,\"persistent\":true,\"names\":[{\"name\":\"host-7\",\"source\":\"dhcp\"}],\"vendor_name\":\"\",\"host_type\":\"workstation\",\"domain_name\":\"host-8\",\"info\":{},\"l3connectivities\":[{\"addr\":\"192.168.1.24\",\"active\":false,\"reachable\":false,\"last_activity\":1769679060,\"af\":\"ipv4\",\"last_time_reachable\":1769679060},{\"addr\":\"fe80::2\",\"active\":false,\"reachable\":false,\"last_activity\":1769679058,\"af\":\"ipv6\",\"last_time_reachable\":1769679044},{\"addr\":\"2001:db8::a\",\"active\":false,\"reachable\":false,\"last_activity\":1769679057,\"af\":\"ipv6\",\"last_time_reachable\":1769679057}],\"id\":\"ether-02:00:00:00:00:01\",\"last_time_reachable\":1769679060,\"primary_name_manual\":false,\"interface\":\"pub\",\"default_name\":\"host-7\",\"first_activity\":1765460441,\"reachable\":false,\"last_activity\":1769679060,\"primary_name\":\"host-7\"},\"options\":{},\"ip\":\"192.168.1.24\"},{\"mac\":\"02:00:00:00:00:02\",\"comment\":\"\",\"hostname\":\"XboxOne\",\"id\":\"02:00:00:00:00:02\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:02\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":true,\"names\":[{\"name\":\"XboxOne\",\"source\":\"dhcp\"},{\"name\":\"XboxOne\",\"source\":\"upnp\"},{\"name\":\"XboxOne\",\"source\":\"mdns\"}],\"vendor_name\":\"Microsoft Corporation\",\"host_type\":\"vg_console\",\"domain_name\":\"host-9\",\"info\":{\"dhcp\":{\"Host Name\":\"XboxOne\",\"Vendor Class Identifier\":\"MSFT 5.0 XBOX\"},\"mdns\":{\"Service: xboxda\":\"192.168.1.100:5000 (tcp)\"},\"upnp\":{\"modelName\":\"Xbox One\",\"friendlyName\":\"XboxOne\",\"manufacturerURL\":\"https://www.microsoft.com\",\"modelURL\":\"https://xbox.com\",\"deviceType\":\"urn:dial-multiscreen-org:device:dial:1\",\"service[2]\":\"urn:upnp-org:serviceId:ConnectionManager\",\"service[1]\":\"urn:upnp-org:serviceId:AVTransport\",\"service[0]\":\"urn:dial-multiscreen-org:serviceId:dial\",\"manufacturer\":\"Microsoft Corporation\",\"modelDescription\":\"Digital Media Renderer\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.47\",\"active\":false,\"reachable\":false,\"last_activity\":1783861728,\"af\":\"ipv4\",\"last_time_reachable\":1783861722},{\"addr\":\"192.168.1.100\",\"active\":true,\"reachable\":true,\"last_activity\":1783943502,\"af\":\"ipv4\",\"last_time_reachable\":1783943502},{\"addr\":\"fe80::3\",\"active\":false,\"reachable\":false,\"last_activity\":1783381026,\"af\":\"ipv6\",\"last_time_reachable\":1783381026},{\"addr\":\"fe80::4\",\"active\":false,\"reachable\":false,\"last_activity\":1783775577,\"af\":\"ipv6\",\"last_time_reachable\":1783775577},{\"addr\":\"fe80::5\",\"active\":false,\"reachable\":false,\"last_activity\":1783861728,\"af\":\"ipv6\",\"last_time_reachable\":1783861720},{\"addr\":\"fe80::6\",\"active\":true,\"reachable\":true,\"last_activity\":1783943625,\"af\":\"ipv6\",\"last_time_reachable\":1783943625},{\"addr\":\"2001:db8::b\",\"active\":false,\"reachable\":false,\"last_activity\":1783775593,\"af\":\"ipv6\",\"last_time_reachable\":1783775567},{\"addr\":\"2001:db8::c\",\"active\":false,\"reachable\":false,\"last_activity\":1783861721,\"af\":\"ipv6\",\"last_time_reachable\":1783861710},{\"addr\":\"2001:db8::d\",\"active\":false,\"reachable\":false,\"last_activity\":1783860891,\"af\":\"ipv6\",\"last_time_reachable\":1783860891},{\"addr\":\"2001:db8::e\",\"active\":true,\"reachable\":true,\"last_activity\":1783943529,\"af\":\"ipv6\",\"last_time_reachable\":1783943529}],\"id\":\"ether-02:00:00:00:00:02\",\"last_time_reachable\":1783943625,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":3163070,\"type\":\"gateway\",\"tx_bytes\":5866674,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":81862,\"phy_rx_rate\":60,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ac\",\"bssid\":\"02:00:00:00:00:03\",\"phy_tx_rate\":2340,\"signal\":-53},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"XboxOne\",\"first_activity\":1724078598,\"reachable\":true,\"last_activity\":1783943625,\"primary_name\":\"XboxOne\"},\"options\":{},\"ip\":\"192.168.1.100\"}]}",
+      "t": 1783943647583
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/dhcp/dynamic_lease/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"mac\":\"02:00:00:00:00:05\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:05\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-10\",\"source\":\"dhcp\"},{\"name\":\"host-11\",\"source\":\"mdns\"},{\"name\":\"host-1\",\"source\":\"upnp\"}],\"vendor_name\":\"Phorus\",\"host_type\":\"television\",\"domain_name\":\"host-12\",\"info\":{\"dhcp\":{\"Host Name\":\"host-10\",\"Vendor Class Identifier\":\"udhcp 1.29.3\"},\"mdns\":{\"Service: raop\":\"192.168.1.6:7000 (tcp)\",\"Service: airplay\":\"192.168.1.6:7000 (tcp)\",\"Service: spotify-connect\":\"192.168.1.6:81 (tcp)\"},\"upnp\":{\"modelNumber\":\"1.0\",\"modelName\":\"Phorus-Renderer\",\"friendlyName\":\"host-1\",\"manufacturerURL\":\"www.phorus.com\",\"modelURL\":\"www.phorus.com\",\"deviceType\":\"urn:schemas-upnp-org:device:MediaRenderer:1\",\"service[2]\":\"urn:upnp-org:serviceId:ConnectionManager\",\"service[1]\":\"urn:upnp-org:serviceId:RenderingControl\",\"modelDescription\":\"Phorus-Renderer\",\"serialNumber\":\"000000000001\",\"manufacturer\":\"Phorus\",\"service[0]\":\"urn:upnp-org:serviceId:AVTransport\",\"service[3]\":\"urn:tencent-com:serviceId:QPlay\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.6\",\"active\":true,\"reachable\":true,\"last_activity\":1783943646,\"af\":\"ipv4\",\"last_time_reachable\":1783943646},{\"addr\":\"fe80::7\",\"active\":true,\"reachable\":true,\"last_activity\":1783943611,\"af\":\"ipv6\",\"last_time_reachable\":1783943580},{\"addr\":\"2001:db8::f\",\"active\":false,\"reachable\":false,\"last_activity\":1761049255,\"af\":\"ipv6\",\"last_time_reachable\":1761049255},{\"addr\":\"2001:db8::10\",\"active\":false,\"reachable\":false,\"last_activity\":1769681577,\"af\":\"ipv6\",\"last_time_reachable\":1769681577},{\"addr\":\"2001:db8::11\",\"active\":false,\"reachable\":false,\"last_activity\":1783866462,\"af\":\"ipv6\",\"last_time_reachable\":1783866462}],\"id\":\"ether-02:00:00:00:00:05\",\"last_time_reachable\":1783943646,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":29607946,\"type\":\"gateway\",\"tx_bytes\":430190,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":82898,\"phy_rx_rate\":60,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ac\",\"bssid\":\"02:00:00:00:00:06\",\"phy_tx_rate\":60,\"signal\":-67},\"rx_rate\":586,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-10\",\"first_activity\":1735816480,\"reachable\":true,\"last_activity\":1783943646,\"primary_name\":\"host-10\"},\"refresh_time\":1783940855,\"hostname\":\"host-10\",\"assign_time\":1783897654,\"lease_remaining\":40408,\"is_static\":false,\"ip\":\"192.168.1.6\"},{\"mac\":\"02:00:00:00:00:07\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:07\",\"type\":\"mac_address\"},\"active\":false,\"persistent\":false,\"names\":[{\"name\":\"Android\",\"source\":\"mdns\"},{\"name\":\"host-13\",\"source\":\"upnp\"}],\"vendor_name\":\"Hui Zhou Gaoshengda Technology Co.,LTD\",\"host_type\":\"smartphone\",\"domain_name\":\"host-14\",\"info\":{\"dhcp\":{\"Vendor Class Identifier\":\"android-dhcp-8.0.0\"},\"upnp\":{\"modelNumber\":\"001\",\"modelName\":\"DMR\",\"friendlyName\":\"host-13\",\"manufacturerURL\":\"http://www.tcl.com\",\"modelURL\":\"http://www.tcl.com\",\"deviceType\":\"urn:schemas-upnp-org:device:MediaRenderer:1\",\"service[2]\":\"urn:upnp-org:serviceId:RenderingControl\",\"service[1]\":\"urn:upnp-org:serviceId:AVTransport\",\"modelDescription\":\"Media Renderer device\",\"manufacturer\":\"TCL\",\"service[0]\":\"urn:upnp-org:serviceId:ConnectionManager\",\"serialNumber\":\"001\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.23\",\"active\":false,\"reachable\":false,\"last_activity\":1783903452,\"af\":\"ipv4\",\"last_time_reachable\":1783903416},{\"addr\":\"fe80::8\",\"active\":false,\"reachable\":false,\"last_activity\":1783903452,\"af\":\"ipv6\",\"last_time_reachable\":1783903418},{\"addr\":\"2001:db8::12\",\"active\":false,\"reachable\":false,\"last_activity\":1783903356,\"af\":\"ipv6\",\"last_time_reachable\":1783903356},{\"addr\":\"2001:db8::13\",\"active\":false,\"reachable\":false,\"last_activity\":1783903105,\"af\":\"ipv6\",\"last_time_reachable\":1783903105},{\"addr\":\"2001:db8::14\",\"active\":false,\"reachable\":false,\"last_activity\":1783903132,\"af\":\"ipv6\",\"last_time_reachable\":1783903132},{\"addr\":\"2001:db8::15\",\"active\":false,\"reachable\":false,\"last_activity\":1783903413,\"af\":\"ipv6\",\"last_time_reachable\":1783903413}],\"id\":\"ether-02:00:00:00:00:07\",\"last_time_reachable\":1783903418,\"primary_name_manual\":false,\"interface\":\"pub\",\"default_name\":\"Android\",\"first_activity\":1719764187,\"reachable\":false,\"last_activity\":1783903452,\"primary_name\":\"Android\"},\"refresh_time\":1783903171,\"hostname\":\"Android\",\"assign_time\":1783903171,\"lease_remaining\":2724,\"is_static\":false,\"ip\":\"192.168.1.23\"},{\"mac\":\"02:00:00:00:00:08\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:08\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"iPad\",\"source\":\"dhcp\"},{\"name\":\"host-15\",\"source\":\"mdns\"}],\"vendor_name\":\"\",\"host_type\":\"tablet\",\"domain_name\":\"host-16\",\"info\":{\"dhcp\":{\"Host Name\":\"iPad\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.33\",\"active\":true,\"reachable\":true,\"last_activity\":1783943641,\"af\":\"ipv4\",\"last_time_reachable\":1783943641},{\"addr\":\"fe80::9\",\"active\":false,\"reachable\":false,\"last_activity\":1781918424,\"af\":\"ipv6\",\"last_time_reachable\":1781918418},{\"addr\":\"fe80::a\",\"active\":false,\"reachable\":false,\"last_activity\":1782733128,\"af\":\"ipv6\",\"last_time_reachable\":1782733128},{\"addr\":\"fe80::b\",\"active\":false,\"reachable\":false,\"last_activity\":1782876696,\"af\":\"ipv6\",\"last_time_reachable\":1782876683},{\"addr\":\"fe80::c\",\"active\":true,\"reachable\":true,\"last_activity\":1783943640,\"af\":\"ipv6\",\"last_time_reachable\":1783943571},{\"addr\":\"2001:db8::16\",\"active\":false,\"reachable\":false,\"last_activity\":1782876425,\"af\":\"ipv6\",\"last_time_reachable\":1782876425},{\"addr\":\"2001:db8::17\",\"active\":false,\"reachable\":false,\"last_activity\":1783860656,\"af\":\"ipv6\",\"last_time_reachable\":1783860656},{\"addr\":\"2001:db8::18\",\"active\":false,\"reachable\":false,\"last_activity\":1783860933,\"af\":\"ipv6\",\"last_time_reachable\":1783860933},{\"addr\":\"2001:db8::19\",\"active\":true,\"reachable\":true,\"last_activity\":1783943641,\"af\":\"ipv6\",\"last_time_reachable\":1783943641}],\"id\":\"ether-02:00:00:00:00:08\",\"last_time_reachable\":1783943641,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":104362055,\"type\":\"gateway\",\"tx_bytes\":3050869601,\"tx_rate\":16920,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":82846,\"phy_rx_rate\":2867,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ax\",\"bssid\":\"02:00:00:00:00:03\",\"phy_tx_rate\":12009,\"signal\":-27},\"rx_rate\":4110,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"iPad\",\"first_activity\":1754940517,\"reachable\":true,\"last_activity\":1783943641,\"primary_name\":\"iPad\"},\"refresh_time\":1783925797,\"hostname\":\"iPad\",\"assign_time\":1783860806,\"lease_remaining\":25350,\"is_static\":false,\"ip\":\"192.168.1.33\"},{\"mac\":\"02:00:00:00:00:09\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:09\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-17\",\"source\":\"dhcp\"},{\"name\":\"host-18\",\"source\":\"upnp\"}],\"vendor_name\":\"\",\"host_type\":\"workstation\",\"domain_name\":\"host-19\",\"info\":{\"dhcp\":{\"Host Name\":\"host-17\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.49\",\"active\":true,\"reachable\":true,\"last_activity\":1783943607,\"af\":\"ipv4\",\"last_time_reachable\":1783943607},{\"addr\":\"fe80::d\",\"active\":true,\"reachable\":true,\"last_activity\":1783943643,\"af\":\"ipv6\",\"last_time_reachable\":1783943643},{\"addr\":\"2001:db8::1a\",\"active\":false,\"reachable\":false,\"last_activity\":1773273622,\"af\":\"ipv6\",\"last_time_reachable\":1773273622},{\"addr\":\"2001:db8::1b\",\"active\":true,\"reachable\":true,\"last_activity\":1783943638,\"af\":\"ipv6\",\"last_time_reachable\":1783943638}],\"id\":\"ether-02:00:00:00:00:09\",\"last_time_reachable\":1783943643,\"primary_name_manual\":false,\"access_point\":{\"mac\":\"02:00:00:00:00:04\",\"type\":\"gateway\",\"connectivity_type\":\"ethernet\",\"ethernet_information\":{\"speed\":1000,\"duplex\":\"full\",\"max_port_speed\":1000,\"link\":\"up\"},\"uid\":\"scrubbed-uid-1\"},\"interface\":\"pub\",\"default_name\":\"host-17\",\"first_activity\":1769679158,\"reachable\":true,\"last_activity\":1783943643,\"primary_name\":\"host-17\"},\"refresh_time\":1783925582,\"hostname\":\"host-17\",\"assign_time\":1783860784,\"lease_remaining\":25135,\"is_static\":false,\"ip\":\"192.168.1.49\"},{\"mac\":\"02:00:00:00:00:0a\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:0a\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":true,\"names\":[{\"name\":\"host-20\",\"source\":\"dhcp\"}],\"vendor_name\":\"SAMJIN Co., Ltd.\",\"host_type\":\"other\",\"domain_name\":\"host-21\",\"info\":{\"dhcp\":{\"Host Name\":\"host-20\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.75\",\"active\":true,\"reachable\":true,\"last_activity\":1783943626,\"af\":\"ipv4\",\"last_time_reachable\":1783943626}],\"id\":\"ether-02:00:00:00:00:0a\",\"last_time_reachable\":1783943626,\"primary_name_manual\":true,\"access_point\":{\"rx_bytes\":871337,\"type\":\"gateway\",\"tx_bytes\":598255,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"2d4g\",\"sess_duration\":82909,\"phy_rx_rate\":10,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"n\",\"bssid\":\"02:00:00:00:00:0b\",\"phy_tx_rate\":722,\"signal\":-33},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-20\",\"first_activity\":1719762509,\"reachable\":true,\"last_activity\":1783943626,\"primary_name\":\"host-22\"},\"refresh_time\":1783925960,\"hostname\":\"host-22\",\"assign_time\":1783860741,\"lease_remaining\":25513,\"is_static\":false,\"ip\":\"192.168.1.75\"},{\"mac\":\"02:00:00:00:00:0c\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:0c\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"Freebox Player POP\",\"source\":\"dhcp\"},{\"name\":\"host-23\",\"source\":\"mdns\"},{\"name\":\"Freebox Player POP\",\"source\":\"mdns_srv\"}],\"vendor_name\":\"Freebox Sas\",\"host_type\":\"freebox_pop\",\"domain_name\":\"host-24\",\"info\":{\"dhcp\":{\"Host Name\":\"Freebox Player POP\",\"Vendor Class Identifier\":\"android-dhcp10\"},\"mdns\":{\"Service: androidtvremote2\":\"192.168.1.76:6466 (tcp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.76\",\"active\":true,\"reachable\":true,\"last_activity\":1783943627,\"af\":\"ipv4\",\"last_time_reachable\":1783943627},{\"addr\":\"fe80::e\",\"active\":true,\"reachable\":true,\"last_activity\":1783943597,\"af\":\"ipv6\",\"last_time_reachable\":1783943597},{\"addr\":\"2001:db8::1c\",\"active\":false,\"reachable\":false,\"last_activity\":1783890844,\"af\":\"ipv6\",\"last_time_reachable\":1783890844},{\"addr\":\"2001:db8::1d\",\"active\":false,\"reachable\":false,\"last_activity\":1783897328,\"af\":\"ipv6\",\"last_time_reachable\":1783897328},{\"addr\":\"2001:db8::1e\",\"active\":false,\"reachable\":false,\"last_activity\":1783897320,\"af\":\"ipv6\",\"last_time_reachable\":1783897320},{\"addr\":\"2001:db8::1f\",\"active\":true,\"reachable\":true,\"last_activity\":1783943587,\"af\":\"ipv6\",\"last_time_reachable\":1783943587}],\"id\":\"ether-02:00:00:00:00:0c\",\"last_time_reachable\":1783943627,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":452496873,\"type\":\"gateway\",\"tx_bytes\":18038800530,\"tx_rate\":280980,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":50412,\"phy_rx_rate\":7800,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ac\",\"bssid\":\"02:00:00:00:00:03\",\"phy_tx_rate\":6500,\"signal\":-56},\"rx_rate\":6260,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"Freebox Player POP\",\"first_activity\":1711445040,\"reachable\":true,\"last_activity\":1783943627,\"model\":\"fbx8am\",\"primary_name\":\"Freebox Player POP\"},\"refresh_time\":1783940880,\"hostname\":\"Freebox Player POP\",\"assign_time\":1783897669,\"lease_remaining\":40433,\"is_static\":false,\"ip\":\"192.168.1.76\"},{\"mac\":\"02:00:00:00:00:0d\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:0d\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"linux\",\"source\":\"mdns\"}],\"vendor_name\":\"Amazon Technologies Inc.\",\"host_type\":\"workstation\",\"domain_name\":\"host-25\",\"info\":{\"dhcp\":{\"Vendor Class Identifier\":\"dhcpcd-6.8.2:Linux-4.9.77+:armv7l:Amazon\"},\"mdns\":{\"Service: spotify-connect\":\"2001:db8::20%23:4070 (tcp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.84\",\"active\":true,\"reachable\":true,\"last_activity\":1783943642,\"af\":\"ipv4\",\"last_time_reachable\":1783943642},{\"addr\":\"fe80::f\",\"active\":true,\"reachable\":true,\"last_activity\":1783943626,\"af\":\"ipv6\",\"last_time_reachable\":1783943621},{\"addr\":\"2001:db8::21\",\"active\":false,\"reachable\":false,\"last_activity\":1761049256,\"af\":\"ipv6\",\"last_time_reachable\":1761049252},{\"addr\":\"2001:db8::22\",\"active\":false,\"reachable\":false,\"last_activity\":1773277443,\"af\":\"ipv6\",\"last_time_reachable\":1773277348},{\"addr\":\"2001:db8::20\",\"active\":true,\"reachable\":true,\"last_activity\":1783943610,\"af\":\"ipv6\",\"last_time_reachable\":1783943610}],\"id\":\"ether-02:00:00:00:00:0d\",\"last_time_reachable\":1783943642,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":13981547,\"type\":\"gateway\",\"tx_bytes\":6996954,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":82903,\"phy_rx_rate\":60,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ac\",\"bssid\":\"02:00:00:00:00:03\",\"phy_tx_rate\":4333,\"signal\":-57},\"rx_rate\":42,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"linux\",\"first_activity\":1719762507,\"reachable\":true,\"last_activity\":1783943642,\"primary_name\":\"linux\"},\"refresh_time\":1783930538,\"hostname\":\"linux\",\"assign_time\":1783860751,\"lease_remaining\":30091,\"is_static\":false,\"ip\":\"192.168.1.84\"},{\"mac\":\"02:00:00:00:00:02\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:02\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":true,\"names\":[{\"name\":\"XboxOne\",\"source\":\"dhcp\"},{\"name\":\"XboxOne\",\"source\":\"upnp\"},{\"name\":\"XboxOne\",\"source\":\"mdns\"}],\"vendor_name\":\"Microsoft Corporation\",\"host_type\":\"vg_console\",\"domain_name\":\"host-9\",\"info\":{\"dhcp\":{\"Host Name\":\"XboxOne\",\"Vendor Class Identifier\":\"MSFT 5.0 XBOX\"},\"mdns\":{\"Service: xboxda\":\"192.168.1.100:5000 (tcp)\"},\"upnp\":{\"modelName\":\"Xbox One\",\"friendlyName\":\"XboxOne\",\"manufacturerURL\":\"https://www.microsoft.com\",\"modelURL\":\"https://xbox.com\",\"deviceType\":\"urn:dial-multiscreen-org:device:dial:1\",\"service[2]\":\"urn:upnp-org:serviceId:ConnectionManager\",\"service[1]\":\"urn:upnp-org:serviceId:AVTransport\",\"service[0]\":\"urn:dial-multiscreen-org:serviceId:dial\",\"manufacturer\":\"Microsoft Corporation\",\"modelDescription\":\"Digital Media Renderer\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.47\",\"active\":false,\"reachable\":false,\"last_activity\":1783861728,\"af\":\"ipv4\",\"last_time_reachable\":1783861722},{\"addr\":\"192.168.1.100\",\"active\":true,\"reachable\":true,\"last_activity\":1783943502,\"af\":\"ipv4\",\"last_time_reachable\":1783943502},{\"addr\":\"fe80::3\",\"active\":false,\"reachable\":false,\"last_activity\":1783381026,\"af\":\"ipv6\",\"last_time_reachable\":1783381026},{\"addr\":\"fe80::4\",\"active\":false,\"reachable\":false,\"last_activity\":1783775577,\"af\":\"ipv6\",\"last_time_reachable\":1783775577},{\"addr\":\"fe80::5\",\"active\":false,\"reachable\":false,\"last_activity\":1783861728,\"af\":\"ipv6\",\"last_time_reachable\":1783861720},{\"addr\":\"fe80::6\",\"active\":true,\"reachable\":true,\"last_activity\":1783943625,\"af\":\"ipv6\",\"last_time_reachable\":1783943625},{\"addr\":\"2001:db8::b\",\"active\":false,\"reachable\":false,\"last_activity\":1783775593,\"af\":\"ipv6\",\"last_time_reachable\":1783775567},{\"addr\":\"2001:db8::c\",\"active\":false,\"reachable\":false,\"last_activity\":1783861721,\"af\":\"ipv6\",\"last_time_reachable\":1783861710},{\"addr\":\"2001:db8::d\",\"active\":false,\"reachable\":false,\"last_activity\":1783860891,\"af\":\"ipv6\",\"last_time_reachable\":1783860891},{\"addr\":\"2001:db8::e\",\"active\":true,\"reachable\":true,\"last_activity\":1783943529,\"af\":\"ipv6\",\"last_time_reachable\":1783943529}],\"id\":\"ether-02:00:00:00:00:02\",\"last_time_reachable\":1783943625,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":3163070,\"type\":\"gateway\",\"tx_bytes\":5866674,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":81862,\"phy_rx_rate\":60,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ac\",\"bssid\":\"02:00:00:00:00:03\",\"phy_tx_rate\":2340,\"signal\":-53},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"XboxOne\",\"first_activity\":1724078598,\"reachable\":true,\"last_activity\":1783943625,\"primary_name\":\"XboxOne\"},\"refresh_time\":1783926610,\"hostname\":\"XboxOne\",\"assign_time\":1783861583,\"lease_remaining\":0,\"is_static\":true,\"ip\":\"192.168.1.100\"},{\"mac\":\"02:00:00:00:00:0e\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:0e\",\"type\":\"mac_address\"},\"active\":false,\"persistent\":false,\"names\":[{\"name\":\"host-26\",\"source\":\"dhcp\"},{\"name\":\"host-27\",\"source\":\"mdns\"}],\"vendor_name\":\"\",\"host_type\":\"workstation\",\"domain_name\":\"host-28\",\"info\":{\"dhcp\":{\"Host Name\":\"host-26\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.101\",\"active\":false,\"reachable\":false,\"last_activity\":1783931527,\"af\":\"ipv4\",\"last_time_reachable\":1783931527},{\"addr\":\"fe80::10\",\"active\":false,\"reachable\":false,\"last_activity\":1782342918,\"af\":\"ipv6\",\"last_time_reachable\":1782342918},{\"addr\":\"fe80::11\",\"active\":false,\"reachable\":false,\"last_activity\":1782876814,\"af\":\"ipv6\",\"last_time_reachable\":1782876812},{\"addr\":\"fe80::12\",\"active\":false,\"reachable\":false,\"last_activity\":1783894740,\"af\":\"ipv6\",\"last_time_reachable\":1783894734},{\"addr\":\"fe80::13\",\"active\":false,\"reachable\":false,\"last_activity\":1783929009,\"af\":\"ipv6\",\"last_time_reachable\":1783928494},{\"addr\":\"2001:db8::23\",\"active\":false,\"reachable\":false,\"last_activity\":1783886304,\"af\":\"ipv6\",\"last_time_reachable\":1783886304},{\"addr\":\"2001:db8::24\",\"active\":false,\"reachable\":false,\"last_activity\":1783894789,\"af\":\"ipv6\",\"last_time_reachable\":1783894789},{\"addr\":\"2001:db8::25\",\"active\":false,\"reachable\":false,\"last_activity\":1783911836,\"af\":\"ipv6\",\"last_time_reachable\":1783911836},{\"addr\":\"2001:db8::26\",\"active\":false,\"reachable\":false,\"last_activity\":1783928619,\"af\":\"ipv6\",\"last_time_reachable\":1783928619}],\"id\":\"ether-02:00:00:00:00:0e\",\"last_time_reachable\":1783931527,\"primary_name_manual\":false,\"interface\":\"pub\",\"default_name\":\"host-26\",\"first_activity\":1762882183,\"reachable\":false,\"last_activity\":1783931527,\"primary_name\":\"host-26\"},\"refresh_time\":1783928939,\"hostname\":\"host-26\",\"assign_time\":1783879383,\"lease_remaining\":28492,\"is_static\":false,\"ip\":\"192.168.1.101\"},{\"mac\":\"02:00:00:00:00:0f\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:0f\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"Mac\",\"source\":\"dhcp\"},{\"name\":\"host-2\",\"source\":\"mdns\"},{\"name\":\"host-29\",\"source\":\"netbios\"}],\"vendor_name\":\"\",\"host_type\":\"television\",\"domain_name\":\"host-30\",\"info\":{\"dhcp\":{\"Host Name\":\"Mac\"},\"mdns\":{\"Service: companion-link\":\"fe80::14%br0:61618 (tcp)\",\"Service: airplay\":\"192.168.1.152:7000 (tcp)\",\"Service: raop\":\"192.168.1.152:7000 (tcp)\",\"Service: asquic\":\"192.168.1.152:55116 (udp)\",\"Service: continuity\":\"192.168.1.152:8771 (tcp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.152\",\"active\":true,\"reachable\":true,\"last_activity\":1783943641,\"af\":\"ipv4\",\"last_time_reachable\":1783943624},{\"addr\":\"fe80::14\",\"active\":true,\"reachable\":true,\"last_activity\":1783943641,\"af\":\"ipv6\",\"last_time_reachable\":1783943632},{\"addr\":\"fe80::15\",\"active\":false,\"reachable\":false,\"last_activity\":1781509595,\"af\":\"ipv6\",\"last_time_reachable\":1781509595},{\"addr\":\"fe80::16\",\"active\":false,\"reachable\":false,\"last_activity\":1781509699,\"af\":\"ipv6\",\"last_time_reachable\":1781509694},{\"addr\":\"fe80::17\",\"active\":false,\"reachable\":false,\"last_activity\":1782876296,\"af\":\"ipv6\",\"last_time_reachable\":1782876296},{\"addr\":\"2001:db8::27\",\"active\":false,\"reachable\":false,\"last_activity\":1783860646,\"af\":\"ipv6\",\"last_time_reachable\":1783860646},{\"addr\":\"2001:db8::28\",\"active\":false,\"reachable\":false,\"last_activity\":1783903350,\"af\":\"ipv6\",\"last_time_reachable\":1783903350},{\"addr\":\"2001:db8::29\",\"active\":false,\"reachable\":false,\"last_activity\":1783861722,\"af\":\"ipv6\",\"last_time_reachable\":1783861722},{\"addr\":\"2001:db8::2a\",\"active\":true,\"reachable\":true,\"last_activity\":1783941110,\"af\":\"ipv6\",\"last_time_reachable\":1783941110}],\"id\":\"ether-02:00:00:00:00:0f\",\"last_time_reachable\":1783943632,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":1573940133,\"type\":\"gateway\",\"tx_bytes\":1280843040,\"tx_rate\":135740,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"6g\",\"sess_duration\":39261,\"phy_rx_rate\":14413,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"be\",\"bssid\":\"02:00:00:00:00:10\",\"phy_tx_rate\":17296,\"signal\":-70},\"rx_rate\":4280,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"Mac\",\"first_activity\":1777117542,\"reachable\":true,\"last_activity\":1783943641,\"primary_name\":\"Mac\"},\"refresh_time\":1783926141,\"hostname\":\"Mac\",\"assign_time\":1783860757,\"lease_remaining\":25694,\"is_static\":false,\"ip\":\"192.168.1.152\"},{\"mac\":\"02:00:00:00:00:11\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:11\",\"type\":\"mac_address\"},\"active\":false,\"persistent\":false,\"names\":[{\"name\":\"host-31\",\"source\":\"dhcp\"}],\"vendor_name\":\"Espressif Inc.\",\"host_type\":\"workstation\",\"domain_name\":\"\",\"info\":{\"dhcp\":{\"Host Name\":\"host-31\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.157\",\"active\":false,\"reachable\":false,\"last_activity\":1783905813,\"af\":\"ipv4\",\"last_time_reachable\":1783905813},{\"addr\":\"2001:db8::2b\",\"active\":false,\"reachable\":false,\"last_activity\":1773284050,\"af\":\"ipv6\",\"last_time_reachable\":1773284050},{\"addr\":\"2001:db8::2\",\"active\":false,\"reachable\":false,\"last_activity\":1783889118,\"af\":\"ipv6\",\"last_time_reachable\":1783889118}],\"id\":\"ether-02:00:00:00:00:11\",\"last_time_reachable\":1783905813,\"primary_name_manual\":false,\"interface\":\"pub\",\"default_name\":\"host-31\",\"first_activity\":1719762504,\"reachable\":false,\"last_activity\":1783905813,\"primary_name\":\"host-31\"},\"refresh_time\":1783905777,\"hostname\":\"host-31\",\"assign_time\":1783905777,\"lease_remaining\":5330,\"is_static\":false,\"ip\":\"192.168.1.157\"},{\"mac\":\"02:00:00:00:00:12\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:12\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"iPhone\",\"source\":\"dhcp\"},{\"name\":\"host-32\",\"source\":\"mdns\"}],\"vendor_name\":\"\",\"host_type\":\"smartphone\",\"domain_name\":\"host-33\",\"info\":{\"dhcp\":{\"Host Name\":\"iPhone\"},\"mdns\":{\"Service: asquic\":\"192.168.1.161:62844 (udp)\",\"Service: remotepairing\":\"192.168.1.161:49152 (tcp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.161\",\"active\":true,\"reachable\":true,\"last_activity\":1783943641,\"af\":\"ipv4\",\"last_time_reachable\":1783943641},{\"addr\":\"fe80::18\",\"active\":false,\"reachable\":false,\"last_activity\":1782262418,\"af\":\"ipv6\",\"last_time_reachable\":1782262418},{\"addr\":\"fe80::19\",\"active\":false,\"reachable\":false,\"last_activity\":1782876771,\"af\":\"ipv6\",\"last_time_reachable\":1782876766},{\"addr\":\"fe80::1a\",\"active\":false,\"reachable\":false,\"last_activity\":1783549371,\"af\":\"ipv6\",\"last_time_reachable\":1783549371},{\"addr\":\"fe80::1b\",\"active\":true,\"reachable\":true,\"last_activity\":1783943639,\"af\":\"ipv6\",\"last_time_reachable\":1783943602},{\"addr\":\"2001:db8::2c\",\"active\":false,\"reachable\":false,\"last_activity\":1783860645,\"af\":\"ipv6\",\"last_time_reachable\":1783860645},{\"addr\":\"2001:db8::2d\",\"active\":false,\"reachable\":false,\"last_activity\":1783865079,\"af\":\"ipv6\",\"last_time_reachable\":1783865079},{\"addr\":\"2001:db8::2e\",\"active\":false,\"reachable\":false,\"last_activity\":1783880347,\"af\":\"ipv6\",\"last_time_reachable\":1783880347},{\"addr\":\"2001:db8::2f\",\"active\":true,\"reachable\":true,\"last_activity\":1783943569,\"af\":\"ipv6\",\"last_time_reachable\":1783943569}],\"id\":\"ether-02:00:00:00:00:12\",\"last_time_reachable\":1783943641,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":738405597,\"type\":\"gateway\",\"tx_bytes\":396913648,\"tx_rate\":201,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"6g\",\"sess_duration\":82888,\"phy_rx_rate\":13612,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ax\",\"bssid\":\"02:00:00:00:00:10\",\"phy_tx_rate\":12971,\"signal\":-63},\"rx_rate\":1420,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"iPhone\",\"first_activity\":1754599827,\"reachable\":true,\"last_activity\":1783943641,\"primary_name\":\"iPhone\"},\"refresh_time\":1783923604,\"hostname\":\"iPhone\",\"assign_time\":1783860761,\"lease_remaining\":23158,\"is_static\":false,\"ip\":\"192.168.1.161\"},{\"mac\":\"02:00:00:00:00:13\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:13\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-34\",\"source\":\"mdns\"},{\"name\":\"host-35\",\"source\":\"dhcp\"}],\"vendor_name\":\"Apple, Inc.\",\"host_type\":\"workstation\",\"domain_name\":\"host-36\",\"info\":{\"dhcp\":{\"Host Name\":\"host-35\"},\"mdns\":{\"Service: sftp-ssh\":\"fe80::1c%br0:22 (tcp)\",\"Service: companion-link\":\"192.168.1.162:49155 (tcp)\",\"Service: rfb\":\"fe80::1c%br0:5900 (tcp)\",\"Service: ssh\":\"fe80::1c%br0:22 (tcp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.162\",\"active\":true,\"reachable\":true,\"last_activity\":1783943630,\"af\":\"ipv4\",\"last_time_reachable\":1783943630},{\"addr\":\"fe80::1c\",\"active\":true,\"reachable\":true,\"last_activity\":1783943642,\"af\":\"ipv6\",\"last_time_reachable\":1783943588},{\"addr\":\"2001:db8::30\",\"active\":false,\"reachable\":false,\"last_activity\":1783867608,\"af\":\"ipv6\",\"last_time_reachable\":1783867608},{\"addr\":\"2001:db8::31\",\"active\":false,\"reachable\":false,\"last_activity\":1783867706,\"af\":\"ipv6\",\"last_time_reachable\":1783867706},{\"addr\":\"2001:db8::32\",\"active\":false,\"reachable\":false,\"last_activity\":1783874740,\"af\":\"ipv6\",\"last_time_reachable\":1783874740},{\"addr\":\"2001:db8::33\",\"active\":true,\"reachable\":true,\"last_activity\":1783943642,\"af\":\"ipv6\",\"last_time_reachable\":1783943642}],\"id\":\"ether-02:00:00:00:00:13\",\"last_time_reachable\":1783943642,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":921220,\"type\":\"gateway\",\"tx_bytes\":2025071,\"tx_rate\":176,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"5g\",\"sess_duration\":68553,\"phy_rx_rate\":2925,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ac\",\"bssid\":\"02:00:00:00:00:06\",\"phy_tx_rate\":5200,\"signal\":-68},\"rx_rate\":217,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-35\",\"first_activity\":1783864634,\"reachable\":true,\"last_activity\":1783943642,\"primary_name\":\"host-35\"},\"refresh_time\":1783929930,\"hostname\":\"host-35\",\"assign_time\":1783864639,\"lease_remaining\":29483,\"is_static\":false,\"ip\":\"192.168.1.162\"},{\"mac\":\"02:00:00:00:00:14\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:14\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-37\",\"source\":\"dhcp\"},{\"name\":\"host-38\",\"source\":\"mdns\"}],\"vendor_name\":\"Apple, Inc.\",\"host_type\":\"laptop\",\"domain_name\":\"host-39\",\"info\":{\"dhcp\":{\"Host Name\":\"host-37\"},\"mdns\":{\"Service: raop\":\"192.168.1.182:7000 (tcp)\",\"Service: companion-link\":\"192.168.1.182:55621 (tcp)\",\"Service: airplay\":\"192.168.1.182:7000 (tcp)\",\"Service: asquic\":\"192.168.1.182:53392 (udp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.182\",\"active\":true,\"reachable\":true,\"last_activity\":1783943543,\"af\":\"ipv4\",\"last_time_reachable\":1783943543},{\"addr\":\"fe80::1d\",\"active\":true,\"reachable\":true,\"last_activity\":1783943568,\"af\":\"ipv6\",\"last_time_reachable\":1783943568},{\"addr\":\"fe80::1e\",\"active\":false,\"reachable\":false,\"last_activity\":1772141524,\"af\":\"ipv6\",\"last_time_reachable\":1772141519},{\"addr\":\"fe80::1f\",\"active\":false,\"reachable\":false,\"last_activity\":1773623136,\"af\":\"ipv6\",\"last_time_reachable\":1773623136},{\"addr\":\"fe80::20\",\"active\":false,\"reachable\":false,\"last_activity\":1773623256,\"af\":\"ipv6\",\"last_time_reachable\":1773623212},{\"addr\":\"2001:db8::34\",\"active\":false,\"reachable\":false,\"last_activity\":1783206287,\"af\":\"ipv6\",\"last_time_reachable\":1783206287},{\"addr\":\"2001:db8::35\",\"active\":false,\"reachable\":false,\"last_activity\":1783860562,\"af\":\"ipv6\",\"last_time_reachable\":1783860562},{\"addr\":\"2001:db8::36\",\"active\":true,\"reachable\":true,\"last_activity\":1783943526,\"af\":\"ipv6\",\"last_time_reachable\":1783943526},{\"addr\":\"2001:db8::37\",\"active\":false,\"reachable\":false,\"last_activity\":1783863804,\"af\":\"ipv6\",\"last_time_reachable\":1783863804}],\"id\":\"ether-02:00:00:00:00:14\",\"last_time_reachable\":1783943568,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":22912569,\"type\":\"gateway\",\"tx_bytes\":45286589,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"6g\",\"sess_duration\":82902,\"phy_rx_rate\":5764,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ax\",\"bssid\":\"02:00:00:00:00:10\",\"phy_tx_rate\":14413,\"signal\":-76},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-37\",\"first_activity\":1731061431,\"reachable\":true,\"last_activity\":1783943568,\"primary_name\":\"host-37\"},\"refresh_time\":1783943248,\"hostname\":\"host-37\",\"assign_time\":1783860747,\"lease_remaining\":42801,\"is_static\":false,\"ip\":\"192.168.1.182\"},{\"mac\":\"02:00:00:00:00:15\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:15\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"Android\",\"source\":\"mdns\"},{\"name\":\"host-40\",\"source\":\"upnp\"}],\"vendor_name\":\"Hui Zhou Gaoshengda Technology Co.,LTD\",\"host_type\":\"smartphone\",\"domain_name\":\"host-41\",\"info\":{\"dhcp\":{\"Vendor Class Identifier\":\"android-dhcp-9\"},\"upnp\":{\"modelName\":\"Windows Media Player\",\"friendlyName\":\"host-40\",\"manufacturerURL\":\"http://www.microsoft.com\",\"modelURL\":\"http://go.microsoft.com/fwlink/?LinkId=105926\",\"deviceType\":\"urn:schemas-upnp-org:device:MediaRenderer:1\",\"service[2]\":\"urn:upnp-org:serviceId:RenderingControl\",\"service[1]\":\"urn:upnp-org:serviceId:ConnectionManager\",\"modelDescription\":\"Media Renderer\",\"manufacturer\":\"Microsoft Corporation\",\"service[0]\":\"urn:upnp-org:serviceId:AVTransport\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.195\",\"active\":true,\"reachable\":true,\"last_activity\":1783943589,\"af\":\"ipv4\",\"last_time_reachable\":1783943589},{\"addr\":\"fe80::21\",\"active\":false,\"reachable\":false,\"last_activity\":1783905974,\"af\":\"ipv6\",\"last_time_reachable\":1783905946},{\"addr\":\"2001:db8::38\",\"active\":false,\"reachable\":false,\"last_activity\":1783904045,\"af\":\"ipv6\",\"last_time_reachable\":1783904045},{\"addr\":\"2001:db8::39\",\"active\":false,\"reachable\":false,\"last_activity\":1783905699,\"af\":\"ipv6\",\"last_time_reachable\":1783905699},{\"addr\":\"2001:db8::3a\",\"active\":false,\"reachable\":false,\"last_activity\":1783905702,\"af\":\"ipv6\",\"last_time_reachable\":1783905702},{\"addr\":\"2001:db8::3b\",\"active\":false,\"reachable\":false,\"last_activity\":1783905969,\"af\":\"ipv6\",\"last_time_reachable\":1783905969}],\"id\":\"ether-02:00:00:00:00:15\",\"last_time_reachable\":1783943589,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":573427,\"type\":\"gateway\",\"tx_bytes\":21732076,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"2d4g\",\"sess_duration\":55420,\"phy_rx_rate\":520,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"n\",\"bssid\":\"02:00:00:00:00:0b\",\"phy_tx_rate\":10,\"signal\":-48},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"Android\",\"first_activity\":1711493444,\"reachable\":true,\"last_activity\":1783943589,\"primary_name\":\"Android\"},\"refresh_time\":1783905909,\"hostname\":\"Android\",\"assign_time\":1783905909,\"lease_remaining\":5462,\"is_static\":false,\"ip\":\"192.168.1.195\"}]}",
+      "t": 1783943647609
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/dhcpv6/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false,\"use_custom_dns\":false,\"dns\":{}}}",
+      "t": 1783943647615
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/ftp/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false,\"allow_anonymous\":false,\"port_ctrl\":28013,\"remote_domain\":\"203.0.113.1\",\"username\":\"freebox\",\"max_port\":32767,\"port_data\":32600,\"allow_anonymous_write\":false,\"weak_password\":true,\"allow_remote_access\":false,\"min_port\":16384,\"password\":\"SCRUBBED_PASSWORD\"}}",
+      "t": 1783943647700
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/tftp/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false,\"root\":\"Lw==\"}}",
+      "t": 1783943647712
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fw/dmz/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false,\"ip\":\"\"}}",
+      "t": 1783943647720
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fw/redir/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647727
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fw/incoming/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"enabled\":true,\"type\":\"tcp\",\"active\":false,\"id\":\"ftp\",\"max_port\":32767,\"readonly\":false,\"in_port\":28013,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp\",\"active\":false,\"id\":\"ftp_pasv\",\"max_port\":32767,\"readonly\":false,\"in_port\":32600,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp\",\"active\":true,\"id\":\"bittorrent-main\",\"max_port\":32767,\"readonly\":false,\"in_port\":20921,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"udp\",\"active\":true,\"id\":\"bittorrent-dht\",\"max_port\":32767,\"readonly\":false,\"in_port\":30588,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp\",\"active\":true,\"id\":\"http\",\"max_port\":32767,\"readonly\":false,\"in_port\":21252,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp\",\"active\":true,\"id\":\"https\",\"max_port\":32767,\"readonly\":false,\"in_port\":29491,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp_udp\",\"active\":false,\"id\":\"openvpn_routed\",\"max_port\":32767,\"readonly\":false,\"in_port\":31384,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp_udp\",\"active\":false,\"id\":\"openvpn_bridge\",\"max_port\":32767,\"readonly\":false,\"in_port\":29028,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"tcp\",\"active\":false,\"id\":\"pptp\",\"max_port\":32767,\"readonly\":true,\"in_port\":1723,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"udp\",\"active\":false,\"id\":\"ipsec_ike\",\"max_port\":32767,\"readonly\":true,\"in_port\":500,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"udp\",\"active\":false,\"id\":\"ipsec_nat\",\"max_port\":32767,\"readonly\":true,\"in_port\":4500,\"min_port\":16384,\"netns\":\"init\"},{\"enabled\":true,\"type\":\"udp\",\"active\":false,\"id\":\"wireguard\",\"max_port\":32767,\"readonly\":false,\"in_port\":18964,\"min_port\":16384,\"netns\":\"init\"}]}",
+      "t": 1783943647735
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/upnpigd/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true,\"version\":1}}",
+      "t": 1783943647741
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/upnpigd/redir/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"enabled\":true,\"proto\":\"tcp\",\"id\":\"0.0.0.0-26476-tcp\",\"desc\":\"Plex Media Server\",\"host\":{\"l2ident\":{\"id\":\"02:00:00:00:00:09\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-17\",\"source\":\"dhcp\"},{\"name\":\"host-18\",\"source\":\"upnp\"}],\"vendor_name\":\"\",\"host_type\":\"workstation\",\"domain_name\":\"host-19\",\"info\":{\"dhcp\":{\"Host Name\":\"host-17\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.49\",\"active\":true,\"reachable\":true,\"last_activity\":1783943607,\"af\":\"ipv4\",\"last_time_reachable\":1783943607},{\"addr\":\"fe80::d\",\"active\":true,\"reachable\":true,\"last_activity\":1783943643,\"af\":\"ipv6\",\"last_time_reachable\":1783943643},{\"addr\":\"2001:db8::1a\",\"active\":false,\"reachable\":false,\"last_activity\":1773273622,\"af\":\"ipv6\",\"last_time_reachable\":1773273622},{\"addr\":\"2001:db8::1b\",\"active\":true,\"reachable\":true,\"last_activity\":1783943638,\"af\":\"ipv6\",\"last_time_reachable\":1783943638}],\"id\":\"ether-02:00:00:00:00:09\",\"last_time_reachable\":1783943643,\"primary_name_manual\":false,\"access_point\":{\"mac\":\"02:00:00:00:00:04\",\"type\":\"gateway\",\"connectivity_type\":\"ethernet\",\"ethernet_information\":{\"speed\":1000,\"duplex\":\"full\",\"max_port_speed\":1000,\"link\":\"up\"},\"uid\":\"scrubbed-uid-1\"},\"interface\":\"pub\",\"default_name\":\"host-17\",\"first_activity\":1769679158,\"reachable\":true,\"last_activity\":1783943643,\"primary_name\":\"host-17\"},\"remaining\":0,\"ext_src_ip\":\"0.0.0.0\",\"int_port\":32400,\"int_ip\":\"192.168.1.49\",\"ext_port\":26476}]}",
+      "t": 1783943647750
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/lcd/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"hide_status_led\":false,\"hide_wifi_key\":false,\"brightness\":100,\"orientation\":0,\"orientation_forced\":false}}",
+      "t": 1783943647757
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/ledstrip/status",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"msg\":\"\",\"success\":false,\"error_code\":\"notsupp\"}",
+      "t": 1783943647769
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/netshare/samba/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"workgroup\":\"WORKGROUP\",\"logon_password\":\"\",\"print_share_enabled\":true,\"file_share_enabled\":true,\"logon_enabled\":false,\"smbv2_enabled\":true,\"logon_user\":\"freebox\"}}",
+      "t": 1783943647780
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/netshare/afp/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true,\"guest_allow\":true,\"login_name\":\"freebox\",\"server_type\":\"airport\",\"login_password\":\"\"}}",
+      "t": 1783943647786
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/upnpav/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true}}",
+      "t": 1783943647797
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/switch/status/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"duplex\":\"half\",\"name\":\"Ethernet 3\",\"link\":\"down\",\"id\":3,\"mode\":\"10BaseT-HD\",\"speed\":\"10\",\"rrd_id\":\"3\"},{\"duplex\":\"half\",\"name\":\"Ethernet 1\",\"link\":\"down\",\"id\":1,\"mode\":\"10BaseT-HD\",\"speed\":\"10\",\"rrd_id\":\"1\"},{\"duplex\":\"half\",\"name\":\"Ethernet 2\",\"link\":\"down\",\"id\":2,\"mode\":\"10BaseT-HD\",\"speed\":\"10\",\"rrd_id\":\"2\"},{\"duplex\":\"half\",\"name\":\"Ethernet 4\",\"link\":\"down\",\"id\":4,\"mode\":\"10BaseT-HD\",\"speed\":\"10\",\"rrd_id\":\"4\"},{\"duplex\":\"auto\",\"mac_list\":{},\"name\":\"Sfp lan\",\"link\":\"down\",\"id\":9999,\"mode\":\"0-FD\",\"speed\":\"0\",\"rrd_id\":\"sfp_lan\"}]}",
+      "t": 1783943647810
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true,\"power_saving\":false,\"mac_filter_state\":\"disabled\"}}",
+      "t": 1783943647821
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/steering/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"steering_level\":1}}",
+      "t": 1783943647828
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/state/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"state\":\"enabled\",\"power_saving_capability\":\"supported\",\"expected_phys\":[{\"band\":\"2d4g\",\"phy_id\":0,\"detected\":true},{\"band\":\"5g\",\"phy_id\":1,\"detected\":true},{\"band\":\"5g\",\"phy_id\":10,\"detected\":true},{\"band\":\"6g\",\"phy_id\":11,\"detected\":true}]}}",
+      "t": 1783943647837
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/ap/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"capabilities\":{\"6g\":{\"shortgi20\":false,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":false,\"ht_40\":false,\"smps_dynamic\":false,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":false,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":false,\"vht_tx_stbc\":false,\"he_supported\":false,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":false,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":false,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":false,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":false,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":false,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":false,\"shortgi40\":false,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"5g\":{\"shortgi20\":true,\"vht_rx_ldpc\":true,\"vht_sounding_dimensions_1\":true,\"ldpc\":true,\"ht_40\":true,\"smps_dynamic\":true,\"vht_shortgi80\":true,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":true,\"vht_max_ampdu_len_exp6\":true,\"smps_static\":false,\"vht_rx_antenna_consistency\":true,\"vht_shortgi160\":true,\"he_40\":true,\"vht_tx_stbc\":true,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":true,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":true,\"vht_su_beamformer\":true,\"vht_tx_antenna_consistency\":true,\"he_80\":true,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":true,\"vht_max_ampdu_len_exp1\":true,\"he_160\":true,\"vht_max_ampdu_len_exp5\":true,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":true,\"vht_max_ampdu_len_exp2\":true,\"vht_rx_stbc_1\":true,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":true,\"vht_su_beamformee\":true,\"dsss_cck_40\":true,\"vht_80_80\":false,\"vht_160\":true,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":true,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":true,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":true,\"tx_stbc\":true,\"shortgi40\":true,\"vht_mu_beamformer\":true,\"lsig_txop_prot\":false},\"2d4g\":{\"shortgi20\":true,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":true,\"ht_40\":true,\"smps_dynamic\":true,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":true,\"vht_tx_stbc\":false,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":true,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":false,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":false,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":true,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":true,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":true,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":true,\"shortgi40\":true,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"60g\":{\"supported\":false}},\"name\":\"host-42\",\"id\":0,\"config\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":true,\"vht_rx_ldpc\":false,\"ldpc\":false,\"vht_rx_stbc\":\"disabled\",\"vht_shortgi80\":false,\"vht_mu_beamformer\":false,\"vht_sounding_dimensions\":\"disabled\",\"ht_enabled\":true,\"rx_stbc\":\"1\",\"dsss_cck_40\":false,\"tx_stbc\":true,\"ac_enabled\":false,\"smps\":\"disabled\",\"vht_shortgi160\":false,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":false,\"vht_su_beamformee\":false,\"vht_su_beamformer\":false,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":false,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":0,\"vht_max_mpdu_len\":\"default\",\"psmp\":false,\"shortgi40\":true,\"vht_rx_antenna_consistency\":false,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":false,\"band\":\"2d4g\",\"secondary_channel\":0,\"channel_width\":\"20\"},\"status\":{\"dfs_cac_remaining_time\":0,\"dfs_disabled\":false,\"channel_width\":\"20\",\"state\":\"active\",\"secondary_channel\":0,\"primary_channel\":6}},{\"capabilities\":{\"6g\":{\"shortgi20\":false,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":false,\"ht_40\":false,\"smps_dynamic\":false,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":false,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":false,\"vht_tx_stbc\":false,\"he_supported\":false,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":false,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":false,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":false,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":false,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":false,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":false,\"shortgi40\":false,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"5g\":{\"shortgi20\":true,\"vht_rx_ldpc\":true,\"vht_sounding_dimensions_1\":true,\"ldpc\":true,\"ht_40\":true,\"smps_dynamic\":true,\"vht_shortgi80\":true,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":true,\"vht_max_ampdu_len_exp6\":true,\"smps_static\":false,\"vht_rx_antenna_consistency\":true,\"vht_shortgi160\":true,\"he_40\":true,\"vht_tx_stbc\":true,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":true,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":true,\"vht_su_beamformer\":true,\"vht_tx_antenna_consistency\":true,\"he_80\":true,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":true,\"vht_max_ampdu_len_exp1\":true,\"he_160\":true,\"vht_max_ampdu_len_exp5\":true,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":true,\"vht_max_ampdu_len_exp2\":true,\"vht_rx_stbc_1\":true,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":true,\"vht_su_beamformee\":true,\"dsss_cck_40\":true,\"vht_80_80\":false,\"vht_160\":true,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":true,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":true,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":true,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":true,\"tx_stbc\":true,\"shortgi40\":true,\"vht_mu_beamformer\":true,\"lsig_txop_prot\":false},\"2d4g\":{\"shortgi20\":true,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":true,\"ht_40\":true,\"smps_dynamic\":true,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":true,\"vht_tx_stbc\":false,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":true,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":false,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":false,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":true,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":true,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":true,\"shortgi40\":true,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"60g\":{\"supported\":false}},\"name\":\"host-43\",\"id\":1,\"config\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":true,\"vht_rx_ldpc\":true,\"ldpc\":true,\"vht_rx_stbc\":\"1\",\"vht_shortgi80\":true,\"vht_mu_beamformer\":true,\"vht_sounding_dimensions\":\"1\",\"ht_enabled\":true,\"rx_stbc\":\"1\",\"dsss_cck_40\":true,\"tx_stbc\":true,\"ac_enabled\":true,\"smps\":\"disabled\",\"vht_shortgi160\":true,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":true,\"vht_su_beamformee\":true,\"vht_su_beamformer\":true,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":true,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":7,\"vht_max_mpdu_len\":\"11454\",\"psmp\":false,\"shortgi40\":true,\"vht_rx_antenna_consistency\":true,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":false,\"band\":\"5g\",\"secondary_channel\":0,\"channel_width\":\"80\"},\"status\":{\"dfs_cac_remaining_time\":0,\"dfs_disabled\":true,\"channel_width\":\"80\",\"state\":\"active\",\"secondary_channel\":48,\"primary_channel\":44}},{\"capabilities\":{\"6g\":{\"shortgi20\":false,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":false,\"ht_40\":false,\"smps_dynamic\":false,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":true,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":true,\"vht_tx_stbc\":false,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":false,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":true,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":true,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":false,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":false,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":false,\"shortgi40\":false,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"5g\":{\"shortgi20\":true,\"vht_rx_ldpc\":true,\"vht_sounding_dimensions_1\":true,\"ldpc\":true,\"ht_40\":true,\"smps_dynamic\":true,\"vht_shortgi80\":true,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":true,\"vht_max_ampdu_len_exp6\":true,\"smps_static\":false,\"vht_rx_antenna_consistency\":true,\"vht_shortgi160\":true,\"he_40\":true,\"vht_tx_stbc\":true,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":true,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":true,\"vht_su_beamformer\":true,\"vht_tx_antenna_consistency\":true,\"he_80\":true,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":true,\"vht_max_ampdu_len_exp1\":true,\"he_160\":true,\"vht_max_ampdu_len_exp5\":true,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":true,\"vht_max_ampdu_len_exp2\":true,\"vht_rx_stbc_1\":true,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":true,\"vht_su_beamformee\":true,\"dsss_cck_40\":true,\"vht_80_80\":false,\"vht_160\":true,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":true,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":true,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":true,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":true,\"tx_stbc\":true,\"shortgi40\":true,\"vht_mu_beamformer\":true,\"lsig_txop_prot\":false},\"2d4g\":{\"shortgi20\":false,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":false,\"ht_40\":false,\"smps_dynamic\":false,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":false,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":false,\"vht_tx_stbc\":false,\"he_supported\":false,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":false,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":false,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":false,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":false,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":false,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":false,\"shortgi40\":false,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"60g\":{\"supported\":false}},\"name\":\"host-44\",\"id\":10,\"config\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":true,\"vht_rx_ldpc\":true,\"ldpc\":true,\"vht_rx_stbc\":\"1\",\"vht_shortgi80\":true,\"vht_mu_beamformer\":true,\"vht_sounding_dimensions\":\"1\",\"ht_enabled\":true,\"rx_stbc\":\"1\",\"dsss_cck_40\":true,\"tx_stbc\":true,\"ac_enabled\":true,\"smps\":\"disabled\",\"vht_shortgi160\":true,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":true,\"vht_su_beamformee\":true,\"vht_su_beamformer\":true,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":true,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":7,\"vht_max_mpdu_len\":\"11454\",\"psmp\":false,\"shortgi40\":true,\"vht_rx_antenna_consistency\":true,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":true,\"band\":\"5g\",\"secondary_channel\":0,\"channel_width\":\"160\"},\"status\":{\"dfs_cac_remaining_time\":0,\"dfs_disabled\":false,\"channel_width\":\"160\",\"state\":\"active\",\"secondary_channel\":116,\"primary_channel\":120}},{\"capabilities\":{\"6g\":{\"shortgi20\":false,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":false,\"ht_40\":false,\"smps_dynamic\":false,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":true,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":true,\"vht_tx_stbc\":false,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":false,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":true,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":true,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":false,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":true,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":false,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":false,\"shortgi40\":false,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"5g\":{\"shortgi20\":true,\"vht_rx_ldpc\":true,\"vht_sounding_dimensions_1\":true,\"ldpc\":true,\"ht_40\":true,\"smps_dynamic\":true,\"vht_shortgi80\":true,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":true,\"vht_max_ampdu_len_exp4\":true,\"vht_max_ampdu_len_exp6\":true,\"smps_static\":false,\"vht_rx_antenna_consistency\":true,\"vht_shortgi160\":true,\"he_40\":true,\"vht_tx_stbc\":true,\"he_supported\":true,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":true,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":true,\"vht_su_beamformer\":true,\"vht_tx_antenna_consistency\":true,\"he_80\":true,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":true,\"vht_max_ampdu_len_exp1\":true,\"he_160\":true,\"vht_max_ampdu_len_exp5\":true,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":true,\"vht_max_ampdu_len_exp2\":true,\"vht_rx_stbc_1\":true,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":true,\"vht_su_beamformee\":true,\"dsss_cck_40\":true,\"vht_80_80\":false,\"vht_160\":true,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":true,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":true,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":true,\"tx_stbc\":true,\"shortgi40\":true,\"vht_mu_beamformer\":true,\"lsig_txop_prot\":false},\"2d4g\":{\"shortgi20\":false,\"vht_rx_ldpc\":false,\"vht_sounding_dimensions_1\":false,\"ldpc\":false,\"ht_40\":false,\"smps_dynamic\":false,\"vht_shortgi80\":false,\"vht_rx_stbc_4\":false,\"vht_txops_ps\":false,\"eht_320\":false,\"eht_supported\":false,\"vht_max_ampdu_len_exp4\":false,\"vht_max_ampdu_len_exp6\":false,\"smps_static\":false,\"vht_rx_antenna_consistency\":false,\"vht_shortgi160\":false,\"he_40\":false,\"vht_tx_stbc\":false,\"he_supported\":false,\"vht_ext_nss_bw_3\":false,\"delayed_ba\":false,\"ht_20\":false,\"vht_ext_nss_bw_2\":false,\"vht_ext_nss_bw_1\":false,\"vht_beamformee_sts_1\":false,\"vht_max_ampdu_len_exp3\":false,\"vht_su_beamformer\":false,\"vht_tx_antenna_consistency\":false,\"he_80\":false,\"vht_rx_stbc_3\":false,\"vht_max_ampdu_len_exp7\":false,\"vht_max_ampdu_len_exp1\":false,\"he_160\":false,\"vht_max_ampdu_len_exp5\":false,\"rx_stbc_3\":false,\"vht_htc\":false,\"vht_mpdu_len_11454\":false,\"vht_max_ampdu_len_exp2\":false,\"vht_rx_stbc_1\":false,\"rx_stbc_2\":false,\"vht_sounding_dimensions_3\":false,\"max_amsdu_7935\":false,\"vht_su_beamformee\":false,\"dsss_cck_40\":false,\"vht_80_80\":false,\"vht_160\":false,\"vht_sounding_dimensions_2\":false,\"psmp\":false,\"vht_80\":false,\"vht_beamformee_sts_3\":false,\"vht_beamformee_sts_2\":false,\"supported\":false,\"greenfield\":false,\"vht_rx_stbc_2\":false,\"rx_stbc_1\":false,\"vht_mu_beamformee\":false,\"vht_mpdu_len_7991\":false,\"tx_stbc\":false,\"shortgi40\":false,\"vht_mu_beamformer\":false,\"lsig_txop_prot\":false},\"60g\":{\"supported\":false}},\"name\":\"host-45\",\"id\":11,\"config\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":false,\"vht_rx_ldpc\":false,\"ldpc\":false,\"vht_rx_stbc\":\"disabled\",\"vht_shortgi80\":false,\"vht_mu_beamformer\":false,\"vht_sounding_dimensions\":\"disabled\",\"ht_enabled\":false,\"rx_stbc\":\"disabled\",\"dsss_cck_40\":false,\"tx_stbc\":false,\"ac_enabled\":false,\"smps\":\"disabled\",\"vht_shortgi160\":false,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":false,\"vht_su_beamformee\":false,\"vht_su_beamformer\":false,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":false,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":0,\"vht_max_mpdu_len\":\"default\",\"psmp\":false,\"shortgi40\":false,\"vht_rx_antenna_consistency\":false,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":true,\"band\":\"6g\",\"secondary_channel\":0,\"channel_width\":\"320\"},\"status\":{\"dfs_cac_remaining_time\":0,\"dfs_disabled\":false,\"channel_width\":\"320\",\"state\":\"active\",\"secondary_channel\":0,\"primary_channel\":85}}]}",
+      "t": 1783943647850
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/bss/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"status\":{\"state\":\"active\",\"custom_key_ssid\":\"scrubbed-ssid-2\",\"partners\":[],\"authorized_sta_count\":3,\"sta_count\":3,\"band\":\"6G\",\"is_main_bss\":false},\"config\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa3_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"use_default_config\":true,\"wps_enabled\":true},\"bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-3\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"ec561095-bf60-4c67-833f-020000000017\",\"wps_enabled\":true},\"shared_bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"wps_enabled\":true},\"id\":\"02:00:00:00:00:10\",\"use_shared_params\":true,\"phy_id\":11,\"disable_wep\":true},{\"status\":{\"state\":\"active\",\"custom_key_ssid\":\"scrubbed-ssid-2\",\"partners\":[],\"authorized_sta_count\":2,\"sta_count\":2,\"band\":\"5G\",\"is_main_bss\":false},\"config\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"use_default_config\":true,\"wps_enabled\":true},\"bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"adb4d7ad-4e4f-4a38-a26c-020000000018\",\"wps_enabled\":true},\"shared_bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"wps_enabled\":true},\"id\":\"02:00:00:00:00:06\",\"use_shared_params\":true,\"phy_id\":10,\"disable_wep\":true},{\"status\":{\"state\":\"active\",\"custom_key_ssid\":\"scrubbed-ssid-2\",\"partners\":[],\"authorized_sta_count\":4,\"sta_count\":4,\"band\":\"5G\",\"is_main_bss\":false},\"config\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"use_default_config\":true,\"wps_enabled\":true},\"bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"521b2eb0-51eb-4484-bb25-020000000019\",\"wps_enabled\":true},\"shared_bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"wps_enabled\":true},\"id\":\"02:00:00:00:00:03\",\"use_shared_params\":true,\"phy_id\":1,\"disable_wep\":true},{\"status\":{\"state\":\"active\",\"custom_key_ssid\":\"scrubbed-ssid-2\",\"partners\":[],\"authorized_sta_count\":2,\"sta_count\":2,\"band\":\"2G4\",\"is_main_bss\":false},\"config\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"use_default_config\":true,\"wps_enabled\":true},\"bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"559983f7-3528-4aa3-8b58-02000000001a\",\"wps_enabled\":true},\"shared_bss_params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-1\",\"encryption\":\"wpa2_psk_ccmp\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":false,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"8cdf46ed-45ad-4135-a1a6-020000000016\",\"wps_enabled\":true},\"id\":\"02:00:00:00:00:0b\",\"use_shared_params\":true,\"phy_id\":0,\"disable_wep\":true}]}",
+      "t": 1783943647864
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/planning/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"use_planning\":false,\"resolution\":48,\"mapping\":[\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\",\"on\"]}}",
+      "t": 1783943647872
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/mac_filter/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647880
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/default",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"aps\":[{\"params\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":false,\"vht_rx_ldpc\":false,\"ldpc\":false,\"vht_rx_stbc\":\"disabled\",\"vht_shortgi80\":false,\"vht_mu_beamformer\":false,\"vht_sounding_dimensions\":\"disabled\",\"ht_enabled\":false,\"rx_stbc\":\"disabled\",\"dsss_cck_40\":false,\"tx_stbc\":false,\"ac_enabled\":false,\"smps\":\"disabled\",\"vht_shortgi160\":false,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":false,\"vht_su_beamformee\":false,\"vht_su_beamformer\":false,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":false,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":0,\"vht_max_mpdu_len\":\"default\",\"psmp\":false,\"shortgi40\":false,\"vht_rx_antenna_consistency\":false,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":true,\"band\":\"6g\",\"secondary_channel\":0,\"channel_width\":\"320\"},\"ap_id\":11},{\"params\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":true,\"vht_rx_ldpc\":true,\"ldpc\":true,\"vht_rx_stbc\":\"1\",\"vht_shortgi80\":true,\"vht_mu_beamformer\":true,\"vht_sounding_dimensions\":\"1\",\"ht_enabled\":true,\"rx_stbc\":\"1\",\"dsss_cck_40\":true,\"tx_stbc\":true,\"ac_enabled\":true,\"smps\":\"disabled\",\"vht_shortgi160\":true,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":true,\"vht_su_beamformee\":true,\"vht_su_beamformer\":true,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":true,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":7,\"vht_max_mpdu_len\":\"11454\",\"psmp\":false,\"shortgi40\":true,\"vht_rx_antenna_consistency\":true,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":true,\"band\":\"5g\",\"secondary_channel\":0,\"channel_width\":\"160\"},\"ap_id\":10},{\"params\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":true,\"vht_rx_ldpc\":true,\"ldpc\":true,\"vht_rx_stbc\":\"1\",\"vht_shortgi80\":true,\"vht_mu_beamformer\":true,\"vht_sounding_dimensions\":\"1\",\"ht_enabled\":true,\"rx_stbc\":\"1\",\"dsss_cck_40\":true,\"tx_stbc\":true,\"ac_enabled\":true,\"smps\":\"disabled\",\"vht_shortgi160\":true,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":true,\"vht_su_beamformee\":true,\"vht_su_beamformer\":true,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":true,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":7,\"vht_max_mpdu_len\":\"11454\",\"psmp\":false,\"shortgi40\":true,\"vht_rx_antenna_consistency\":true,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":true,\"band\":\"5g\",\"secondary_channel\":0,\"channel_width\":\"160\"},\"ap_id\":1},{\"params\":{\"enabled\":true,\"ht\":{\"greenfield\":false,\"shortgi20\":true,\"vht_rx_ldpc\":false,\"ldpc\":false,\"vht_rx_stbc\":\"disabled\",\"vht_shortgi80\":false,\"vht_mu_beamformer\":false,\"vht_sounding_dimensions\":\"disabled\",\"ht_enabled\":true,\"rx_stbc\":\"1\",\"dsss_cck_40\":false,\"tx_stbc\":true,\"ac_enabled\":false,\"smps\":\"disabled\",\"vht_shortgi160\":false,\"vht_beamformee_sts\":\"disabled\",\"vht_tx_stbc\":false,\"vht_su_beamformee\":false,\"vht_su_beamformer\":false,\"delayed_ba\":false,\"vht_tx_antenna_consistency\":false,\"max_amsdu_7935\":false,\"vht_max_ampdu_len_exp\":0,\"vht_max_mpdu_len\":\"default\",\"psmp\":false,\"shortgi40\":true,\"vht_rx_antenna_consistency\":false,\"lsig_txop_prot\":false},\"eht\":{\"enabled\":true,\"su_beamformer\":true,\"su_beamformee\":true,\"mu_beamformer\":true},\"he\":{\"enabled\":true,\"su_beamformee\":true,\"twt_responder\":true,\"su_beamformer\":true,\"twt_required\":false,\"mu_beamformer\":true},\"primary_channel\":0,\"dfs_enabled\":false,\"band\":\"2d4g\",\"secondary_channel\":0,\"channel_width\":\"20\"},\"ap_id\":0}],\"bsss\":[{\"params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa23_psk_ccmp_mrsno\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":true,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"b1145f5c-c2db-456b-a94c-02000000001b\",\"wps_enabled\":true},\"bssid\":\"02:00:00:00:00:10\"},{\"params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa23_psk_ccmp_mrsno\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":true,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"0b097519-427c-4bc0-ba5f-02000000001c\",\"wps_enabled\":true},\"bssid\":\"02:00:00:00:00:06\"},{\"params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa23_psk_ccmp_mrsno\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":true,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"2cdb9d1a-37dc-4e43-8076-02000000001d\",\"wps_enabled\":true},\"bssid\":\"02:00:00:00:00:03\"},{\"params\":{\"enabled\":true,\"ssid\":\"scrubbed-ssid-4\",\"encryption\":\"wpa23_psk_ccmp_mrsno\",\"hide_ssid\":false,\"eapol_version\":2,\"gcmp256\":true,\"key\":\"SCRUBBED_KEY\",\"wps_uuid\":\"fe96692e-102d-4370-8a82-02000000001e\",\"wps_enabled\":true},\"bssid\":\"02:00:00:00:00:0b\"}]}}",
+      "t": 1783943647889
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/diag",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"aps\":[],\"bsss\":[{\"severity\":\"minor\",\"bssid\":\"02:00:00:00:00:06\",\"code\":\"network_security\"},{\"severity\":\"minor\",\"bssid\":\"02:00:00:00:00:03\",\"code\":\"network_security\"},{\"severity\":\"minor\",\"bssid\":\"02:00:00:00:00:0b\",\"code\":\"network_security\"}]}}",
+      "t": 1783943647898
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/wps/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":true}}",
+      "t": 1783943647908
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/wps/sessions/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647921
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/custom_keys/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"ssid_read_only\":false,\"hide_ssid\":false,\"ssid\":\"scrubbed-ssid-2\",\"encryption\":\"wpa2_psk_ccmp\"}}",
+      "t": 1783943647929
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/custom_key/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647939
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/wifi/temp_disable",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"remaining\":0}}",
+      "t": 1783943647954
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":58}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 2 minutes 14 secondes\",\"uptime_val\":82934,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943647965
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"state\":\"stopped\",\"type\":\"pptp\",\"name\":\"pptp\",\"connection_count\":0,\"auth_connection_count\":0},{\"state\":\"stopped\",\"type\":\"openvpn\",\"name\":\"openvpn_routed\",\"connection_count\":0,\"auth_connection_count\":0},{\"state\":\"stopped\",\"type\":\"ipsec\",\"name\":\"ipsec\",\"connection_count\":0,\"auth_connection_count\":0},{\"state\":\"stopped\",\"type\":\"openvpn\",\"name\":\"openvpn_bridge\",\"connection_count\":0,\"auth_connection_count\":0},{\"state\":\"stopped\",\"type\":\"wireguard\",\"name\":\"wireguard\",\"connection_count\":0,\"auth_connection_count\":0}]}",
+      "t": 1783943647973
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn/user/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647978
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn/ip_pool/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"ip_start\":\"192.168.27.65\",\"ip_end\":\"192.168.27.95\",\"reservations\":[]}}",
+      "t": 1783943647984
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn/connection/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647991
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn_client/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943647999
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn_client/status",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"enabled\":false}}",
+      "t": 1783943648006
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vpn_client/log",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":\"\"}",
+      "t": 1783943648012
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":1,\"id\":1,\"info_hash\":\"\",\"created_ts\":1726316875,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000},{\"rx_bytes\":0,\"tx_bytes\":0,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0x\",\"archive_password\":\"\",\"eta\":0,\"status\":\"error\",\"io_priority\":\"normal\",\"type\":\"http\",\"piece_length\":0,\"queue_pos\":2,\"id\":2,\"info_hash\":\"\",\"created_ts\":1726318545,\"stop_ratio\":0,\"tx_rate\":0,\"name\":\"file-1\",\"tx_pct\":10000,\"rx_pct\":0,\"rx_rate\":0,\"error\":\"none\",\"size\":425860000}]}",
+      "t": 1783943648021
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/stats",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"throttling_rate\":{\"rx_rate\":0,\"tx_rate\":0},\"nb_tasks_stopped\":0,\"dht_stats\":{\"enabled\":false,\"node_count_ipv6\":0,\"enabled_ipv6\":false,\"node_count\":0},\"nb_tasks_checking\":0,\"nb_tasks_queued\":0,\"blocklist_hits\":0,\"blocklist_entries\":0,\"nb_tasks_extracting\":0,\"nb_tasks_done\":0,\"nb_tasks_stopping\":0,\"nzb_config_status\":{\"status\":\"not_checked\",\"error\":\"none\"},\"conn_ready\":true,\"nb_peer\":0,\"throttling_mode\":\"normal\",\"nb_tasks_active\":0,\"nb_tasks_seeding\":0,\"nb_tasks_error\":2,\"tx_rate\":0,\"nb_tasks_repairing\":0,\"nb_tasks\":2,\"nb_rss\":0,\"nb_tasks_downloading\":0,\"nb_rss_items_unread\":0,\"rx_rate\":0,\"throttling_is_scheduled\":false}}",
+      "t": 1783943648028
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/feeds/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943648034
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/downloads/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"blocklist\":{\"sources\":{}},\"use_watch_dir\":true,\"dns2\":\"\",\"dns1\":\"\",\"max_downloading_tasks\":5,\"download_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0y\",\"bt\":{\"dht_port\":30588,\"announce_timeout\":30,\"enable_dht\":true,\"main_port\":20921,\"stop_ratio\":150,\"max_port\":32767,\"max_peers\":50,\"enable_pex\":true,\"min_port\":16384,\"crypto_support\":\"allowed\"},\"watch_dir\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS0z\",\"news\":{\"user\":\"\",\"erase_tmp\":true,\"file_naming\":\"auto\",\"password\":\"\",\"port\":119,\"nthreads\":4,\"auto_repair\":true,\"ssl\":false,\"auto_extract\":true,\"lazy_par2\":true,\"server\":\"news.free.fr\"},\"feed\":{\"max_items\":120,\"fetch_interval\":60},\"throttling\":{\"normal\":{\"rx_rate\":0,\"tx_rate\":0},\"slow\":{\"rx_rate\":512000,\"tx_rate\":42000},\"schedule\":[\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\",\"normal\"],\"mode\":\"normal\"}}}",
+      "t": 1783943648042
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/fs/tasks/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943648051
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/share_link/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943648068
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/ws/upload",
+      "reqBody": null,
+      "status": 400,
+      "resBody": "400 Bad Request",
+      "t": 1783943648073
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/upload/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[]}",
+      "t": 1783943648079
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/home/adapters",
+      "reqBody": null,
+      "status": 404,
+      "resBody": "{\"msg\":\"Requête invalide (404)\",\"success\":false,\"error_code\":\"invalid_request\"}",
+      "t": 1783943648084
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/home/nodes",
+      "reqBody": null,
+      "status": 404,
+      "resBody": "{\"msg\":\"Requête invalide (404)\",\"success\":false,\"error_code\":\"invalid_request\"}",
+      "t": 1783943648090
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/home/tileset/all",
+      "reqBody": null,
+      "status": 404,
+      "resBody": "{\"msg\":\"Requête invalide (404)\",\"success\":false,\"error_code\":\"invalid_request\"}",
+      "t": 1783943648095
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/camera/",
+      "reqBody": null,
+      "status": 404,
+      "resBody": "{\"msg\":\"Requête invalide (404)\",\"success\":false,\"error_code\":\"invalid_request\"}",
+      "t": 1783943648101
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/lang/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"lang\":\"fra\",\"avalaible\":[\"fra\",\"eng\",\"ita\"]}}",
+      "t": 1783943648109
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/notif/targets",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"last_use\":1783860755,\"type\":\"firebase\",\"name\":\"iPhone\",\"id\":\"6E19497A-CBF0-496F-AE08-02000000001f\",\"subscriptions\":[\"box_state\"],\"api_url\":\"https://api.scw.iliad.fr/notifications/freebox/connect\",\"message_type\":\"data\"},{\"last_use\":1783860755,\"type\":\"firebase\",\"name\":\"iPhone\",\"id\":\"4C70CE49-FAA8-4C1F-ABCE-020000000020-data\",\"subscriptions\":[\"box_state\"],\"api_url\":\"https://api.scw.iliad.fr/notifications/freebox/files\",\"message_type\":\"data\"},{\"last_use\":1783860755,\"type\":\"firebase\",\"name\":\"iPhone\",\"id\":\"6E19497A-CBF0-496F-AE08-02000000001f-data\",\"subscriptions\":[\"box_state\"],\"api_url\":\"https://api.scw.iliad.fr/notifications/freebox/connect\",\"message_type\":\"data\"}]}",
+      "t": 1783943648116
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/profile",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"id\":1,\"name\":\"person-7\",\"icon\":\"/resources/images/profile/profile_03.png\"}]}",
+      "t": 1783943648124
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/network_control",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"override_mode\":\"allowed\",\"profile_id\":1,\"cdayranges\":[],\"hosts\":[{\"l2ident\":{\"id\":\"02:00:00:00:00:21\",\"type\":\"mac_address\"},\"active\":false,\"persistent\":true,\"names\":[{\"name\":\"host-46\",\"source\":\"dhcp\"},{\"name\":\"host-47\",\"source\":\"mdns\"}],\"vendor_name\":\"Apple, Inc.\",\"host_type\":\"laptop\",\"domain_name\":\"host-48\",\"info\":{},\"l3connectivities\":[{\"addr\":\"192.168.1.141\",\"active\":false,\"reachable\":false,\"last_activity\":1733072354,\"af\":\"ipv4\",\"last_time_reachable\":1733072354},{\"addr\":\"fe80::22\",\"active\":false,\"reachable\":false,\"last_activity\":1730979120,\"af\":\"ipv6\",\"last_time_reachable\":1730979116},{\"addr\":\"fe80::23\",\"active\":false,\"reachable\":false,\"last_activity\":1733072170,\"af\":\"ipv6\",\"last_time_reachable\":1733072165},{\"addr\":\"fe80::24\",\"active\":false,\"reachable\":false,\"last_activity\":1733072280,\"af\":\"ipv6\",\"last_time_reachable\":1733072275},{\"addr\":\"fe80::25\",\"active\":false,\"reachable\":false,\"last_activity\":1733072353,\"af\":\"ipv6\",\"last_time_reachable\":1733072348},{\"addr\":\"2001:db8::3c\",\"active\":false,\"reachable\":false,\"last_activity\":1730979116,\"af\":\"ipv6\",\"last_time_reachable\":1730979116},{\"addr\":\"2001:db8::3d\",\"active\":false,\"reachable\":false,\"last_activity\":1733072165,\"af\":\"ipv6\",\"last_time_reachable\":1733072165},{\"addr\":\"2001:db8::3e\",\"active\":false,\"reachable\":false,\"last_activity\":1733072300,\"af\":\"ipv6\",\"last_time_reachable\":1733072300},{\"addr\":\"2001:db8::3f\",\"active\":false,\"reachable\":false,\"last_activity\":1733072347,\"af\":\"ipv6\",\"last_time_reachable\":1733072347}],\"id\":\"ether-02:00:00:00:00:21\",\"last_time_reachable\":1733072354,\"primary_name_manual\":false,\"network_control\":{\"current_mode\":\"allowed\",\"profile_id\":1,\"name\":\"person-7\"},\"interface\":\"pub\",\"default_name\":\"host-46\",\"first_activity\":1711443024,\"reachable\":false,\"last_activity\":1733072354,\"primary_name\":\"host-46\"}],\"resolution\":288,\"profile_name\":\"person-7\",\"current_mode\":\"allowed\",\"macs\":[\"02:00:00:00:00:21\"],\"next_change\":0,\"override\":false,\"rule_mode\":\"allowed\",\"profile_icon\":\"/resources/images/profile/profile_03.png\"}]}",
+      "t": 1783943648134
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/network_control/migrate",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"default_mode_migrated\":true}}",
+      "t": 1783943648140
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/player",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"mac\":\"02:00:00:00:00:0c\",\"stb_type\":\"stb_v8\",\"last_time_reachable\":1783943627,\"api_available\":false,\"device_name\":\"Freebox Player POP\",\"device_model\":\"fbx8am\",\"reachable\":true,\"lan_gids\":[\"ether-02:00:00:00:00:0c\",\"ether-02:00:00:00:00:22\"]}]}",
+      "t": 1783943648226
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/pvr/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"margin_before\":0,\"auto_ack\":false,\"margin_after\":0}}",
+      "t": 1783943648235
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/pvr/quota/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"quota_exceeded\":true,\"needed_tresh\":8,\"cur_tresh\":0}}",
+      "t": 1783943648241
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/pvr/programmed/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943648246
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/pvr/finished/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943648253
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/pvr/media/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"free_bytes\":358030000000,\"record_time\":{\"dvb\":{\"sd\":437048,\"3d\":317853,\"hd\":317853},\"iptv\":{\"ld\":1398554,\"sd\":998967,\"3d\":460050,\"hd\":460050}},\"total_bytes\":984260000000,\"media\":\"Freebox\"}]}",
+      "t": 1783943648260
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/rrd/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"msg\":\"invalid_db\",\"success\":false}",
+      "t": 1783943648268
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/standby/status",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"use_planning\":false,\"planning_mode\":\"wifi_off\",\"available_planning_modes\":[\"wifi_off\",\"suspend\"],\"next_change\":0}}",
+      "t": 1783943648278
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/storage/disk/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"idle_duration\":0,\"read_error_requests\":0,\"read_requests\":847962,\"spinning\":false,\"table_type\":\"gpt\",\"firmware\":\"\",\"type\":\"usb\",\"idle\":true,\"connector\":0,\"id\":1000,\"write_error_requests\":0,\"state\":\"enabled\",\"write_requests\":553288,\"total_bytes\":1000000000000,\"model\":\"\",\"active_duration\":0,\"temp\":0,\"serial\":\"\",\"partitions\":[{\"fstype\":\"ext4\",\"total_bytes\":984260000000,\"label\":\"Freebox\",\"id\":1001,\"internal\":false,\"fsck_result\":\"no_run_yet\",\"state\":\"mounted\",\"disk_id\":1000,\"free_bytes\":358030000000,\"used_bytes\":626210000000,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS00\"}]}]}",
+      "t": 1783943648285
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/storage/partition/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"fstype\":\"ext4\",\"total_bytes\":984260000000,\"label\":\"Freebox\",\"id\":1001,\"internal\":false,\"fsck_result\":\"no_run_yet\",\"state\":\"mounted\",\"disk_id\":1000,\"free_bytes\":358030000000,\"used_bytes\":626210000000,\"path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS00\"}]}",
+      "t": 1783943648292
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/storage/config/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"external_pm_idle_before_spindown\":10,\"external_pm_enabled\":true}}",
+      "t": 1783943648300
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/storage/raid/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943648309
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/sfp/status",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"p2p_1g\",\"present\":false,\"link\":false,\"supported\":false,\"power_good\":true,\"eeprom_valid\":false}}",
+      "t": 1783943648320
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/update/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"state\":\"up_to_date\"}}",
+      "t": 1783943648326
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vm/info/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"usb_used\":false,\"sata_used\":false,\"sata_ports\":{},\"used_memory\":1536,\"usb_ports\":[\"usb-external-type-a\"],\"used_cpus\":1,\"total_memory\":2048,\"total_cpus\":2}}",
+      "t": 1783943648334
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vm/distros/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"hash\":\"http://ftp.free.fr/.private/ubuntu-cloud/releases/noble/release/SHA256SUMS\",\"url\":\"http://ftp.free.fr/.private/ubuntu-cloud/releases/noble/release/ubuntu-24.04-server-cloudimg-arm64.img\",\"name\":\"Ubuntu 24.04 LTS (Noble)\",\"os\":\"ubuntu\"},{\"hash\":\"http://ftp.free.fr/.private/ubuntu-cloud/releases/mantic/release/SHA256SUMS\",\"url\":\"http://ftp.free.fr/.private/ubuntu-cloud/releases/mantic/release/ubuntu-23.10-server-cloudimg-arm64.img\",\"name\":\"Ubuntu 23.10 (Mantic)\",\"os\":\"ubuntu\"},{\"hash\":\"https://cloud.debian.org/images/cloud/bookworm/daily/latest/SHA512SUMS\",\"url\":\"https://cloud.debian.org/images/cloud/bookworm/daily/latest/debian-12-generic-arm64-daily.qcow2\",\"name\":\"Debian 12 (Bookworm)\",\"os\":\"debian\"},{\"hash\":\"https://cloud.debian.org/images/cloud/sid/daily/latest/SHA512SUMS\",\"url\":\"https://cloud.debian.org/images/cloud/sid/daily/latest/debian-sid-generic-arm64-daily.qcow2\",\"name\":\"Debian Unstable (sid)\",\"os\":\"debian\"},{\"hash\":\"http://ftp.free.fr/pub/Distributions_Linux/Fedora/releases/40/Cloud/aarch64/images/Fedora-Cloud-40-1.14-aarch64-CHECKSUM\",\"url\":\"http://ftp.free.fr/pub/Distributions_Linux/Fedora/releases/40/Cloud/aarch64/images/Fedora-Cloud-Base-Generic.aarch64-40-1.14.qcow2\",\"name\":\"Fedora 40\",\"os\":\"fedora\"},{\"hash\":\"http://ftp.free.fr/mirrors/ftp.opensuse.org/opensuse/distribution/leap/15.6/appliances/openSUSE-Leap-15.6-ARM-JeOS-efi.aarch64.qcow2.sha256\",\"url\":\"http://ftp.free.fr/mirrors/ftp.opensuse.org/opensuse/distribution/leap/15.6/appliances/openSUSE-Leap-15.6-ARM-JeOS-efi.aarch64.qcow2\",\"name\":\"openSUSE Leap 15.6 JeOS\",\"os\":\"opensuse\"},{\"hash\":\"https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/cloud/nocloud_alpine-3.20.3-aarch64-uefi-cloudinit-r0.qcow2.sha512\",\"url\":\"https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/cloud/nocloud_alpine-3.20.3-aarch64-uefi-cloudinit-r0.qcow2\",\"name\":\"Alpine 3.20\",\"os\":\"alpine\"},{\"url\":\"https://cloud.centos.org/centos/8/aarch64/images/CentOS-8-GenericCloud-8.4.2105-20210603.0.aarch64.qcow2\",\"name\":\"CentOS 8.4 (snapshot 20210603)\",\"os\":\"centos\"},{\"hash\":\"https://images.jeedom.com/freebox/SHA256SUMS\",\"url\":\"https://images.jeedom.com/freebox/freeboxDelta.qcow2\",\"name\":\"Jeedom (fourni par Jeedom SAS)\",\"os\":\"jeedom\"}]}",
+      "t": 1783943648377
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vm/",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"mac\":\"02:00:00:00:00:09\",\"cloudinit_userdata\":\"SCRUBBED_CLOUDINIT_USERDATA\",\"cd_path\":\"\",\"id\":0,\"os\":\"debian\",\"enable_cloudinit\":true,\"disk_path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS01\",\"vcpus\":1,\"memory\":1536,\"name\":\"host-17\",\"cloudinit_hostname\":\"host-17\",\"status\":\"running\",\"bind_usb_ports\":\"\",\"enable_screen\":false,\"disk_type\":\"qcow2\"},{\"mac\":\"02:00:00:00:00:01\",\"cloudinit_userdata\":\"SCRUBBED_CLOUDINIT_USERDATA\",\"cd_path\":\"\",\"id\":1,\"os\":\"debian\",\"enable_cloudinit\":true,\"disk_path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS02\",\"vcpus\":1,\"memory\":256,\"name\":\"host-7\",\"cloudinit_hostname\":\"host-7\",\"status\":\"stopped\",\"bind_usb_ports\":\"\",\"enable_screen\":false,\"disk_type\":\"qcow2\"}]}",
+      "t": 1783943648385
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783943727753",
+      "reqBody": "{\"name\":\"Fbx.os.app.settings.Accounts\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943727776
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/login/perms/?_dc=1783943727757",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"parental\":{\"granted\":true,\"desc\":\"Accès au contrôle parental\"},\"tv\":{\"granted\":true,\"desc\":\"Accès au guide TV\"},\"explorer\":{\"granted\":true,\"desc\":\"Accès aux fichiers de la Freebox\"},\"contacts\":{\"granted\":true,\"desc\":\"Accès à la base de contacts de la Freebox\"},\"wdo\":{\"granted\":true,\"desc\":\"Provisionnement des équipements\"},\"camera\":{\"granted\":true,\"desc\":\"Accès aux caméras\"},\"profile\":{\"granted\":true,\"desc\":\"Gestion des profils utilisateur\"},\"player\":{\"granted\":true,\"desc\":\"Contrôle du Freebox Player\"},\"settings\":{\"granted\":true,\"desc\":\"Modification des réglages de la Freebox \"},\"calls\":{\"granted\":true,\"desc\":\"Accès au journal d’appels\"},\"home\":{\"granted\":true,\"desc\":\"Gestion de l’alarme et maison connectée\"},\"pvr\":{\"granted\":true,\"desc\":\"Programmation des enregistrements\"},\"vm\":{\"granted\":true,\"desc\":\"Contrôle de la VM\"},\"downloader\":{\"granted\":true,\"desc\":\"Accès au gestionnaire de téléchargements\"}}}",
+      "t": 1783943727777
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/config/?_dc=1783943727773",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"allow_token_request\":true,\"adblock\":false,\"wol\":false,\"sip_alg\":\"direct_media\",\"disable_guest\":false,\"remote_access_min_port\":16384,\"api_domain\":\"fake-1.fbxos.fr\",\"remote_access\":false,\"is_secure_pass\":true,\"https_port\":29491,\"api_remote_access\":true,\"https_available\":true,\"remote_access_ip\":\"203.0.113.1\",\"remote_access_port\":21252,\"ping\":true,\"remote_access_max_port\":32767,\"adblock_not_set\":false}}",
+      "t": 1783943727783
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/authorization/?_dc=1783943727777",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"app_name\":\"Freebox Connect\",\"id\":1,\"app_version\":\"3238\",\"device_name\":\"iPhone\",\"last_session\":1770580548,\"req_ip\":\"192.168.1.94\",\"req_date\":1711455980,\"permissions\":{\"parental\":true,\"downloader\":true,\"explorer\":true,\"tv\":true,\"wdo\":true,\"camera\":false,\"profile\":true,\"player\":true,\"settings\":true,\"calls\":true,\"home\":false,\"pvr\":true,\"vm\":true,\"contacts\":true},\"app_id\":\"fr.freebox.framework\",\"token_validity\":\"granted\"},{\"app_name\":\"Download\",\"id\":2,\"app_version\":\"1\",\"device_name\":\"iPhone\",\"last_session\":1740846700,\"req_ip\":\"2001:db8::162\",\"req_date\":1711456925,\"permissions\":{\"parental\":true,\"tv\":true,\"explorer\":true,\"contacts\":true,\"wdo\":true,\"settings\":true,\"profile\":true,\"downloader\":true,\"home\":false,\"calls\":true,\"camera\":false,\"pvr\":true,\"vm\":true,\"player\":true},\"app_id\":\"fr.freebox.download\",\"token_validity\":\"granted\"}]}",
+      "t": 1783943727785
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/notif/targets/?_dc=1783943727780",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"last_use\":1783860755,\"type\":\"firebase\",\"name\":\"iPhone\",\"id\":\"6E19497A-CBF0-496F-AE08-02000000001f\",\"subscriptions\":[\"box_state\"],\"api_url\":\"https://api.scw.iliad.fr/notifications/freebox/connect\",\"message_type\":\"data\"},{\"last_use\":1783860755,\"type\":\"firebase\",\"name\":\"iPhone\",\"id\":\"4C70CE49-FAA8-4C1F-ABCE-020000000020-data\",\"subscriptions\":[\"box_state\"],\"api_url\":\"https://api.scw.iliad.fr/notifications/freebox/files\",\"message_type\":\"data\"},{\"last_use\":1783860755,\"type\":\"firebase\",\"name\":\"iPhone\",\"id\":\"6E19497A-CBF0-496F-AE08-02000000001f-data\",\"subscriptions\":[\"box_state\"],\"api_url\":\"https://api.scw.iliad.fr/notifications/freebox/connect\",\"message_type\":\"data\"}]}",
+      "t": 1783943727790
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/sessions/?_dc=1783943727780",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"is_web_app\":true,\"device_name\":\"Mac\",\"app_name\":\"Freebox OS\",\"id\":5,\"start_time\":1783942906,\"client_ip\":\"192.168.1.152\"},{\"is_web_app\":true,\"device_name\":\"host-192\",\"app_name\":\"Freebox OS\",\"id\":4,\"start_time\":1783941141,\"client_ip\":\"2001:db8::2a\"}]}",
+      "t": 1783943727794
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/domain/config/?_dc=1783943727782",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"default_domain\":\"\",\"root_domains\":[\"freeboxos.fr\"],\"api_domain\":\"fake-1.fbxos.fr\"}}",
+      "t": 1783943727927
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/29?_dc=1783943727857",
+      "reqBody": "{\"id\":29,\"name\":\"Fbx.os.app.settings.Accounts-window\",\"data\":{\"width\":735,\"maximized\":false,\"size\":{\"width\":734,\"height\":640},\"pos\":[88,130],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":29,\"name\":\"Fbx.os.app.settings.Accounts-window\",\"data\":{\"maximized\":false,\"version\":1,\"width\":735,\"size\":{\"height\":640,\"width\":734},\"pos\":[88,130]}}}",
+      "t": 1783943727934
+    }
+  ],
+  "ws": []
+}

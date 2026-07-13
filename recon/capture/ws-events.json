@@ -1,0 +1,1193 @@
+{
+  "label": "ws-events",
+  "http": [
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783943938074",
+      "reqBody": "{\"name\":\"Fbx.os.app.vm.app\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943938160
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/vm/?_dc=1783943938083",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":[{\"mac\":\"02:00:00:00:00:09\",\"cloudinit_userdata\":\"SCRUBBED_CLOUDINIT_USERDATA\",\"cd_path\":\"\",\"id\":0,\"os\":\"debian\",\"enable_cloudinit\":true,\"disk_path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS01\",\"vcpus\":1,\"memory\":1536,\"name\":\"host-17\",\"cloudinit_hostname\":\"host-17\",\"status\":\"running\",\"bind_usb_ports\":\"\",\"enable_screen\":false,\"disk_type\":\"qcow2\"},{\"mac\":\"02:00:00:00:00:01\",\"cloudinit_userdata\":\"SCRUBBED_CLOUDINIT_USERDATA\",\"cd_path\":\"\",\"id\":1,\"os\":\"debian\",\"enable_cloudinit\":true,\"disk_path\":\"L0ZyZWVib3gvc2NydWJiZWQvZmlsZS02\",\"vcpus\":1,\"memory\":256,\"name\":\"host-7\",\"cloudinit_hostname\":\"host-7\",\"status\":\"stopped\",\"bind_usb_ports\":\"\",\"enable_screen\":false,\"disk_type\":\"qcow2\"}]}",
+      "t": 1783943938174
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/21?_dc=1783943938822",
+      "reqBody": "{\"id\":21,\"name\":\"Fbx.os.app.vm.app-window\",\"data\":{\"width\":819,\"height\":807,\"maximized\":false,\"size\":{\"width\":819,\"height\":807},\"pos\":[2,17],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":21,\"name\":\"Fbx.os.app.vm.app-window\",\"data\":{\"maximized\":false,\"version\":1,\"height\":807,\"width\":819,\"size\":{\"height\":807,\"width\":819},\"pos\":[2,17]}}}",
+      "t": 1783943938848
+    },
+    {
+      "method": "POST",
+      "url": "/api/latest/taskcount/?_dc=1783943991353",
+      "reqBody": "{\"name\":\"Fbx.os.app.settings.ConnectionStatus\"}",
+      "status": 200,
+      "resBody": "{\"success\":true}",
+      "t": 1783943991392
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/phone/config/?_dc=1783943991380",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"network\":\"working\",\"dect_eco_mode\":false,\"dect_pin\":\"0000\",\"dect_ring_pattern\":1,\"dect_registration\":false,\"dect_nemo_mode\":false,\"dect_enabled\":false,\"dect_ring_on_off\":false}}",
+      "t": 1783943991392
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783943991381",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":176626,\"bytes_up\":4574485085,\"ipv4_port_range\":[16384,32767],\"rate_up\":543876,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50358370127,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943991395
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943991381",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":62},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":60},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 7 minutes 57 secondes\",\"uptime_val\":83277,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943991423
+    },
+    {
+      "method": "PUT",
+      "url": "/api/latest/settings/5?_dc=1783943991465",
+      "reqBody": "{\"id\":5,\"name\":\"Fbx.os.app.settings.ConnectionStatus-window\",\"data\":{\"width\":682,\"maximized\":false,\"size\":{\"width\":680,\"height\":520},\"pos\":[3,286],\"version\":1}}",
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"id\":5,\"name\":\"Fbx.os.app.settings.ConnectionStatus-window\",\"data\":{\"maximized\":false,\"version\":1,\"width\":682,\"size\":{\"height\":520,\"width\":680},\"pos\":[3,286]}}}",
+      "t": 1783943991487
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection/full/?_dc=1783943991385",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":210119,\"ipv4_port_range\":[16384,32767],\"ipv6\":\"2001:db8::1\",\"bytes_up\":4574637873,\"media\":\"ftth\",\"rate_up\":30557,\"bandwidth_up\":8000000000,\"state\":\"up\",\"bandwidth_down\":8000000000,\"ftth\":{\"sfp_has_power_report\":true,\"sfp_has_signal\":true,\"sfp_model\":\"LTF7219-BC+1\",\"link_type\":\"pon\",\"sfp_pwr_rx\":-1838,\"sfp_vendor\":\"Hisense\",\"sfp_pwr_tx\":647,\"has_sfp\":true,\"link\":true,\"sfp_alim_ok\":true,\"sfp_serial\":\"SCRUBBEDSERIAL0001\",\"sfp_present\":true},\"xdsl\":{\"status\":\"disabled\"},\"bytes_down\":50359420725,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943991511
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943992423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":62},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":60},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 7 minutes 58 secondes\",\"uptime_val\":83278,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943992483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783943993396",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":210119,\"bytes_up\":4574637873,\"ipv4_port_range\":[16384,32767],\"rate_up\":30557,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50359420725,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943993407
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943993423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":62},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":60},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 7 minutes 59 secondes\",\"uptime_val\":83279,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943993467
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943994423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes \",\"uptime_val\":83280,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943994473
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783943995409",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":210119,\"bytes_up\":4574637873,\"ipv4_port_range\":[16384,32767],\"rate_up\":30557,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50359420725,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943995421
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943995423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 1 seconde\",\"uptime_val\":83281,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943995478
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943996423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 2 secondes\",\"uptime_val\":83282,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943996479
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783943997422",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":277195,\"bytes_up\":4578542173,\"ipv4_port_range\":[16384,32767],\"rate_up\":780860,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50360806704,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943997435
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943997424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 3 secondes\",\"uptime_val\":83283,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943997486
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943998423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 4 secondes\",\"uptime_val\":83284,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943998508
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783943999424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 5 secondes\",\"uptime_val\":83285,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783943999552
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783943999436",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":277195,\"bytes_up\":4578542173,\"ipv4_port_range\":[16384,32767],\"rate_up\":780860,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50360806704,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783943999553
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944000424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 6 secondes\",\"uptime_val\":83286,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944000484
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944001424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 7 secondes\",\"uptime_val\":83287,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944001470
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944001554",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":150844,\"bytes_up\":4579506274,\"ipv4_port_range\":[16384,32767],\"rate_up\":192820,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50361560924,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944001603
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944002424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 8 secondes\",\"uptime_val\":83288,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944002492
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944003424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":61},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 9 secondes\",\"uptime_val\":83289,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944003483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944003604",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":150844,\"bytes_up\":4579506274,\"ipv4_port_range\":[16384,32767],\"rate_up\":192820,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50361560924,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944003614
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944004423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":61},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 10 secondes\",\"uptime_val\":83290,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944004482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944005424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":61},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 11 secondes\",\"uptime_val\":83291,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944005477
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944005616",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":150844,\"bytes_up\":4579506274,\"ipv4_port_range\":[16384,32767],\"rate_up\":192820,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50361560924,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944005626
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944006424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":58}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 12 secondes\",\"uptime_val\":83292,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944006480
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944007423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":58}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 13 secondes\",\"uptime_val\":83293,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944007480
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944007627",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":285272,\"bytes_up\":4584415653,\"ipv4_port_range\":[16384,32767],\"rate_up\":981875,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50362987287,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944007636
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944008423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":58}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 14 secondes\",\"uptime_val\":83294,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944008479
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944009423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 15 secondes\",\"uptime_val\":83295,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944009517
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944009638",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":285272,\"bytes_up\":4584415653,\"ipv4_port_range\":[16384,32767],\"rate_up\":981875,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50362987287,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944009647
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944010424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 16 secondes\",\"uptime_val\":83296,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944010472
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944011424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 17 secondes\",\"uptime_val\":83297,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944011482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944011648",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":153074,\"bytes_up\":4584730396,\"ipv4_port_range\":[16384,32767],\"rate_up\":62948,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50363752658,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944011658
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944012423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 18 secondes\",\"uptime_val\":83298,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944012483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944013424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 19 secondes\",\"uptime_val\":83299,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944013485
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944013659",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":153074,\"bytes_up\":4584730396,\"ipv4_port_range\":[16384,32767],\"rate_up\":62948,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50363752658,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944013673
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944014423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 20 secondes\",\"uptime_val\":83300,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944014492
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944015423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 21 secondes\",\"uptime_val\":83301,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944015492
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944015675",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":153074,\"bytes_up\":4584730396,\"ipv4_port_range\":[16384,32767],\"rate_up\":62948,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50363752658,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944015758
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944016424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 22 secondes\",\"uptime_val\":83302,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944016473
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944017424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 23 secondes\",\"uptime_val\":83303,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944017466
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944017759",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":230412,\"bytes_up\":4585219188,\"ipv4_port_range\":[16384,32767],\"rate_up\":97758,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50364904718,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944017769
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944018423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":61}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 24 secondes\",\"uptime_val\":83304,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944018470
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944019424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":61}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 25 secondes\",\"uptime_val\":83305,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944019482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944019770",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":230412,\"bytes_up\":4585219188,\"ipv4_port_range\":[16384,32767],\"rate_up\":97758,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50364904718,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944019781
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944020423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":61}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 26 secondes\",\"uptime_val\":83306,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944020513
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944021423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 27 secondes\",\"uptime_val\":83307,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944021480
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944021782",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":117841,\"bytes_up\":4585333666,\"ipv4_port_range\":[16384,32767],\"rate_up\":22895,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50365493924,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944021794
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944022423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 28 secondes\",\"uptime_val\":83308,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944022466
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944023424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 29 secondes\",\"uptime_val\":83309,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944023479
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944023795",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":117841,\"bytes_up\":4585333666,\"ipv4_port_range\":[16384,32767],\"rate_up\":22895,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50365493924,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944023808
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944024423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 30 secondes\",\"uptime_val\":83310,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944024486
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944025423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 31 secondes\",\"uptime_val\":83311,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944025477
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944025810",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":117841,\"bytes_up\":4585333666,\"ipv4_port_range\":[16384,32767],\"rate_up\":22895,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50365493924,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944025822
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944026423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 32 secondes\",\"uptime_val\":83312,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944026486
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944027423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 33 secondes\",\"uptime_val\":83313,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944027481
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944027823",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":312007,\"bytes_up\":4588530123,\"ipv4_port_range\":[16384,32767],\"rate_up\":639291,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50367053959,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944027834
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944028425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 34 secondes\",\"uptime_val\":83314,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944028482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944029423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 35 secondes\",\"uptime_val\":83315,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944029482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944029834",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":312007,\"bytes_up\":4588530123,\"ipv4_port_range\":[16384,32767],\"rate_up\":639291,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50367053959,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944029913
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944030425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 36 secondes\",\"uptime_val\":83316,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944030496
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944031424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 37 secondes\",\"uptime_val\":83317,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944031538
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944031914",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":274214,\"bytes_up\":4590205233,\"ipv4_port_range\":[16384,32767],\"rate_up\":335022,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50368425030,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944031924
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944032425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 38 secondes\",\"uptime_val\":83318,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944032479
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944033425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 39 secondes\",\"uptime_val\":83319,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944033486
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944033926",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":274214,\"bytes_up\":4590205233,\"ipv4_port_range\":[16384,32767],\"rate_up\":335022,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50368425030,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944033941
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944034424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 40 secondes\",\"uptime_val\":83320,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944034486
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944035424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 41 secondes\",\"uptime_val\":83321,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944035480
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944035942",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":274214,\"bytes_up\":4590205233,\"ipv4_port_range\":[16384,32767],\"rate_up\":335022,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50368425030,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944035952
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944036425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 42 secondes\",\"uptime_val\":83322,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944036469
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944037423",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 43 secondes\",\"uptime_val\":83323,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944037477
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944037954",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":126742,\"bytes_up\":4590327500,\"ipv4_port_range\":[16384,32767],\"rate_up\":24453,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50369058742,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944037979
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944038424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 44 secondes\",\"uptime_val\":83324,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944038476
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944039424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":61},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 45 secondes\",\"uptime_val\":83325,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944039484
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944039981",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":126742,\"bytes_up\":4590327500,\"ipv4_port_range\":[16384,32767],\"rate_up\":24453,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50369058742,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944039991
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944040424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":61},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 46 secondes\",\"uptime_val\":83326,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944040482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944041424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":61},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 47 secondes\",\"uptime_val\":83327,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944041498
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944041993",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":300037,\"bytes_up\":4595274509,\"ipv4_port_range\":[16384,32767],\"rate_up\":989401,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50370558928,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944042004
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944042424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 48 secondes\",\"uptime_val\":83328,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944042545
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944043424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 49 secondes\",\"uptime_val\":83329,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944043482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944044006",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":300037,\"bytes_up\":4595274509,\"ipv4_port_range\":[16384,32767],\"rate_up\":989401,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50370558928,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944044073
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944044424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 50 secondes\",\"uptime_val\":83330,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944044483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944045424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":60},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 51 secondes\",\"uptime_val\":83331,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944045474
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944046075",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":300037,\"bytes_up\":4595274509,\"ipv4_port_range\":[16384,32767],\"rate_up\":989401,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50370558928,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944046085
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944046424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":60},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 52 secondes\",\"uptime_val\":83332,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944046467
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944047424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":60},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 53 secondes\",\"uptime_val\":83333,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944047478
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944048086",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":158799,\"bytes_up\":4595645948,\"ipv4_port_range\":[16384,32767],\"rate_up\":74287,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50371352926,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944048098
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944048425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":60},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 54 secondes\",\"uptime_val\":83334,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944048481
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944049424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":60},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 55 secondes\",\"uptime_val\":83335,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944049474
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944050100",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":158799,\"bytes_up\":4595645948,\"ipv4_port_range\":[16384,32767],\"rate_up\":74287,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50371352926,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944050111
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944050424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":60},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":60},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 56 secondes\",\"uptime_val\":83336,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944050468
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944051424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 57 secondes\",\"uptime_val\":83337,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944051468
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944052112",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":254002,\"bytes_up\":4595951758,\"ipv4_port_range\":[16384,32767],\"rate_up\":61162,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50372622939,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944052124
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944052424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 58 secondes\",\"uptime_val\":83338,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944052497
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944053424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 8 minutes 59 secondes\",\"uptime_val\":83339,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944053482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944054126",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":254002,\"bytes_up\":4595951758,\"ipv4_port_range\":[16384,32767],\"rate_up\":61162,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50372622939,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944054143
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944054424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes \",\"uptime_val\":83340,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944054467
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944055424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 1 seconde\",\"uptime_val\":83341,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944055483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944056145",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":254002,\"bytes_up\":4595951758,\"ipv4_port_range\":[16384,32767],\"rate_up\":61162,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50372622939,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944056155
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944056425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 2 secondes\",\"uptime_val\":83342,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944056483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944057424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 3 secondes\",\"uptime_val\":83343,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944057483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944058157",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":200481,\"bytes_up\":4601068604,\"ipv4_port_range\":[16384,32767],\"rate_up\":1023369,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50373625347,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944058239
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944058424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 4 secondes\",\"uptime_val\":83344,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944058472
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944059424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 5 secondes\",\"uptime_val\":83345,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944059478
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944060241",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":200481,\"bytes_up\":4601068604,\"ipv4_port_range\":[16384,32767],\"rate_up\":1023369,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50373625347,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944060321
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944060425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 6 secondes\",\"uptime_val\":83346,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944060483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944061424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 7 secondes\",\"uptime_val\":83347,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944061463
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944062323",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":309074,\"bytes_up\":4601525859,\"ipv4_port_range\":[16384,32767],\"rate_up\":91451,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50375170717,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944062335
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944062425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 8 secondes\",\"uptime_val\":83348,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944062464
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944063424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 9 secondes\",\"uptime_val\":83349,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944063519
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944064337",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":309074,\"bytes_up\":4601525859,\"ipv4_port_range\":[16384,32767],\"rate_up\":91451,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50375170717,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944064348
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944064425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 10 secondes\",\"uptime_val\":83350,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944064483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944065424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 11 secondes\",\"uptime_val\":83351,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944065477
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944066349",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":309074,\"bytes_up\":4601525859,\"ipv4_port_range\":[16384,32767],\"rate_up\":91451,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50375170717,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944066360
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944066425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":61},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 12 secondes\",\"uptime_val\":83352,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944066470
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944067424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":61},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 13 secondes\",\"uptime_val\":83353,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944067480
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944068361",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":351140,\"bytes_up\":4602246339,\"ipv4_port_range\":[16384,32767],\"rate_up\":144096,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50376926417,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944068372
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944068425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":61},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 14 secondes\",\"uptime_val\":83354,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944068481
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944069425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 15 secondes\",\"uptime_val\":83355,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944069476
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944070373",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":351140,\"bytes_up\":4602246339,\"ipv4_port_range\":[16384,32767],\"rate_up\":144096,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50376926417,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944070385
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944070424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 16 secondes\",\"uptime_val\":83356,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944070476
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944071424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 17 secondes\",\"uptime_val\":83357,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944071466
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944072387",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":286008,\"bytes_up\":4602665678,\"ipv4_port_range\":[16384,32767],\"rate_up\":83867,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50378356457,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944072396
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944072425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 18 secondes\",\"uptime_val\":83358,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944072469
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944073425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 19 secondes\",\"uptime_val\":83359,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944073482
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944074396",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":286008,\"bytes_up\":4602665678,\"ipv4_port_range\":[16384,32767],\"rate_up\":83867,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50378356457,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944074477
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944074425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 20 secondes\",\"uptime_val\":83360,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944074517
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944075424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":61},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 21 secondes\",\"uptime_val\":83361,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944075491
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944076425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":61},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 22 secondes\",\"uptime_val\":83362,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944076483
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944076484",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":292986,\"bytes_up\":4602829823,\"ipv4_port_range\":[16384,32767],\"rate_up\":32829,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50379821388,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944076495
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944077425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":61},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":60}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 23 secondes\",\"uptime_val\":83363,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944077485
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944078425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 24 secondes\",\"uptime_val\":83364,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944078492
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944078499",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":292986,\"bytes_up\":4602829823,\"ipv4_port_range\":[16384,32767],\"rate_up\":32829,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50379821388,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944078509
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944079425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 25 secondes\",\"uptime_val\":83365,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944079476
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944080424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":660}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":59},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":58},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 26 secondes\",\"uptime_val\":83366,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944080472
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944080510",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":292986,\"bytes_up\":4602829823,\"ipv4_port_range\":[16384,32767],\"rate_up\":32829,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50379821388,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944080522
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944081425",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 27 secondes\",\"uptime_val\":83367,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944081488
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944082424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 28 secondes\",\"uptime_val\":83368,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944082480
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/connection?_dc=1783944082524",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"type\":\"ethernet\",\"rate_down\":119173,\"bytes_up\":4602965365,\"ipv4_port_range\":[16384,32767],\"rate_up\":27108,\"bandwidth_up\":8000000000,\"ipv6\":\"2001:db8::1\",\"bandwidth_down\":8000000000,\"media\":\"ftth\",\"state\":\"up\",\"bytes_down\":50380417256,\"ipv4\":\"203.0.113.1\"}}",
+      "t": 1783944082533
+    },
+    {
+      "method": "GET",
+      "url": "/api/latest/system/?_dc=1783944083424",
+      "reqBody": null,
+      "status": 200,
+      "resBody": "{\"success\":true,\"result\":{\"mac\":\"02:00:00:00:00:04\",\"usb3_enable\":true,\"board_name\":\"fbxgw9r\",\"model_info\":{\"net_operator\":\"free_fra\",\"led_strip_revision\":0,\"customer_hdd_slots\":1,\"wifi_country\":\"FR\",\"wifi_type\":\"2d4_5g_5g_6g\",\"pretty_name\":\"Freebox v9 (r1)\",\"has_separate_internal_storage\":true,\"has_eco_wifi\":true,\"has_basic_raid_support\":false,\"has_standby\":true,\"has_lcd_orientation\":true,\"has_vm\":true,\"has_status_led\":true,\"supported_languages\":[\"fra\",\"eng\",\"ita\"],\"name\":\"fbxgw9-r1\",\"has_lan_sfp\":true,\"internal_hdd_size\":0,\"default_language\":\"fra\",\"has_wop\":true,\"has_usb3_enable\":true},\"fans\":[{\"id\":\"fan0_speed\",\"name\":\"Ventilateur 1\",\"value\":630}],\"sensors\":[{\"id\":\"temp_cpu1\",\"name\":\"Température CPU 1\",\"value\":59},{\"id\":\"temp_cpu3\",\"name\":\"Température CPU 3\",\"value\":60},{\"id\":\"temp_cpu0\",\"name\":\"Température CPU 0\",\"value\":59},{\"id\":\"temp_cpu2\",\"name\":\"Température CPU 2\",\"value\":59},{\"id\":\"temp_t1\",\"name\":\"Température 1\",\"value\":59}],\"user_storage_powered\":true,\"disk_status\":\"active\",\"uptime\":\"23 heures 9 minutes 29 secondes\",\"uptime_val\":83369,\"user_main_storage\":\"Freebox\",\"box_authenticated\":true,\"serial\":\"SCRUBBEDSERIAL0002\",\"firmware_version\":\"4.12.2\"}}",
+      "t": 1783944083469
+    }
+  ],
+  "ws": [
+    {
+      "dir": "rx",
+      "url": "ws://mafreebox.freebox.fr/api/latest/ws/event/",
+      "data": "{\"success\":true,\"result\":{\"l2ident\":{\"id\":\"02:00:00:00:00:14\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-37\",\"source\":\"dhcp\"},{\"name\":\"host-38\",\"source\":\"mdns\"}],\"vendor_name\":\"Apple, Inc.\",\"host_type\":\"laptop\",\"domain_name\":\"host-39\",\"info\":{\"dhcp\":{\"Host Name\":\"host-37\"},\"mdns\":{\"Service: raop\":\"192.168.1.182:7000 (tcp)\",\"Service: companion-link\":\"192.168.1.182:55621 (tcp)\",\"Service: airplay\":\"192.168.1.182:7000 (tcp)\",\"Service: asquic\":\"192.168.1.182:53392 (udp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.182\",\"active\":true,\"reachable\":true,\"last_activity\":1783943827,\"af\":\"ipv4\",\"last_time_reachable\":1783943827},{\"addr\":\"fe80::1d\",\"active\":false,\"reachable\":false,\"last_activity\":1783943742,\"af\":\"ipv6\",\"last_time_reachable\":1783943742},{\"addr\":\"fe80::1e\",\"active\":false,\"reachable\":false,\"last_activity\":1772141524,\"af\":\"ipv6\",\"last_time_reachable\":1772141519},{\"addr\":\"fe80::1f\",\"active\":false,\"reachable\":false,\"last_activity\":1773623136,\"af\":\"ipv6\",\"last_time_reachable\":1773623136},{\"addr\":\"fe80::20\",\"active\":false,\"reachable\":false,\"last_activity\":1773623256,\"af\":\"ipv6\",\"last_time_reachable\":1773623212},{\"addr\":\"2001:db8::34\",\"active\":false,\"reachable\":false,\"last_activity\":1783206287,\"af\":\"ipv6\",\"last_time_reachable\":1783206287},{\"addr\":\"2001:db8::35\",\"active\":false,\"reachable\":false,\"last_activity\":1783860562,\"af\":\"ipv6\",\"last_time_reachable\":1783860562},{\"addr\":\"2001:db8::36\",\"active\":true,\"reachable\":true,\"last_activity\":1783943847,\"af\":\"ipv6\",\"last_time_reachable\":1783943847},{\"addr\":\"2001:db8::37\",\"active\":false,\"reachable\":false,\"last_activity\":1783863804,\"af\":\"ipv6\",\"last_time_reachable\":1783863804}],\"id\":\"ether-02:00:00:00:00:14\",\"last_time_reachable\":1783943847,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":22912995,\"type\":\"gateway\",\"tx_bytes\":45286829,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"6g\",\"sess_duration\":83193,\"phy_rx_rate\":5764,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ax\",\"bssid\":\"02:00:00:00:00:10\",\"phy_tx_rate\":14413,\"signal\":-76},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-37\",\"first_activity\":1731061431,\"reachable\":true,\"last_activity\":1783943847,\"primary_name\":\"host-37\"},\"source\":\"lan\",\"event\":\"host_l3addr_unreachable\",\"action\":\"notification\"}",
+      "t": 1783943938203
+    },
+    {
+      "dir": "rx",
+      "url": "ws://mafreebox.freebox.fr/api/latest/ws/event/",
+      "data": "{\"success\":true,\"result\":{\"l2ident\":{\"id\":\"02:00:00:00:00:14\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-37\",\"source\":\"dhcp\"},{\"name\":\"host-38\",\"source\":\"mdns\"}],\"vendor_name\":\"Apple, Inc.\",\"host_type\":\"laptop\",\"domain_name\":\"host-39\",\"info\":{\"dhcp\":{\"Host Name\":\"host-37\"},\"mdns\":{\"Service: raop\":\"192.168.1.182:7000 (tcp)\",\"Service: companion-link\":\"192.168.1.182:55621 (tcp)\",\"Service: airplay\":\"192.168.1.182:7000 (tcp)\",\"Service: asquic\":\"192.168.1.182:53392 (udp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.182\",\"active\":true,\"reachable\":true,\"last_activity\":1783943969,\"af\":\"ipv4\",\"last_time_reachable\":1783943969},{\"addr\":\"fe80::1d\",\"active\":false,\"reachable\":false,\"last_activity\":1783943742,\"af\":\"ipv6\",\"last_time_reachable\":1783943742},{\"addr\":\"fe80::1e\",\"active\":false,\"reachable\":false,\"last_activity\":1772141524,\"af\":\"ipv6\",\"last_time_reachable\":1772141519},{\"addr\":\"fe80::1f\",\"active\":false,\"reachable\":false,\"last_activity\":1773623136,\"af\":\"ipv6\",\"last_time_reachable\":1773623136},{\"addr\":\"fe80::20\",\"active\":false,\"reachable\":false,\"last_activity\":1773623256,\"af\":\"ipv6\",\"last_time_reachable\":1773623212},{\"addr\":\"2001:db8::34\",\"active\":false,\"reachable\":false,\"last_activity\":1783206287,\"af\":\"ipv6\",\"last_time_reachable\":1783206287},{\"addr\":\"2001:db8::35\",\"active\":false,\"reachable\":false,\"last_activity\":1783860562,\"af\":\"ipv6\",\"last_time_reachable\":1783860562},{\"addr\":\"2001:db8::36\",\"active\":false,\"reachable\":false,\"last_activity\":1783943847,\"af\":\"ipv6\",\"last_time_reachable\":1783943847},{\"addr\":\"2001:db8::37\",\"active\":false,\"reachable\":false,\"last_activity\":1783863804,\"af\":\"ipv6\",\"last_time_reachable\":1783863804}],\"id\":\"ether-02:00:00:00:00:14\",\"last_time_reachable\":1783943969,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":22913079,\"type\":\"gateway\",\"tx_bytes\":45286949,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"6g\",\"sess_duration\":83301,\"phy_rx_rate\":5764,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ax\",\"bssid\":\"02:00:00:00:00:10\",\"phy_tx_rate\":14413,\"signal\":-76},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-37\",\"first_activity\":1731061431,\"reachable\":true,\"last_activity\":1783943969,\"primary_name\":\"host-37\"},\"source\":\"lan\",\"event\":\"host_l3addr_unreachable\",\"action\":\"notification\"}",
+      "t": 1783944046197
+    },
+    {
+      "dir": "rx",
+      "url": "ws://mafreebox.freebox.fr/api/latest/ws/event/",
+      "data": "{\"success\":true,\"result\":{\"l2ident\":{\"id\":\"02:00:00:00:00:14\",\"type\":\"mac_address\"},\"active\":true,\"persistent\":false,\"names\":[{\"name\":\"host-37\",\"source\":\"dhcp\"},{\"name\":\"host-38\",\"source\":\"mdns\"}],\"vendor_name\":\"Apple, Inc.\",\"host_type\":\"laptop\",\"domain_name\":\"host-39\",\"info\":{\"dhcp\":{\"Host Name\":\"host-37\"},\"mdns\":{\"Service: raop\":\"192.168.1.182:7000 (tcp)\",\"Service: companion-link\":\"192.168.1.182:55621 (tcp)\",\"Service: airplay\":\"192.168.1.182:7000 (tcp)\",\"Service: asquic\":\"192.168.1.182:53392 (udp)\"}},\"l3connectivities\":[{\"addr\":\"192.168.1.182\",\"active\":true,\"reachable\":true,\"last_activity\":1783944059,\"af\":\"ipv4\",\"last_time_reachable\":1783944058},{\"addr\":\"fe80::1d\",\"active\":true,\"reachable\":true,\"last_activity\":1783944060,\"af\":\"ipv6\",\"last_time_reachable\":1783944060},{\"addr\":\"fe80::1e\",\"active\":false,\"reachable\":false,\"last_activity\":1772141524,\"af\":\"ipv6\",\"last_time_reachable\":1772141519},{\"addr\":\"fe80::1f\",\"active\":false,\"reachable\":false,\"last_activity\":1773623136,\"af\":\"ipv6\",\"last_time_reachable\":1773623136},{\"addr\":\"fe80::20\",\"active\":false,\"reachable\":false,\"last_activity\":1773623256,\"af\":\"ipv6\",\"last_time_reachable\":1773623212},{\"addr\":\"2001:db8::34\",\"active\":false,\"reachable\":false,\"last_activity\":1783206287,\"af\":\"ipv6\",\"last_time_reachable\":1783206287},{\"addr\":\"2001:db8::35\",\"active\":false,\"reachable\":false,\"last_activity\":1783860562,\"af\":\"ipv6\",\"last_time_reachable\":1783860562},{\"addr\":\"2001:db8::36\",\"active\":true,\"reachable\":false,\"last_activity\":1783944060,\"af\":\"ipv6\",\"last_time_reachable\":1783943847},{\"addr\":\"2001:db8::37\",\"active\":false,\"reachable\":false,\"last_activity\":1783863804,\"af\":\"ipv6\",\"last_time_reachable\":1783863804}],\"id\":\"ether-02:00:00:00:00:14\",\"last_time_reachable\":1783944060,\"primary_name_manual\":false,\"access_point\":{\"rx_bytes\":22979475,\"type\":\"gateway\",\"tx_bytes\":45376825,\"tx_rate\":0,\"uid\":\"scrubbed-uid-1\",\"connectivity_type\":\"wifi\",\"wifi_information\":{\"band\":\"6g\",\"sess_duration\":83316,\"phy_rx_rate\":4083,\"ssid\":\"scrubbed-ssid-1\",\"standard\":\"ax\",\"bssid\":\"02:00:00:00:00:10\",\"phy_tx_rate\":8646,\"signal\":-79},\"rx_rate\":0,\"mac\":\"02:00:00:00:00:04\"},\"interface\":\"pub\",\"default_name\":\"host-37\",\"first_activity\":1731061431,\"reachable\":true,\"last_activity\":1783944060,\"primary_name\":\"host-37\"},\"source\":\"lan\",\"event\":\"host_l3addr_reachable\",\"action\":\"notification\"}",
+      "t": 1783944061244
+    }
+  ]
+}
