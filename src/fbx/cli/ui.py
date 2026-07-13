@@ -78,9 +78,11 @@ def emit(
     JSON mode prints the *whole* upstream object (rule #5: never a lossy
     subset). Table mode uses `table(data)` when a renderer is provided, and
     falls back to JSON when it isn't — so `--output table` never loses data it
-    doesn't have a table for.
+    doesn't have a table for. A `None` result (the box's bare
+    `{"success": true}` answer) also falls back to JSON: renderers take a
+    dict/list and must never see None.
     """
-    if state.as_json or table is None:
+    if state.as_json or table is None or data is None:
         emit_json(data)
     else:
         out.print(table(data))

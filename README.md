@@ -5,9 +5,11 @@ connection status, LAN devices, DHCP, port forwarding, Wi-Fi, downloads,
 VPN, telephony — and the undocumented **virtual machine manager** — plus an
 MCP server so coding agents can drive the box.
 
-> ⚠️ **Early development (v0.1.0).** Working today: discovery, authorization,
-> `fbx system info`, and the `fbx api` raw-call escape hatch. More domains land
-> phase by phase (see the roadmap).
+> ⚠️ **Early development (v0.2.0).** Working today: discovery, authorization,
+> the read-only view of every major domain (connection, LAN, DHCP, Wi-Fi,
+> downloads, storage, files, calls, contacts), `fbx system info`, and the
+> `fbx api` raw-call escape hatch. Write operations land phase by phase (see
+> the roadmap).
 
 **Unofficial.** This project is not affiliated with Free or the Iliad group.
 
@@ -45,6 +47,32 @@ automatically after that.
 ./fbx system info          # firmware, model, uptime, temperatures, fans
 ```
 
+## Reading the box
+
+Every domain gets a noun command with Rich tables (and `--json` for scripts):
+
+```sh
+./fbx connection status    # WAN state, addresses, live throughput
+./fbx connection ftth      # optical link + SFP power (fiber health)
+./fbx connection ipv6      # delegated prefixes
+./fbx connection logs      # WAN up/down history
+./fbx lan devices          # who's on the network (--all for inactive too)
+./fbx lan interfaces       # browsable interfaces (pub, wifiguest, …)
+./fbx dhcp leases          # active leases
+./fbx dhcp static          # static reservations
+./fbx wifi status          # radios (2.4/5/5/6 GHz on the Ultra)
+./fbx wifi ap              # per-radio channel/width/state
+./fbx wifi bss             # SSIDs + security (keys only via --json)
+./fbx wifi stations        # associated clients, signal, rates
+./fbx downloads list       # download tasks
+./fbx downloads stats      # manager counters
+./fbx storage disks        # physical disks
+./fbx storage partitions   # space usage
+./fbx fs ls /Freebox       # browse files on the box
+./fbx calls list           # landline call log
+./fbx contacts list        # address book
+```
+
 ## The `--json` contract
 
 Every command that emits data supports `--json`, and it prints the **whole**
@@ -73,7 +101,7 @@ the docs (a leading `/api/latest/` or `/api/v16/` is stripped):
 
 - [x] Phase 0 — API reconnaissance on a real Freebox Ultra (kept private)
 - [x] Phase 1 — discovery, auth, `fbx system info`, `fbx api` (**v0.1.0**)
-- [ ] Phase 2 — all read-only domains, `--json` everywhere
+- [x] Phase 2 — all read-only domains, `--json` everywhere (**v0.2.0**)
 - [ ] Phase 3 — write operations (port forwarding, DHCP, Wi-Fi, downloads)
 - [ ] Phase 4 — VM lifecycle + serial console
 - [ ] Phase 5 — MCP server + Claude Skill

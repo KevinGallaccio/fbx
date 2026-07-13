@@ -20,7 +20,16 @@ from ..core.errors import (
 from . import ui
 from .commands import api as api_cmd
 from .commands import auth as auth_cmd
+from .commands import calls as calls_cmd
+from .commands import connection as connection_cmd
+from .commands import contacts as contacts_cmd
+from .commands import dhcp as dhcp_cmd
+from .commands import downloads as downloads_cmd
+from .commands import fs as fs_cmd
+from .commands import lan as lan_cmd
+from .commands import storage as storage_cmd
 from .commands import system as system_cmd
+from .commands import wifi as wifi_cmd
 
 app = typer.Typer(
     name="fbx",
@@ -126,6 +135,15 @@ def main_callback(
 app.add_typer(auth_cmd.app, name="auth")
 system_cmd.register(app)
 api_cmd.register(app)
+calls_cmd.register(app)
+connection_cmd.register(app)
+contacts_cmd.register(app)
+dhcp_cmd.register(app)
+downloads_cmd.register(app)
+fs_cmd.register(app)
+lan_cmd.register(app)
+storage_cmd.register(app)
+wifi_cmd.register(app)
 
 
 def main() -> None:
