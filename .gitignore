@@ -1,8 +1,10 @@
 # ── Safety net ────────────────────────────────────────────────────────────
-# Raw recon captures may contain the box serial, LAN MACs, the WAN IP,
-# session tokens, phone numbers. They NEVER get committed. Scrubbed copies
-# live in recon/capture/ (which IS committed).
-recon/raw/
+# The Phase 0 recon (captures — even scrubbed — and the API notes derived
+# from them) is private home-network data and stays local. It lives on a
+# local-only branch; this guard makes sure none of it can ever be committed
+# to the public mainline by accident.
+recon/
+docs/api-notes.md
 
 # ── Python ────────────────────────────────────────────────────────────────
 __pycache__/
