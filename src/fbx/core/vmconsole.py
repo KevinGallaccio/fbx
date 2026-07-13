@@ -51,7 +51,13 @@ async def _pump(url: str, token: str, detach: int) -> None:
     # Imported lazily so the dependency is only needed when the console is used.
     from websockets.asyncio.client import connect
 
-    async with connect(url, additional_headers={"X-Fbx-App-Auth": token}) as ws:
+    # The box selects the `binary` subprotocol (verified live); the client must
+    # offer it or the handshake fails with "no subprotocols supported".
+    async with connect(
+        url,
+        additional_headers={"X-Fbx-App-Auth": token},
+        subprotocols=["binary"],
+    ) as ws:
 
         async def ws_to_stdout() -> None:
             async for message in ws:
