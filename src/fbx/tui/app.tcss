@@ -241,3 +241,37 @@ SplashScreen {
     text-align: center;
     color: $text-muted;
 }
+
+/* ---------- console pre-flight modal ---------- */
+
+ConsolePreflightModal {
+    align: center middle;
+}
+
+#preflight-box {
+    width: 76;
+    max-width: 90%;
+    height: auto;
+    background: $surface;
+    border: thick $primary;
+    padding: 1 2;
+}
+
+#preflight-title {
+    text-style: bold;
+    padding-bottom: 1;
+}
+
+#preflight-creds {
+    margin-top: 1;
+}
+
+#preflight-buttons {
+    height: auto;
+    align-horizontal: right;
+    margin-top: 1;
+}
+
+#preflight-buttons Button {
+    margin-left: 2;
+}

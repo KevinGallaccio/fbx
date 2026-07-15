@@ -8,17 +8,103 @@ from rich.text import Text
 from textual import work
 from textual.app import ComposeResult
 from textual.binding import Binding
-from textual.widgets import DataTable, Footer, Header, Static
+from textual.containers import Horizontal, Vertical
+from textual.screen import ModalScreen
+from textual.widgets import Button, DataTable, Footer, Header, Static
 
 from ...cli import fmt
-from ...core import vmconsole
+from ...core import cloudinit, vmconsole
 from ...core.api import vm
 from ...core.errors import FbxError
+from .. import oslaunch
 from ..support import BoxCallError, human_error
 from ..widgets import Field, FormModal, TextModal, cursor_key, refill
 from ._base import BoxScreen
 
 _STATUS_STYLE = {"running": "green", "stopped": "dim"}
+
+_PREFLIGHT = (
+    "This attaches your terminal to the VM's serial port (its tty) — not a "
+    "fresh shell. You may land on a guest login prompt, or on whatever the "
+    "console last printed; a sleeping getty may need an Enter to wake up."
+    "\n\nTo come back to fbx, press Ctrl-]"
+)
+
+
+class ConsolePreflightModal(ModalScreen["str | None"]):
+    """What the serial console is and how to leave it, asked BEFORE the
+    terminal is handed over. Dismisses with "attach", "terminal", or None.
+
+    Guest credentials found in cloud-init are shown masked; `r` reveals them
+    in place. They are never typed into the guest tty.
+    """
+
+    BINDINGS = [
+        Binding("a", "attach", "Attach here"),
+        Binding("t", "terminal", "New terminal"),
+        Binding("r", "reveal", "Reveal credentials", show=False),
+        Binding("escape", "cancel", "Cancel", show=False),
+    ]
+
+    def __init__(
+        self,
+        name: str,
+        credentials: list[tuple[str, str]],
+        *,
+        offer_terminal: bool,
+    ) -> None:
+        super().__init__()
+        self._name = name
+        self._credentials = credentials
+        self._offer_terminal = offer_terminal
+        self._revealed = False
+
+    def compose(self) -> ComposeResult:
+        with Vertical(id="preflight-box"):
+            yield Static(f"Serial console — {self._name}", id="preflight-title")
+            yield Static(_PREFLIGHT, id="preflight-text")
+            if self._credentials:
+                yield Static(self._cred_text(), id="preflight-creds")
+            with Horizontal(id="preflight-buttons"):
+                yield Button("Attach here (a)", variant="primary", id="attach")
+                if self._offer_terminal:
+                    yield Button("New terminal window (t)", id="terminal")
+                yield Button("Cancel (esc)", id="cancel")
+
+    def _cred_text(self) -> Text:
+        text = Text("Guest credentials (cloud-init): ", style="dim")
+        for i, (label, secret) in enumerate(self._credentials):
+            if i:
+                text.append("  ")
+            text.append(f"{label}: ", style="bold dim")
+            if self._revealed:
+                text.append(secret)
+            else:
+                # Fixed-width mask: the length is a secret too.
+                text.append("••••••••", style="dim")
+        if not self._revealed:
+            text.append("  —  r reveals", style="dim italic")
+        return text
+
+    def action_reveal(self) -> None:
+        if not self._credentials:
+            return
+        self._revealed = True
+        self.query_one("#preflight-creds", Static).update(self._cred_text())
+
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        choice = event.button.id
+        self.dismiss(choice if choice in ("attach", "terminal") else None)
+
+    def action_attach(self) -> None:
+        self.dismiss("attach")
+
+    def action_terminal(self) -> None:
+        if self._offer_terminal:
+            self.dismiss("terminal")
+
+    def action_cancel(self) -> None:
+        self.dismiss(None)
 
 
 class VmScreen(BoxScreen):
@@ -158,6 +244,24 @@ class VmScreen(BoxScreen):
         vm_id, item = sel
         if item.get("status") != "running":
             self.notify("The VM must be running to attach its console.", severity="warning")
+            return
+        choice = await self.app.push_screen_wait(
+            ConsolePreflightModal(
+                str(item.get("name") or vm_id),
+                cloudinit.find_credentials(str(item.get("cloudinit_userdata") or "")),
+                offer_terminal=oslaunch.can_spawn_terminal(),
+            )
+        )
+        if choice == "terminal":
+            if oslaunch.spawn_terminal(["fbx", "vm", "console", str(vm_id)]):
+                self.notify("Console opened in its own window — Ctrl-] there detaches.")
+            else:
+                self.notify(
+                    "Couldn't open a terminal window — `a` attaches here instead.",
+                    severity="warning",
+                )
+            return
+        if choice != "attach":
             return
         # Release the terminal to the raw byte pump; the pump runs in a
         # thread so its own event loop (asyncio.run) doesn't collide with
