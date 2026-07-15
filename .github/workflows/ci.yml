@@ -21,6 +21,6 @@ jobs:
       - name: Install
         run: uv sync
       - name: Lint
-        run: uv run ruff check src tests
+        run: uv run ruff check src tests scripts
       - name: Test (offline — the box is respx-mocked)
         run: uv run pytest
