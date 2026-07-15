@@ -31,7 +31,7 @@ FREEBOX_THEME = Theme(
 )
 
 # Pixel grid: WIDTH columns × HEIGHT half-rows (2 per text row).
-_W, _H = 34, 32
+_W, _H = 46, 40
 _CX, _CY = _W / 2 - 0.5, _H / 2 - 0.5
 _R = _H / 2 - 0.5
 
@@ -47,45 +47,92 @@ def _seg(px: float, py: float, ax: float, ay: float, bx: float, by: float) -> fl
     return ((px - qx) ** 2 + (py - qy) ** 2) ** 0.5
 
 
-# The italic f, as thick strokes in pixel space (tuned by eye against the
-# real logo: gently slanted stem, a hook curving off the top, a crossbar).
-def _strokes() -> list[tuple[float, float, float, float, float]]:
-    cx, cy = _CX, _CY
+# The mark is « fbx »: Free's italic f, then our own b and x, smaller.
+# Strokes are segments; the b's bowl is a ring. All tuned by eye.
+def _segments() -> list[tuple[float, float, float, float, float]]:
+    cy = _CY
+    fx = _CX - 7.0  # the f sits left of centre to make room for bx
     return [
-        # stem, gently slanted (italic): top-right to bottom-left
-        (cx + 2.6, cy - 9.2, cx - 2.4, cy + 10.5, 3.6),
-        # top hook: curves right off the stem's top, tip dipping outward
-        (cx + 2.4, cy - 9.4, cx + 5.4, cy - 9.6, 3.0),
-        (cx + 5.2, cy - 9.6, cx + 7.0, cy - 8.2, 2.4),
-        # crossbar
-        (cx - 5.4, cy - 1.4, cx + 5.6, cy - 1.4, 3.2),
-        # bottom curl, trailing left like the italic descender
-        (cx - 2.4, cy + 10.3, cx - 4.8, cy + 9.2, 2.6),
+        # f: stem, gently slanted (italic), top-right to bottom-left
+        (fx + 2.8, cy - 11.0, fx - 2.6, cy + 12.0, 3.8),
+        # f: top hook, curving right off the stem's top
+        (fx + 2.6, cy - 11.2, fx + 6.0, cy - 11.4, 3.2),
+        (fx + 5.8, cy - 11.4, fx + 7.8, cy - 9.8, 2.6),
+        # f: crossbar
+        (fx - 5.6, cy - 1.8, fx + 6.0, cy - 1.8, 3.2),
+        # f: bottom curl, trailing left like the italic descender
+        (fx - 2.6, cy + 11.8, fx - 5.2, cy + 10.6, 2.8),
     ]
 
 
-def _sample(x: float, y: float) -> str | None:
-    dx, dy = x - _CX, y - _CY
-    if dx * dx + dy * dy > _R * _R:
-        return None
-    for ax, ay, bx, by, width in _strokes():
+# The b and x are too small for rasterized strokes (they erode into
+# speckle): hand-placed pixel-font bitmaps, 2 px stems, shared baseline.
+_B_GLYPH = (
+    "XX.....",
+    "XX.....",
+    "XX.....",
+    "XX.....",
+    "XX.....",
+    "XXXXXX.",
+    "XXXXXXX",
+    "XX...XX",
+    "XX...XX",
+    "XX...XX",
+    "XXXXXXX",
+    "XXXXXX.",
+)
+_X_GLYPH = (
+    "XX...XX",
+    "XXX.XXX",
+    ".XXXXX.",
+    "..XXX..",
+    "..XXX..",
+    ".XXXXX.",
+    "XXX.XXX",
+    "XX...XX",
+)
+
+
+def _bitmaps() -> list[tuple[int, int, tuple[str, ...]]]:
+    # Baseline picked so the small letters' x-height meets the f's crossbar.
+    baseline = int(_CY + 6.5)  # integer rows: bitmaps must not straddle pixels
+    return [
+        (int(_CX + 2.5), baseline - len(_B_GLYPH) + 1, _B_GLYPH),
+        (int(_CX + 11.5), baseline - len(_X_GLYPH) + 1, _X_GLYPH),
+    ]
+
+
+def _on_glyph(x: float, y: float) -> bool:
+    for ax, ay, bx, by, width in _segments():
         if _seg(x, y, ax, ay, bx, by) <= width / 2:
-            return "W"
-    return "R"
+            return True
+    col, row = int(x), int(y)
+    for x0, y0, glyph in _bitmaps():
+        if 0 <= row - y0 < len(glyph) and 0 <= col - x0 < len(glyph[0]):
+            if glyph[row - y0][col - x0] == "X":
+                return True
+    return False
 
 
 _SUB = (-1 / 3, 0.0, 1 / 3)
 
 
 def _pixel(x: int, y: int) -> str | None:
-    """Colour of pixel (x, y) by 3×3 supersampling: majority of W/R/outside."""
-    votes = {"W": 0, "R": 0, None: 0}
-    for ox in _SUB:
-        for oy in _SUB:
-            votes[_sample(x + ox, y + oy)] += 1
-    if votes[None] >= 5:
+    """Colour of pixel (x, y).
+
+    The disc edge is 3×3-supersampled so the circle comes out round; the
+    glyphs are sampled at the pixel centre only — majority-voting thin
+    strokes erodes them into speckle, crisp stairs read better.
+    """
+    inside = sum(
+        1
+        for ox in _SUB
+        for oy in _SUB
+        if (x + ox - _CX) ** 2 + (y + oy - _CY) ** 2 <= _R * _R
+    )
+    if inside < 5:
         return None
-    return "W" if votes["W"] >= votes["R"] else "R"
+    return "W" if _on_glyph(x, y) else "R"
 
 
 def logo() -> Text:
