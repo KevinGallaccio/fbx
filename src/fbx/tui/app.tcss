@@ -79,6 +79,101 @@ ConfirmModal {
     margin-left: 2;
 }
 
+/* ---------- form modal ---------- */
+
+FormModal {
+    align: center middle;
+}
+
+#form-box {
+    width: 64;
+    max-width: 90%;
+    height: auto;
+    background: $surface;
+    border: thick $primary;
+    padding: 1 2;
+}
+
+#form-title {
+    text-style: bold;
+    padding-bottom: 1;
+}
+
+#form-buttons {
+    height: auto;
+    align-horizontal: right;
+    margin-top: 1;
+}
+
+#form-buttons Button {
+    margin-left: 2;
+}
+
+/* ---------- text modal ---------- */
+
+TextModal {
+    align: center middle;
+}
+
+#text-box {
+    width: 90;
+    max-width: 95%;
+    height: auto;
+    max-height: 80%;
+    background: $surface;
+    border: thick $primary;
+    padding: 1 2;
+}
+
+#text-title {
+    text-style: bold;
+    padding-bottom: 1;
+}
+
+/* ---------- files shell ---------- */
+
+#fs-log {
+    height: 1fr;
+    border: round $panel;
+    margin: 0 1;
+}
+
+#fs-prompt-row {
+    height: 3;
+    padding: 0 1;
+}
+
+#fs-prompt {
+    padding: 1 0;
+    color: $accent;
+    text-style: bold;
+}
+
+#fs-input {
+    width: 1fr;
+}
+
+/* ---------- top ---------- */
+
+#top-rates {
+    height: auto;
+}
+
+.top-rate-pane {
+    width: 1fr;
+    height: auto;
+    padding: 0 1;
+}
+
+#top-down, #top-up {
+    height: 3;
+    margin: 0 1;
+}
+
+#top-stations {
+    height: 1fr;
+}
+
 /* ---------- shared ---------- */
 
 .panel {

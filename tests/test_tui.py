@@ -46,7 +46,25 @@ def _mock_dashboard_box() -> None:
     mock_get("wifi/wps/config/", {"enabled": True})
     mock_get(
         "lan/browser/pub/",
-        [{"active": True, "primary_name": "host-a"}, {"active": True, "primary_name": ""}],
+        [
+            {
+                "id": "ether-02:00:00:00:00:0a",
+                "active": True,
+                "primary_name": "host-a",
+                "host_type": "laptop",
+                "l2ident": {"id": "02:00:00:00:00:0a", "type": "mac_address"},
+                "l3connectivities": [
+                    {"addr": "192.0.2.10", "af": "ipv4", "active": True, "reachable": True}
+                ],
+                "last_activity": 1783944060,
+            },
+            {
+                "id": "ether-02:00:00:00:00:0b",
+                "active": True,
+                "primary_name": "",
+                "l2ident": {"id": "02:00:00:00:00:0b", "type": "mac_address"},
+            },
+        ],
     )
     mock_get(
         "vm/",
