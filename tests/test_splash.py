@@ -20,14 +20,15 @@ def anyio_backend():
 
 @pytest.mark.anyio
 @respx.mock
-async def test_splash_shows_then_gives_way_to_a_fetched_dashboard(monkeypatch):
+async def test_the_timer_gives_way_to_a_fetched_dashboard(monkeypatch):
+    # Timer-path only: under load the 0.05 s beat can elapse before any
+    # assertion runs, so splash *visibility* is asserted in the key-skip test
+    # (where a 30 s DURATION makes it deterministic), not here.
     monkeypatch.setattr(SplashScreen, "DURATION", 0.05)
     authorize()
     _mock_dashboard_box()
     app = FbxApp()
     async with app.run_test(size=(120, 40)) as pilot:
-        assert isinstance(app.screen, SplashScreen)
-        assert "fbx" in str(app.screen.query_one("#splash-title", Static).content)
         await _settle(pilot, lambda: isinstance(app.screen, DashboardScreen))
         # The dashboard was fetching underneath the whole time.
         await _settle(
@@ -38,13 +39,14 @@ async def test_splash_shows_then_gives_way_to_a_fetched_dashboard(monkeypatch):
 
 @pytest.mark.anyio
 @respx.mock
-async def test_any_key_skips_and_q_does_not_quit(monkeypatch):
+async def test_splash_shows_any_key_skips_and_q_does_not_quit(monkeypatch):
     monkeypatch.setattr(SplashScreen, "DURATION", 30.0)  # only the key can end it
     authorize()
     _mock_dashboard_box()
     app = FbxApp()
     async with app.run_test(size=(120, 40)) as pilot:
         assert isinstance(app.screen, SplashScreen)
+        assert "fbx" in str(app.screen.query_one("#splash-title", Static).content)
         await pilot.press("q")
         await _settle(pilot, lambda: isinstance(app.screen, DashboardScreen))
         assert app.is_running
