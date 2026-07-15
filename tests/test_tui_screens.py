@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import pytest
 import respx
-from textual.widgets import DataTable, Input, RichLog
+from textual.widgets import DataTable, Input, Static
 
 from fbx.core import fspath
 from fbx.tui.app import FbxApp
@@ -224,13 +224,15 @@ async def test_fs_shell_mkdir_and_gated_rm():
         await _settle(pilot, lambda: made.called)
         assert sent_json(made) == {"parent": fspath.encode("/"), "dirname": "photos"}
 
+        # The prompt is disabled while a command runs; wait for it back.
+        await _settle(pilot, lambda: not app.screen.query_one("#fs-input", Input).disabled)
         app.screen.query_one("#fs-input", Input).value = "rm /Freebox/old"
         await pilot.press("enter")
         await _confirm_yes(pilot, app)
         await _settle(pilot, lambda: removed.called)
         assert sent_json(removed) == {"files": [fspath.encode("/Freebox/old")]}
-        log_lines = "\n".join(str(line) for line in app.screen.query_one(RichLog).lines)
-        assert "task 7" in log_lines
+        text = str(app.screen.query_one("#fs-scrollback", Static).content)
+        assert "task 7" in text
 
 
 @pytest.mark.anyio

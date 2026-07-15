@@ -151,25 +151,34 @@ TextModal {
 
 /* ---------- files shell ---------- */
 
-#fs-log {
+#fs-term {
     height: 1fr;
     border: round $panel;
     margin: 0 1;
-}
-
-#fs-prompt-row {
-    height: 3;
     padding: 0 1;
 }
 
+#fs-scrollback {
+    width: 1fr;
+    height: auto;
+}
+
+#fs-prompt-line {
+    height: 1;
+}
+
 #fs-prompt {
-    padding: 1 0;
     color: $accent;
     text-style: bold;
 }
 
-#fs-input {
+/* The input is one bare line in the flow — no chrome, it IS the terminal. */
+#fs-input, #fs-input:focus {
     width: 1fr;
+    height: 1;
+    border: none;
+    padding: 0;
+    background: transparent;
 }
 
 /* ---------- top ---------- */
