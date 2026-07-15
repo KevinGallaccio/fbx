@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.svg" alt="fbx" width="180">
+</p>
+
 # freebox-cli
 
 Pilotez intégralement votre **Freebox Ultra** (Freebox OS) depuis le
@@ -29,20 +33,32 @@ trois lettres, comme la box. Sans rien installer :
 
 ## L'application
 
-Tapez `fbx` et vous y êtes : un tableau de bord de toute la box — débit WAN
-en direct, radios Wi-Fi, appareils, VMs, stockage, téléchargements,
-téléphone — plus des **suggestions** qui pointent ce qui mérite un coup
-d'œil (WPS resté activé, téléchargements terminés à nettoyer, une VM
-arrêtée, des appareils sans nom…). Naviguez dans chaque domaine, agissez,
-quittez avec `q`. Toute action destructrice demande confirmation.
+Tapez `fbx` et vous y êtes : le logo le temps d'un battement (une touche le
+saute), puis un tableau de bord de toute la box — débit WAN en direct,
+radios Wi-Fi, appareils, VMs, stockage, téléchargements, téléphone — plus
+des **suggestions** qui pointent ce qui mérite un coup d'œil (WPS resté
+activé, téléchargements terminés à nettoyer, une VM arrêtée, des appareils
+sans nom…). Naviguez dans chaque domaine, agissez, quittez avec `q`. Toute
+action destructrice demande confirmation.
 
 ![L'application fbx : tableau de bord avec tuiles en direct et suggestions](docs/screenshot-app.svg)
 
+La grille s'adapte à la largeur du terminal (2 à 4 colonnes), et le thème
+**freebox** — le rouge Free sur les gris clairs, variante sombre incluse —
+se choisit dans la palette (`ctrl+p`) et survit au redémarrage, comme le
+reste de vos préférences (`~/.config/fbx/app.toml`).
+
 Dans l'application : une vue `top` en direct (courbes de débit à la
-seconde, températures, signal Wi-Fi par client), un **shell de fichiers**
-dans le terminal (`/Freebox > ls`, `cd`, `mkdir`, `mv`, `cp`, `rm`,
-`share`), et un écran VM complet qui attache la **console série** sur place
-(Ctrl-] pour détacher, vous revenez dans l'application).
+seconde, températures, signal Wi-Fi par client) ; un **shell de fichiers**
+qui se comporte comme un vrai terminal — invite dans le fil de la sortie,
+**complétion Tab** des commandes et des chemins de la box, historique ↑/↓
+persistant, `ls` riche, `cd -`, `tree` ; et un écran VM complet — panneau
+de détails (disque, MAC, cloud-init), **console série** précédée d'un écran
+préparatoire qui rappelle comment revenir (**Ctrl-T ou Ctrl-]**) et propose
+d'attacher sur place ou d'ouvrir la console **dans sa propre fenêtre de
+terminal** (Warp, iTerm2, Terminal.app), identifiants cloud-init de l'invité
+copiables sans les afficher, et `v` qui ouvre l'écran VNC de la box dans le
+navigateur.
 
 L'application est l'une des trois façades du même cœur — la CLI ci-dessous
 et le serveur MCP restent scriptables à l'octet près ; `fbx` sans argument
@@ -304,8 +320,10 @@ Pas besoin de Freebox pour contribuer : les tests mockent la box.
 
 `freebox-cli` gives you full control of the **Freebox Ultra** (the fiber
 router/NAS/hypervisor of French ISP Free) from the terminal: an
-**interactive app** (just type `fbx`: dashboard, live tiles, contextual
-suggestions, confirm-gated actions), a complete scriptable CLI —
+**interactive app** (just type `fbx`: dashboard, live tiles, adaptive
+layout, persistent freebox themes, a files shell with tab-completion and
+history, a guided VM serial console, contextual suggestions, confirm-gated
+actions), a complete scriptable CLI —
 connection, LAN, DHCP, port forwarding, Wi-Fi, downloads, files, telephony,
 and the undocumented **virtual machine manager** with a WebSocket serial
 console — plus an **MCP server** (109 tools) and a Claude Code plugin so AI

@@ -248,7 +248,7 @@ async def test_dashboard_columns_follow_terminal_width():
     for width, cols, klass in ((120, 2, "-w2"), (160, 3, "-w3"), (200, 4, "-w4")):
         app = FbxApp(splash=False)
         async with app.run_test(size=(width, 40)) as pilot:
-            await _settle(pilot, lambda: "up" in _tile_text(app, "connection"))
+            await _settle(pilot, lambda app=app: "up" in _tile_text(app, "connection"))
             assert app.screen.has_class(klass), f"width {width}: expected {klass}"
             grid = app.screen.query_one("#dash-tiles")
             assert grid.styles.grid_size_columns == cols
