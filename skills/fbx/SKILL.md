@@ -12,10 +12,14 @@ behavior, same shapes.
 
 ## Preconditions
 
-- The machine must already be **paired**: `fbx auth status` tells you. Pairing
-  (`fbx auth login`) is a one-time HUMAN step — it blocks until someone presses
-  the ▶ button on the box's front panel. **Never run it yourself**; if not
-  paired, ask the user to run it at a terminal.
+- The machine must already be **paired**: `fbx auth status` tells you (an
+  unpaired box also errors with the fix). Pairing is a one-time HUMAN step
+  gated by a physical press of the ▶ button on the box's front panel; nothing
+  is granted without it. Two paths, both only with the user's explicit
+  go-ahead: they run `fbx auth login` at a terminal, or you drive the guided
+  flow — `fbx_auth_enroll`, tell them to go press ▶, then
+  `fbx_auth_enroll_status` until granted/denied. **Never start pairing
+  unprompted**, and never pass `replace=true` unless the user asked to re-pair.
 - Some permissions (notably `settings` and `home`) can only be granted by hand
   in Freebox OS → Paramètres → Gestion des accès → Applications → fbx. A
   `missing the X permission` error means the user has to tick a box there.

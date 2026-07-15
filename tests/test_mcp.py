@@ -98,8 +98,10 @@ def test_spec_params_match_function_signature(spec):
     sig = inspect.signature(spec.fn)
     fn_params = dict(sig.parameters)
     first = next(iter(fn_params))
-    assert first == "client", f"{spec.name}: first param of {spec.fn} must be client"
-    fn_params.pop("client")
+    # Regular tools receive the box client; pre-pairing tools the runtime.
+    expected = "client" if spec.requires_client else "rt"
+    assert first == expected, f"{spec.name}: first param of {spec.fn} must be {expected}"
+    fn_params.pop(expected)
 
     spec_names = {p.name for p in spec.params}
     # Every spec param exists on the function (dispatch is fn(client, **args)).
@@ -169,7 +171,7 @@ def test_select_toolsets_and_exclude():
 
 
 def test_default_surface_is_everything():
-    assert len(select()) == len(TOOLS) == 109
+    assert len(select()) == len(TOOLS) == 111
 
 
 # -- secrets redaction + size filtering ----------------------------------------
@@ -317,9 +319,12 @@ def test_runtime_raw_api_request_strips_doc_prefix():
 
 
 def test_runtime_not_authenticated_says_how_to_pair():
-    # No stored credential (isolated store): the tool must NOT trigger pairing.
+    # No stored credential (isolated store): the tool must NOT trigger pairing,
+    # and the message must name both pairing paths (terminal + guided tool).
     rt = FbxRuntime()
     with pytest.raises(FbxMcpToolError, match="fbx auth login"):
+        rt.call(by_name()["fbx_system_info"], {})
+    with pytest.raises(FbxMcpToolError, match="fbx_auth_enroll"):
         rt.call(by_name()["fbx_system_info"], {})
     rt.close()
 
@@ -365,6 +370,129 @@ def test_runtime_fs_wait_wrapper_raises_on_failed_task():
         rt.close()
 
 
+# -- guided pairing (mcp.enroll) ------------------------------------------------
+
+_AUTHORIZE_BODY = {"success": True, "result": {"app_token": "NEW_TOKEN", "track_id": 42}}
+
+
+def _mock_authorize_start() -> respx.Route:
+    import httpx as _httpx
+
+    return respx.post(
+        "http://mafreebox.freebox.fr/api/v16/login/authorize/"
+    ).mock(return_value=_httpx.Response(200, json=_AUTHORIZE_BODY))
+
+
+def _mock_track(*statuses: str) -> respx.Route:
+    import httpx as _httpx
+
+    return respx.get(
+        "http://mafreebox.freebox.fr/api/v16/login/authorize/42"
+    ).mock(
+        side_effect=[
+            _httpx.Response(200, json={"success": True, "result": {"status": s}})
+            for s in statuses
+        ]
+    )
+
+
+@respx.mock
+def test_enroll_happy_path_pairs_and_never_leaks_the_token():
+    from fbx.core import credentials
+
+    mock_login()  # discovery + the post-grant session check
+    _mock_authorize_start()
+    _mock_track("pending", "granted")
+
+    rt = FbxRuntime()
+    try:
+        started = rt.call(by_name()["fbx_auth_enroll"], {})
+        assert started["status"] == "pending"
+        assert started["track_id"] == 42
+        assert "NEW_TOKEN" not in json.dumps(started)
+        assert "▶" in started["action_required"]
+
+        waiting = rt.call(
+            by_name()["fbx_auth_enroll_status"], {"track_id": 42, "wait_seconds": 0}
+        )
+        assert waiting["status"] == "pending"
+
+        done = rt.call(
+            by_name()["fbx_auth_enroll_status"], {"track_id": 42, "wait_seconds": 0}
+        )
+    finally:
+        rt.close()
+
+    assert done["status"] == "granted"
+    assert "NEW_TOKEN" not in json.dumps(done)
+    assert done["permissions_granted"]  # the session check ran
+    cred = credentials.load()
+    assert cred is not None and cred.app_token == "NEW_TOKEN"
+    assert cred.box_model == "fbxgw9-r1"  # identity captured at discovery
+
+
+@respx.mock
+def test_enroll_refuses_when_already_paired_unless_replace():
+    authorize()
+    mock_login()
+    _mock_authorize_start()
+
+    rt = FbxRuntime()
+    try:
+        refused = rt.call(by_name()["fbx_auth_enroll"], {})
+        assert refused["status"] == "already_paired"
+
+        replaced = rt.call(by_name()["fbx_auth_enroll"], {"replace": True})
+        assert replaced["status"] == "pending"
+    finally:
+        rt.close()
+
+
+@respx.mock
+def test_enroll_denial_and_timeout_clear_the_pending_state():
+    mock_login()
+    _mock_authorize_start()
+    _mock_track("denied")
+
+    rt = FbxRuntime()
+    try:
+        rt.call(by_name()["fbx_auth_enroll"], {})
+        verdict = rt.call(
+            by_name()["fbx_auth_enroll_status"], {"track_id": 42, "wait_seconds": 0}
+        )
+        assert verdict["status"] == "denied"
+        # The pending record is gone: a retry must say so, not poll the box.
+        again = rt.call(
+            by_name()["fbx_auth_enroll_status"], {"track_id": 42, "wait_seconds": 0}
+        )
+        assert again["status"] == "unknown_track"
+    finally:
+        rt.close()
+
+
+def test_enroll_status_with_no_pending_flow_says_start_over():
+    rt = FbxRuntime()
+    try:
+        result = rt.call(
+            by_name()["fbx_auth_enroll_status"], {"track_id": 999, "wait_seconds": 0}
+        )
+    finally:
+        rt.close()
+    assert result["status"] == "unknown_track"
+    assert "fbx_auth_enroll" in result["note"]
+
+
+def test_enroll_specs_are_annotated_for_consent():
+    enroll_spec = by_name()["fbx_auth_enroll"]
+    assert enroll_spec.destructive and not enroll_spec.readonly
+    assert not enroll_spec.requires_client
+    status_spec = by_name()["fbx_auth_enroll_status"]
+    assert not status_spec.requires_client
+    # Neither may surface in a read-only server.
+    names = {s.name for s in select(read_only=True)}
+    assert "fbx_auth_enroll" not in names and "fbx_auth_enroll_status" not in names
+
+
 # -- the real protocol over the in-memory transport ----------------------------
 
 
@@ -389,7 +517,7 @@ async def test_mcp_protocol_list_and_call():
     try:
         async with create_connected_server_and_client_session(server) as session:
             listed = await session.list_tools()
-            assert len(listed.tools) == 109
+            assert len(listed.tools) == 111
             tools = {t.name: t for t in listed.tools}
             assert tools["fbx_system_info"].annotations.readOnlyHint is True
             assert tools["fbx_system_reboot"].annotations.destructiveHint is True
@@ -486,6 +614,45 @@ def test_plugin_manifest_tracks_the_package():
     args = manifest["mcpServers"]["fbx"]["args"]
     assert "freebox-cli[mcp] @ file://${CLAUDE_PLUGIN_ROOT}" in args, args
     assert args[-2:] == ["mcp", "serve"]
+
+
+def test_marketplace_entry_tracks_the_package():
+    from pathlib import Path
+
+    import fbx
+
+    marketplace = json.loads(
+        (Path(__file__).parent.parent / ".claude-plugin" / "marketplace.json").read_text()
+    )
+    # Installers watch the marketplace for changes; without a version stamp the
+    # file is byte-identical across releases and caches never refresh (the
+    # Desktop "stuck at an old version" failure).
+    (entry,) = marketplace["plugins"]
+    assert entry["version"] == fbx.__version__
+
+
+def test_mcpb_manifest_tracks_the_package():
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    import fbx
+
+    out = subprocess.run(
+        [sys.executable, "scripts/build_mcpb.py", "--print-manifest"],
+        capture_output=True,
+        text=True,
+        check=True,
+        cwd=Path(__file__).parent.parent,
+    )
+    manifest = json.loads(out.stdout)
+    assert manifest["version"] == fbx.__version__
+    # The Desktop extension must pin the exact release: uv resolves a spec once
+    # and caches it, so only a pinned==version makes a new bundle a new server.
+    config = manifest["server"]["mcp_config"]
+    assert config["command"] == "uvx"
+    assert f"freebox-cli[mcp]=={fbx.__version__}" in config["args"]
+    assert config["args"][-2:] == ["mcp", "serve"]
 
 
 # -- CLI surface ----------------------------------------------------------------

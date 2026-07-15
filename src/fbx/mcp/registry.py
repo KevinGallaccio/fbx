@@ -35,6 +35,7 @@ from ..core.api import (
     wifi,
 )
 from ..core.errors import FbxError
+from . import enroll
 
 # -- the spec model ---------------------------------------------------------
 
@@ -63,6 +64,9 @@ class ToolSpec:
     readonly: bool = False
     destructive: bool = False  # only meaningful when not readonly
     open_world: bool = False   # reaches beyond the box (e.g. downloads a URL)
+    # Pre-pairing tools (mcp.enroll) receive the FbxRuntime instead of a box
+    # client — they must work exactly when no credential exists yet.
+    requires_client: bool = True
 
 
 def input_schema(spec: ToolSpec) -> dict:
@@ -248,6 +252,40 @@ _FS_OP = (
 # -- the table ---------------------------------------------------------------
 
 TOOLS: tuple[ToolSpec, ...] = (
+    # ── auth (pairing; works with no credential) ──────────────────────────
+    ToolSpec(
+        "fbx_auth_enroll", "auth", enroll.start,
+        "Begin the one-time pairing with the Freebox. Registers the app on the "
+        "box, whose front display then prompts for a physical press of the ▶ "
+        "(right-arrow) button within ~90 seconds — nothing is granted without "
+        "that press, and the earned token is stored locally, never returned. "
+        "Confirm with the user first, send them to the box, then call "
+        "fbx_auth_enroll_status. No-op when already paired (see replace).",
+        params=(
+            _p("device_name", "string",
+               "Label shown on the box's prompt and in its access list "
+               "(default: this machine's hostname).", required=False),
+            _p("replace", "boolean",
+               "Re-pair even though a credential exists, replacing it.",
+               required=False),
+        ),
+        destructive=True,
+        requires_client=False,
+    ),
+    ToolSpec(
+        "fbx_auth_enroll_status", "auth", enroll.status,
+        "Await the verdict of a pairing started with fbx_auth_enroll: polls the "
+        "box up to wait_seconds (default 25, max 60) and returns granted, "
+        "denied, timeout, or pending (call again). On granted the credential "
+        "is saved and every other fbx tool goes live immediately.",
+        params=(
+            _p("track_id", "integer", "The track_id returned by fbx_auth_enroll."),
+            _p("wait_seconds", "integer",
+               "Seconds to keep polling before answering pending (0–60).",
+               required=False),
+        ),
+        requires_client=False,
+    ),
     # ── system ────────────────────────────────────────────────────────────
     ToolSpec(
         "fbx_system_info", "system", system.info,
