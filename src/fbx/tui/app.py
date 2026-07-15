@@ -30,10 +30,17 @@ class FbxApp(App):
         Binding("escape", "back", "Back", show=False),
     ]
 
-    def __init__(self, *, profile: str = "default", host: str | None = None) -> None:
+    def __init__(
+        self,
+        *,
+        profile: str = "default",
+        host: str | None = None,
+        splash: bool = True,
+    ) -> None:
         super().__init__()
         self.runtime = ClientRuntime(profile=profile, host=host)
         self._last_error: tuple[str, float] | None = None
+        self._show_splash = splash
         self.prefs = Prefs.load()
         # Before the first frame, so there's no flash of the default theme.
         # A stale name would raise InvalidThemeError, hence the guard.
@@ -43,9 +50,14 @@ class FbxApp(App):
 
     def on_mount(self) -> None:
         from .screens.dashboard import DashboardScreen
+        from .screens.splash import SplashScreen
 
         self.theme_changed_signal.subscribe(self, self._remember_theme)
         self.push_screen(DashboardScreen())
+        if self._show_splash:
+            # Over the dashboard, which is already fetching underneath — by
+            # the time the splash pops, the first tiles have real data.
+            self.push_screen(SplashScreen())
 
     def _remember_theme(self, theme: Any) -> None:
         self.prefs.set("app.theme", theme.name)

@@ -182,3 +182,34 @@ TextModal {
     margin: 0 1;
     height: auto;
 }
+
+/* ---------- splash ---------- */
+
+SplashScreen {
+    align: center middle;
+}
+
+#splash-body {
+    width: auto;
+    height: auto;
+}
+
+#splash-art {
+    width: auto;
+    color: $accent;
+    text-style: bold;
+}
+
+#splash-title {
+    width: 100%;
+    margin-top: 1;
+    text-align: center;
+    text-style: bold;
+}
+
+#splash-hint {
+    width: 100%;
+    margin-top: 1;
+    text-align: center;
+    color: $text-muted;
+}

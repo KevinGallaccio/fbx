@@ -67,12 +67,12 @@ def test_set_preserves_keys_it_does_not_know():
 async def test_theme_survives_relaunch():
     authorize()
     _mock_dashboard_box()
-    app = FbxApp()
+    app = FbxApp(splash=False)
     async with app.run_test(size=(120, 40)) as pilot:
         app.theme = "textual-light"
         await _settle(pilot, lambda: Prefs.load().get("app.theme") == "textual-light")
 
-    assert FbxApp().theme == "textual-light"
+    assert FbxApp(splash=False).theme == "textual-light"
 
 
 @pytest.mark.anyio
@@ -80,13 +80,13 @@ async def test_theme_survives_relaunch():
 async def test_lan_all_active_choice_survives_relaunch():
     authorize()
     _mock_dashboard_box()
-    app = FbxApp()
+    app = FbxApp(splash=False)
     async with app.run_test(size=(120, 40)) as pilot:
         await _open(pilot, app, "lan", "hosts")
         await pilot.press("a")
         await _settle(pilot, lambda: Prefs.load().get("screens.lan.show") == "all")
 
-    relaunched = FbxApp()
+    relaunched = FbxApp(splash=False)
     async with relaunched.run_test(size=(120, 40)) as pilot:
         await _open(pilot, relaunched, "lan", "hosts")
         await _settle(pilot, lambda: "all known" in str(relaunched.screen.sub_title))
@@ -100,7 +100,7 @@ async def test_fs_last_dir_survives_relaunch():
     mock_get("fs/ls/", [], startswith=True)
     from textual.widgets import Input
 
-    app = FbxApp()
+    app = FbxApp(splash=False)
     async with app.run_test(size=(120, 40)) as pilot:
         await _open(pilot, app, "fs")
         await _settle(pilot, lambda: bool(app.screen.query("#fs-input")))
@@ -108,7 +108,7 @@ async def test_fs_last_dir_survives_relaunch():
         await pilot.press("enter")
         await _settle(pilot, lambda: Prefs.load().get("screens.fs.last_dir") == "/Freebox")
 
-    relaunched = FbxApp()
+    relaunched = FbxApp(splash=False)
     async with relaunched.run_test(size=(120, 40)) as pilot:
         await _open(pilot, relaunched, "fs")
         await _settle(pilot, lambda: bool(relaunched.screen.query("#fs-prompt")))

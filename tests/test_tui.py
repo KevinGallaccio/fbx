@@ -101,7 +101,7 @@ def _tile_text(app: FbxApp, name: str) -> str:
 async def test_dashboard_renders_tiles_and_suggestions():
     authorize()
     _mock_dashboard_box()
-    app = FbxApp()
+    app = FbxApp(splash=False)
     async with app.run_test(size=(120, 40)) as pilot:
         await _settle(pilot, lambda: "up" in _tile_text(app, "connection"))
         assert "ftth" in _tile_text(app, "connection")
@@ -125,7 +125,7 @@ async def test_dashboard_renders_tiles_and_suggestions():
 async def test_dashboard_menu_opens_domain_screen():
     authorize()
     _mock_dashboard_box()
-    app = FbxApp()
+    app = FbxApp(splash=False)
     async with app.run_test(size=(120, 40)) as pilot:
         await _settle(pilot, lambda: "up" in _tile_text(app, "connection"))
         app.open_domain("system")
@@ -148,7 +148,7 @@ async def test_reboot_needs_confirmation_and_posts():
     authorize()
     _mock_dashboard_box()
     reboot = mock_write("POST", "system/reboot/")
-    app = FbxApp()
+    app = FbxApp(splash=False)
     async with app.run_test(size=(120, 40)) as pilot:
         await _settle(pilot, lambda: "up" in _tile_text(app, "connection"))
         app.open_domain("system")
