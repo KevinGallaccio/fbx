@@ -2,13 +2,15 @@
 
 The client lifecycle (lazy connect, lock, drop-on-transport-error) lives in
 `core.runtime.ClientRuntime`, shared with the interactive app; this module
-adds the agent-facing error translation. Never triggers the pairing flow:
-with no stored credential the tool call fails with instructions to run
-`fbx auth login` at a terminal (it needs a physical button press on the box).
+adds the agent-facing error translation. Regular tools never trigger the
+pairing flow: with no stored credential they fail with instructions instead.
+Pairing happens only through the two explicit enroll tools (`mcp.enroll`),
+which still hinge on the physical ▶ press on the box.
 """
 
 from __future__ import annotations
 
+import threading
 from typing import Any
 
 from ..core.errors import (
@@ -32,9 +34,10 @@ def error_message(exc: FbxError, *, profile: str) -> str:
     if isinstance(exc, FbxNotAuthenticated):
         return (
             f"fbx is not paired with a Freebox (profile {profile!r}). Pairing is a "
-            "one-time human step: run `fbx auth login` in a terminal on this "
-            "machine and press the ▶ button on the Freebox's front panel. "
-            "This tool cannot do it for you."
+            "one-time human step gated by a physical ▶ press on the box's front "
+            "panel: the user can run `fbx auth login` in a terminal on this "
+            "machine, or — with their explicit go-ahead — use the fbx_auth_enroll "
+            "tool and go press the button when told."
         )
     if isinstance(exc, FbxPermissionError):
         return (
@@ -57,13 +60,24 @@ class FbxRuntime:
         self.profile = profile
         self.host = host
         self._runtime = ClientRuntime(profile=profile, host=host)
+        # Pairing in flight (mcp.enroll): track_id -> PendingEnrollment. Held
+        # here so both enroll tools see the same state across worker threads.
+        self.pending_enrollments: dict[int, Any] = {}
+        self.enroll_lock = threading.Lock()
 
     def call(self, spec: ToolSpec, args: dict) -> Any:
         """Run one tool call synchronously (the server offloads to a thread)."""
         try:
+            if not spec.requires_client:
+                # Pre-pairing tools get the runtime itself, not a box client.
+                return spec.fn(self, **args)
             return self._runtime.call(spec.fn, **args)
         except FbxError as exc:
             raise FbxMcpToolError(error_message(exc, profile=self.profile)) from exc
+
+    def reset_client(self) -> None:
+        """Drop the cached box client (e.g. after pairing replaced the credential)."""
+        self._runtime.close()
 
     def close(self) -> None:
         self._runtime.close()

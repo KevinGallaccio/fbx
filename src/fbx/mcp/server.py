@@ -23,12 +23,14 @@ from .runtime import FbxRuntime
 log = logging.getLogger("fbx.mcp")
 
 INSTRUCTIONS = (
-    "Tools for one Freebox (the user's own router/NAS/hypervisor, already "
-    "paired). Results are the box's raw JSON. Ids (Wi-Fi APs, VMs, LAN hosts, "
-    "port forwards) are only valid freshly listed — discover, then act. For "
-    "config-object writes, read the current object first and send only the "
-    "fields you mean to change. Tools marked destructive interrupt service or "
-    "delete data irreversibly — get explicit user confirmation first."
+    "Tools for one Freebox (the user's own router/NAS/hypervisor). Results are "
+    "the box's raw JSON. Ids (Wi-Fi APs, VMs, LAN hosts, port forwards) are "
+    "only valid freshly listed — discover, then act. For config-object writes, "
+    "read the current object first and send only the fields you mean to "
+    "change. Tools marked destructive interrupt service or delete data "
+    "irreversibly — get explicit user confirmation first. If the box is not "
+    "paired yet, fbx_auth_enroll runs the one-time pairing with the user's "
+    "help (a physical button press on the box)."
 )
 
 
