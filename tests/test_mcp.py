@@ -730,3 +730,11 @@ def test_cli_mcp_install_json_shape():
     data = json.loads(result.stdout)
     assert data["command"][-2:] == ["mcp", "serve"]
     assert "claude mcp add fbx" in data["claude_code"]
+
+    # opencode rejects the common mcpServers shape: command must be a single
+    # array (no `args`), and `type`/`enabled` are required keys.
+    opencode = data["opencode"]["mcp"]["fbx"]
+    assert opencode["type"] == "local"
+    assert opencode["enabled"] is True
+    assert opencode["command"][-2:] == ["mcp", "serve"]
+    assert "args" not in opencode

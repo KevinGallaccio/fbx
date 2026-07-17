@@ -133,11 +133,23 @@ def install(ctx: typer.Context) -> None:
     desktop_json = {
         "mcpServers": {"fbx": {"command": fbx_path, "args": ["mcp", "serve"]}}
     }
+    # opencode validates a discriminated union: command is one array (no
+    # `args` key) and `type`/`enabled` are required, not defaulted.
+    opencode_json = {
+        "mcp": {
+            "fbx": {
+                "type": "local",
+                "command": [fbx_path, "mcp", "serve"],
+                "enabled": True,
+            }
+        }
+    }
     if state.as_json:
         ui.emit_json(
             {
                 "claude_code": claude_cmd,
                 "claude_desktop": desktop_json,
+                "opencode": opencode_json,
                 "command": [fbx_path, "mcp", "serve"],
             }
         )
@@ -156,6 +168,13 @@ def install(ctx: typer.Context) -> None:
     import json as _json
 
     ui.info(f"  {_json.dumps(desktop_json)}", state)
+    ui.info("", state)
+    ui.info(
+        "[bold]opencode[/] — add to ~/.config/opencode/opencode.json "
+        "(one command array, `type` and `enabled` required):",
+        state,
+    )
+    ui.info(f"  {_json.dumps(opencode_json)}", state)
     ui.info("", state)
     ui.info(
         "Optional flags for `serve`: --read-only, --toolsets vm,wifi,…, --exclude raw",
