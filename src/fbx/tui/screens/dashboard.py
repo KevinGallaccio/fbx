@@ -5,6 +5,7 @@ from __future__ import annotations
 import time
 from collections.abc import Callable
 
+from rich.text import Text
 from textual.app import ComposeResult
 from textual.binding import Binding
 from textual.containers import Container, Grid, Horizontal, Vertical
@@ -62,8 +63,17 @@ class DashboardScreen(BoxScreen):
             with Vertical(id="dash-menu-pane"):
                 yield Static(_("Go to"), classes="pane-title")
                 yield OptionList(
+                    # Bold title, dim blurb: entries wrap in a 38-cell pane
+                    # (worse in French), and uniform styling made a wrapped
+                    # blurb read as a new entry. A dim continuation under a
+                    # bold start visibly belongs to the line above.
                     *(
-                        Option(f"{_(d.title)} — {_(d.blurb)}", id=d.key)
+                        Option(
+                            Text.assemble(
+                                (_(d.title), "bold"), (" — ", "dim"), (_(d.blurb), "dim")
+                            ),
+                            id=d.key,
+                        )
                         for d in DOMAINS.values()
                     ),
                     id="dash-menu",
