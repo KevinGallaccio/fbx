@@ -79,7 +79,7 @@ class WifiScreen(BoxScreen):
         self.query_one("#wifi-summary", Static).update(
             f"Wi-Fi {fmt.onoff(self._config.get('enabled'))} · "
             f"{_('MAC filter')} "
-            f"{fmt.safe(_p('mac-filter', str(self._config.get('mac_filter_state'))))} · "
+            f"{fmt.safe(_p('mac-filter', str(self._config.get('mac_filter_state') or '')))} · "
             f"WPS {fmt.onoff(self._wps.get('enabled'))}"
         )
 

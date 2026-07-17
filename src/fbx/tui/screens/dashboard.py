@@ -162,7 +162,7 @@ class DashboardScreen(BoxScreen):
                 _("{name} ch {channel} · {state}").format(
                     name=fmt.safe(a.get("name")),
                     channel=channel,
-                    state=fmt.safe(_p("ap-state", str(st.get("state")))),
+                    state=fmt.safe(_p("ap-state", str(st.get("state") or ""))),
                 )
             )
         self._tile("wifi").update(
@@ -180,7 +180,7 @@ class DashboardScreen(BoxScreen):
             dot = "[green]●[/]" if v.get("status") == "running" else "[dim]○[/]"
             vm_lines.append(
                 f"{dot} {fmt.safe(v.get('name'))} — "
-                f"{fmt.safe(_p('vm-status', str(v.get('status'))))}"
+                f"{fmt.safe(_p('vm-status', str(v.get('status') or '')))}"
             )
         self._tile("vm").update(
             "[b]VMs[/b]\n" + ("\n".join(vm_lines) or _("none defined"))

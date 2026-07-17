@@ -25,7 +25,12 @@ def _scan_sources() -> tuple[set[str], set[tuple[str, str | None]], set[str]]:
     constants: set[str] = set()
 
     for path in TUI_DIR.rglob("*.py"):
-        for node in ast.walk(ast.parse(path.read_text())):
+        if path.name == "locale_fr.py":
+            # The catalog must not vouch for itself: its keys are string
+            # literals too, and counting them as "used" would blind the
+            # stale-entry guard below.
+            continue
+        for node in ast.walk(ast.parse(path.read_text(encoding="utf-8"))):
             if isinstance(node, ast.Constant) and isinstance(node.value, str):
                 constants.add(node.value)
             if not isinstance(node, ast.Call):
