@@ -30,22 +30,24 @@ class Domain:
     factory: Callable[[], Screen]
 
 
-# Order is the dashboard menu order. Grows as Phase 6 screens land.
+# Order is the dashboard menu order. Blurbs are sized so title + " — " +
+# blurb fits the dashboard menu's 33 usable cells on one line, in BOTH
+# languages — wrapped entries were what made the menu read like word soup.
 DOMAINS: dict[str, Domain] = {
     d.key: d
     for d in (
         Domain("top", "Top", "live throughput and sensors", TopScreen),
-        Domain("connection", "Connection", "WAN, fiber, IPv6, logs", ConnectionScreen),
+        Domain("connection", "Connection", "fiber, IPv6, logs", ConnectionScreen),
         Domain("wifi", "Wi-Fi", "radios, networks, clients", WifiScreen),
         Domain("lan", "Devices", "who's on the network", LanScreen),
         Domain("dhcp", "DHCP", "leases and reservations", DhcpScreen),
-        Domain("fw", "Port forwarding", "rules, DMZ, UPnP", FwScreen),
+        Domain("fw", "Port forwarding", "DMZ, UPnP", FwScreen),
         Domain("downloads", "Downloads", "the download manager", DownloadsScreen),
         Domain("fs", "Files", "browse the box's disks", FsScreen),
         Domain("storage", "Storage", "disks and partitions", StorageScreen),
-        Domain("vm", "Virtual machines", "lifecycle, console, exec", VmScreen),
+        Domain("vm", "Virtual machines", "console, exec", VmScreen),
         Domain("calls", "Phone", "call log", CallsScreen),
         Domain("contacts", "Contacts", "address book", ContactsScreen),
-        Domain("system", "System", "firmware, sensors, reboot", SystemScreen),
+        Domain("system", "System", "sensors, reboot", SystemScreen),
     )
 }
