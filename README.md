@@ -269,7 +269,7 @@ la bonne posture. Box pas encore appairée ? Demandez à Claude d'appairer —
 l'outil `fbx_auth_enroll` vous enverra appuyer sur ▶.
 
 <details>
-<summary><strong>N'importe quel client MCP (Cursor, Zed, …)</strong></summary>
+<summary><strong>N'importe quel client MCP (Cursor, Zed, opencode, …)</strong></summary>
 
 Installez avec l'extra `mcp` et pointez votre client sur `fbx mcp serve` :
 
@@ -280,6 +280,14 @@ fbx mcp install        # affiche le câblage exact des clients courants
 
 ```json
 { "mcpServers": { "fbx": { "command": "fbx", "args": ["mcp", "serve"] } } }
+```
+
+**opencode** n'utilise pas le schéma `mcpServers` : la commande est un
+tableau unique (pas de clé `args`), et `type` + `enabled` sont exigés. Dans
+`~/.config/opencode/opencode.json` :
+
+```json
+{ "mcp": { "fbx": { "type": "local", "command": ["fbx", "mcp", "serve"], "enabled": true } } }
 ```
 
 </details>
