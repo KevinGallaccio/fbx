@@ -62,22 +62,7 @@ class DashboardScreen(BoxScreen):
         with Horizontal(id="dash-body"):
             with Vertical(id="dash-menu-pane"):
                 yield Static(_("Go to"), classes="pane-title")
-                yield OptionList(
-                    # Bold title, dim blurb: entries wrap in a 38-cell pane
-                    # (worse in French), and uniform styling made a wrapped
-                    # blurb read as a new entry. A dim continuation under a
-                    # bold start visibly belongs to the line above.
-                    *(
-                        Option(
-                            Text.assemble(
-                                (_(d.title), "bold"), (" — ", "dim"), (_(d.blurb), "dim")
-                            ),
-                            id=d.key,
-                        )
-                        for d in DOMAINS.values()
-                    ),
-                    id="dash-menu",
-                )
+                yield OptionList(*self._menu_options(), id="dash-menu")
             with Container(id="dash-tiles-area"):
                 with Grid(id="dash-tiles"):
                     for tile in _TILES:
@@ -86,6 +71,31 @@ class DashboardScreen(BoxScreen):
             yield Static(_("Suggestions"), classes="pane-title")
             yield OptionList(id="dash-suggestions")
         yield Footer()
+
+    @staticmethod
+    def _menu_options() -> list[Option]:
+        """The navigation entries, styled and spaced to read as entries.
+
+        Most wrap in the 38-cell pane (worse in French), and uniformly
+        styled, tightly packed lines read as one word soup: so bold title +
+        dim blurb (a dim continuation visibly belongs to the bold line
+        above), and a blank line between entries. Textual 8 has no option
+        separators — the spacers are disabled blank options, which keyboard
+        navigation skips.
+        """
+        options: list[Option] = []
+        for d in DOMAINS.values():
+            if options:
+                options.append(Option("", disabled=True))
+            options.append(
+                Option(
+                    Text.assemble(
+                        (_(d.title), "bold"), (" — ", "dim"), (_(d.blurb), "dim")
+                    ),
+                    id=d.key,
+                )
+            )
+        return options
 
     # -- data ---------------------------------------------------------------
 
